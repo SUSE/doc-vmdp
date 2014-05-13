@@ -1,0 +1,22 @@
+= Virtual Machine Driver Pack Documentation
+
+This is the source of the VMDP documentation.
+
+Released versions of the VMDP documentatuin are published at
+https://www.suse.com/documentation.
+
+== Editing DocBook
+
+To contribute to the documentation, you need to write DocBook.
+
+* You can learn about DocBook syntax at http://docbook.org/tdg5/en/html .
+* SUSE documents are generally built with DAPS (package `daps`) and the
+  SUSE XSL Stylesheets (package `suse-xsl-stylesheets`). Ideally, you should
+  get these from the repository `Documentation:Tools`. However, slightly
+  older versions are also available from the SLE and openSUSE repositories.
+* Basic daps usage:
+** `$ daps -d DC-vmdp validate`: Make sure what you have written is
+    well-formed XML and valid DocBook 5
+** `$ daps -d DC-vmdp pdf`: Build a PDF document
+** `$ daps -d DC-vmdp html`: Build multi-page HTML document
+** Learn more at https://opensuse.github.io/daps
