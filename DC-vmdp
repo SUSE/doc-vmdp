@@ -1,0 +1,25 @@
+## --------------------------------- 
+## Doc Config File for the
+## Virtual Machine Driver Pack Manual
+## ----------------------------------
+##
+## Basics
+
+MAIN="MAIN.VMDP.xml"
+
+#ROOTID=""
+
+## Profiling
+#PROFOS=""
+#PROFARCH=""
+
+## Provo
+#HTMLROOT=""
+
+## stylesheet location
+STYLEROOT="/usr/share/xml/docbook/stylesheet/suse2013"
+FALLBACK_STYLEROOT="/usr/share/xml/docbook/stylesheet/suse"
+
+## enable sourcing
+export DOCCONF=$BASH_SOURCE
+
