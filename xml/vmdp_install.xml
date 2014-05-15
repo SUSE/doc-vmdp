@@ -1,0 +1,361 @@
+<?xml version="1.0"?>
+<!DOCTYPE article PUBLIC "-//Novell//DTD NovDoc XML V1.0//EN" "novdocx.dtd"
+[
+  <!ENTITY % NOVDOC.DEACTIVATE.IDREF "INCLUDE">
+  <!ENTITY % entities SYSTEM "entity-decl.ent">
+  %entities;
+]>
+<sect1 id="sec.vmdp.driver.winwizard">
+ <title>&suse; Drivers for Windows</title>
+ <procedure>
+  <step>
+   <para>
+    Launch the Virtual Machine Manager and start your Windows* virtual machine.
+   </para>
+  </step>
+  <step>
+   <para>
+    Set up the ISO image or CD of the drivers you want to install as a
+    virtual CD reader in the VM. You can use virt-manager to do that.
+   </para>
+  </step>
+  <step>
+   <para>
+    Right-click the virtual CD-ROM you just added, then click
+    <guimenu>Autoplay</guimenu>.
+   </para>
+   <para>
+    If a security alert appears, indicating the Bus driver has not been
+    properly signed, click <guimenu>Yes</guimenu> to install the Bus driver
+    software. It is important that you do not click <guimenu>No</guimenu>.
+   </para>
+   <informalfigure pgwide="0">
+    <mediaobject>
+     <imageobject role="fo">
+      <imagedata fileref="busdriver.png" width="45%" format="PNG"/>
+     </imageobject>
+     <imageobject role="html">
+      <imagedata fileref="busdriver.png" width="45%" format="PNG"/>
+     </imageobject>
+    </mediaobject>
+   </informalfigure>
+   <para>
+    The Novell Virtual Device Driver Installer launches.
+   </para>
+   <informalfigure pgwide="0">
+    <mediaobject>
+     <imageobject role="fo">
+      <imagedata fileref="drvr_installer_welcome.png" width="56%" format="PNG"/>
+     </imageobject>
+     <imageobject role="html">
+      <imagedata fileref="drvr_installer_welcome.png" width="56%" format="PNG"/>
+     </imageobject>
+    </mediaobject>
+   </informalfigure>
+  </step>
+  <step>
+   <para>
+    Click <guimenu>Next</guimenu>.
+   </para>
+   <para>
+    The End User License Agreement window appears.
+   </para>
+   <informalfigure pgwide="0">
+    <mediaobject>
+     <imageobject role="fo">
+      <imagedata fileref="drvr_installer_eula.png" width="56%" format="PNG"/>
+     </imageobject>
+     <imageobject role="html">
+      <imagedata fileref="drvr_installer_eula.png" width="56%" format="PNG"/>
+     </imageobject>
+    </mediaobject>
+   </informalfigure>
+  </step>
+  <step>
+   <para>
+    Click <guimenu>Next</guimenu>.
+   </para>
+   <para>
+    A software installation note appears, indicating that the software has
+    not passed Windows logo testing.
+   </para>
+   <para>
+    If you are installing Windows XP or Windows Server 2003, you see the
+    following:
+   </para>
+   <informalfigure pgwide="0">
+    <mediaobject>
+     <imageobject role="fo">
+      <imagedata fileref="installer_xp.png" width="45%" format="PNG"/>
+     </imageobject>
+     <imageobject role="html">
+      <imagedata fileref="installer_xp.png" width="45%" format="PNG"/>
+     </imageobject>
+    </mediaobject>
+   </informalfigure>
+   <para>
+    If you are installing Windows 2000, you see the following:
+   </para>
+   <informalfigure pgwide="0">
+    <mediaobject>
+     <imageobject role="fo">
+      <imagedata fileref="win2k_dig_signature.png" width="50%" format="PNG"/>
+     </imageobject>
+     <imageobject role="html">
+      <imagedata fileref="win2k_dig_signature.png" width="50%" format="PNG"/>
+     </imageobject>
+    </mediaobject>
+   </informalfigure>
+  </step>
+  <step>
+   <para>
+    Click <guimenu>Continue Anyway</guimenu> or click <guimenu>Yes</guimenu>
+    for each occurrence of this window.
+   </para>
+   <para>
+    A Congratulations window indicates that the drivers were installed.
+   </para>
+   <informalfigure pgwide="0">
+    <mediaobject>
+     <imageobject role="fo">
+      <imagedata fileref="drvr_installer_congrats.png" width="56%" format="PNG"/>
+     </imageobject>
+     <imageobject role="html">
+      <imagedata fileref="drvr_installer_congrats.png" width="56%" format="PNG"/>
+     </imageobject>
+    </mediaobject>
+   </informalfigure>
+   <note>
+    <para>
+     Clicking <guimenu>Cancel</guimenu> on this screen does not cancel the
+     installation. If you want to cancel, you have to uninstall (see
+     <xref linkend="sec.vmdp.driver.winwizard.vmdp.uninstall" xrefstyle="SectTitleOnPage"/>).
+    </para>
+   </note>
+  </step>
+  <step>
+   <para>
+    Click <guimenu>Finish</guimenu>.
+   </para>
+   <para>
+    A message appears, indicating that you must restart the system.
+   </para>
+   <informalfigure pgwide="0">
+    <mediaobject>
+     <imageobject role="fo">
+      <imagedata fileref="drv_installer_restart.png" width="47%" format="PNG"/>
+     </imageobject>
+     <imageobject role="html">
+      <imagedata fileref="drv_installer_restart.png" width="47%" format="PNG"/>
+     </imageobject>
+    </mediaobject>
+   </informalfigure>
+  </step>
+  <step>
+   <para>
+    Click <guimenu>Yes</guimenu>.
+   </para>
+   <para>
+    The system restarts. The Found New Hardware Wizard appears, indicating
+    that it has found new hardware.
+   </para>
+   <informalfigure pgwide="0">
+    <mediaobject>
+     <imageobject role="fo">
+      <imagedata fileref="fnh_netdriver.png" width="56%" format="PNG"/>
+     </imageobject>
+     <imageobject role="html">
+      <imagedata fileref="fnh_netdriver.png" width="56%" format="PNG"/>
+     </imageobject>
+    </mediaobject>
+   </informalfigure>
+  </step>
+  <step>
+   <para>
+    Click <guimenu>Yes, this time only</guimenu>, then click
+    <guimenu>Next</guimenu>.
+   </para>
+   <informalfigure pgwide="0">
+    <mediaobject>
+     <imageobject role="fo">
+      <imagedata fileref="xen_netdrvr.png" width="56%" format="PNG"/>
+     </imageobject>
+     <imageobject role="html">
+      <imagedata fileref="xen_netdrvr.png" width="56%" format="PNG"/>
+     </imageobject>
+    </mediaobject>
+   </informalfigure>
+  </step>
+  <step>
+   <para>
+    Click <guimenu>Install the Software Automatically</guimenu>, then click
+    <guimenu>Next</guimenu>.
+   </para>
+   <para>
+    A software installation note appears, indicating that the software has
+    not passed Windows logo testing.
+   </para>
+   <para>
+    If you are installing Windows XP or Windows Server 2003, you see the
+    following:
+   </para>
+   <informalfigure pgwide="0">
+    <mediaobject>
+     <imageobject role="fo">
+      <imagedata fileref="installer_xp.png" width="45%" format="PNG"/>
+     </imageobject>
+     <imageobject role="html">
+      <imagedata fileref="installer_xp.png" width="45%" format="PNG"/>
+     </imageobject>
+    </mediaobject>
+   </informalfigure>
+   <para>
+    If you are installing Windows 2000, you see the following:
+   </para>
+   <informalfigure pgwide="0">
+    <mediaobject>
+     <imageobject role="fo">
+      <imagedata fileref="win2k_dig_signature.png" width="50%" format="PNG"/>
+     </imageobject>
+     <imageobject role="html">
+      <imagedata fileref="win2k_dig_signature.png" width="50%" format="PNG"/>
+     </imageobject>
+    </mediaobject>
+   </informalfigure>
+  </step>
+  <step>
+   <para>
+    Click <guimenu>Continue Anyway</guimenu> or click
+    <guimenu>Yes</guimenu>.
+   </para>
+   <para>
+    A message indicates the Found New Hardware Wizard is done.
+   </para>
+   <informalfigure pgwide="0">
+    <mediaobject>
+     <imageobject role="fo">
+      <imagedata fileref="netdrvr_finished.png" width="56%" format="PNG"/>
+     </imageobject>
+     <imageobject role="html">
+      <imagedata fileref="netdrvr_finished.png" width="56%" format="PNG"/>
+     </imageobject>
+    </mediaobject>
+   </informalfigure>
+  </step>
+  <step>
+   <para>
+    Click <guimenu>Finish</guimenu>.
+   </para>
+  </step>
+  <step>
+   <para>
+    If you are installing the Windows 2000 Server, you must reboot the
+    system again.
+   </para>
+  </step>
+ </procedure>
+
+ <sect2 id="sec.vmdp.driver.winwizard.vmdp.uninstall">
+  <title>Uninstalling the Driver Pack</title>
+  <procedure>
+   <step>
+    <para>
+     Make sure the installation CD is detached from the virtual machine.
+    </para>
+   </step>
+   <step>
+    <para>
+     Browse to <filename>c:\Program Files\SUSE\VMDP</filename>.
+    </para>
+   </step>
+   <step>
+    <para>
+     Double-click <filename>uninstall.exe</filename>.
+    </para>
+    <para>
+     You will be prompted to reboot the system.
+    </para>
+   </step>
+   <step>
+    <para>
+     Close all applications that are running and click
+     <guimenu>OK</guimenu>.
+    </para>
+    <para>
+     The system restarts. The Found New Hardware Wizard appears, indicating
+     that new hardware has been found.
+    </para>
+   </step>
+   <step>
+    <para>
+     Click <guimenu>Yes, this time only</guimenu>, then click
+     <guimenu>Next</guimenu>.
+    </para>
+    <para>
+     The wizard asks to install software for the PCI Device.
+    </para>
+    <informalfigure pgwide="0">
+     <mediaobject>
+      <imageobject role="fo">
+       <imagedata fileref="pcidevice.png" width="57%" format="PNG"/>
+      </imageobject>
+      <imageobject role="html">
+       <imagedata fileref="pcidevice.png" width="57%" format="PNG"/>
+      </imageobject>
+     </mediaobject>
+    </informalfigure>
+   </step>
+   <step>
+    <para>
+     Click <guimenu>Cancel</guimenu>.
+    </para>
+    <para>
+     The driver pack is now uninstalled from your system.
+    </para>
+   </step>
+  </procedure>
+ </sect2>
+
+ <sect2 id="sec.vmdp.driver.winwizard.vmdp.upgrade">
+  <title>Upgrading the Driver Pack</title>
+  <para>
+   To upgrade to a newer version of the driver pack follow these steps:
+  </para>
+  <procedure>
+   <step>
+    <para>
+     Uninstall the current driver pack (see
+     <xref linkend="sec.vmdp.driver.winwizard.vmdp.uninstall" xrefstyle="SectTitleOnPage"/>).
+    </para>
+   </step>
+   <step>
+    <para>
+     Download and install the new driver pack.
+    </para>
+   </step>
+  </procedure>
+ </sect2>
+
+ <sect2 id="sec.vmdp.driver.winwizard.vmdp.recover">
+  <title>Recovering from a Catastrophic Failure</title>
+  <para>
+   In the event of a catastrophic failure caused by the driver pack, you can
+   safely remove the driver pack and return to your previous system
+   configuration.
+  </para>
+  <procedure>
+   <step>
+    <para>
+     Shut down the virtual machine and reboot in safe mode.
+    </para>
+   </step>
+   <step>
+    <para>
+     Uninstall the driver pack (see
+     <xref linkend="sec.vmdp.driver.winwizard.vmdp.uninstall" xrefstyle="SectTitleOnPage"/>).
+    </para>
+   </step>
+  </procedure>
+ </sect2>
+
+</sect1>

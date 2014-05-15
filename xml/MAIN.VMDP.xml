@@ -77,46 +77,11 @@
   </sect2>
  </sect1>
  
- <sect1 id="sec.vmdp.inst">
-  <title>Installation process</title>
-  <para>
-   Describe new and upgdrae installation of VMDP
-  </para>
-  <sect2 id="sec.vmdp.inst.new">
-   <title>New installation</title>
-   <para>
-    start
-   </para>
-  </sect2>
-  <sect2 id="sec.vmdp.inst.upgrade">
-   <title>Upgrade path</title>
-   <para>
-    upgrade
-   </para>
-  </sect2>
- </sect1>
+ <!--VMDP installation -->
+ <xi:include href="vmdp_install.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
  
- <sect1 id="sec.vmdp.best">
-  <title>Best practices</title>
-  <para>
-   Best practices and usage using VMDP.
-  </para>
-  <sect2 id="sec.vmdp.best.before">
-   <title>Before the installation</title>
-   <para>
-    Before installing &sle; Virtual Machine Driver Pack in your production
-    environment, we strongly recommend that you run it in a test environment
-    to ensure that it functions properly with your system.
-   </para>
-  </sect2>
-  <sect2 id="sec.vmdp.best.network">
-   <title>Network configuration</title>
-   <para>
-    Do not give the server a fixed IP address before installing the driver
-    pack, otherwise you have to switch to a different intermediate IP address
-    before finishing the installation.
-   </para>
-  </sect2>
- </sect1>  
+ <!-- VMDP best practices -->
+ <xi:include href="vmdp_best_practices.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
  
 </article>
