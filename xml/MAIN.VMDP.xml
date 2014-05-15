@@ -6,7 +6,7 @@
   %entities;
 ]>
 
-<article id="cha.vmdp.driver" lang="en">
+<article id="article.vmdp.driver" lang="en">
  <title>Virtual Machine Drivers</title>
  <sect1 id="sec.vmdp.drivers.vdmp">
   <title>VMDP</title>
@@ -30,6 +30,7 @@
     network subsystems. Most performance loss occurs in this area.
    </para>
   </sect2>
+  
   <sect2 id="sec.vmdp.drivers.performance">
    <title>Bringing performance</title>
    <para>
@@ -75,24 +76,47 @@
    </itemizedlist>
   </sect2>
  </sect1>
-
- <sect1>
+ 
+ <sect1 id="sec.vmdp.inst">
   <title>Installation process</title>
-  <tip>
+  <para>
+   Describe new and upgdrae installation of VMDP
+  </para>
+  <sect2 id="sec.vmdp.inst.new">
+   <title>New installation</title>
+   <para>
+    start
+   </para>
+  </sect2>
+  <sect2 id="sec.vmdp.inst.upgrade">
+   <title>Upgrade path</title>
+   <para>
+    upgrade
+   </para>
+  </sect2>
+ </sect1>
+ 
+ <sect1 id="sec.vmdp.best">
+  <title>Best practices</title>
+  <para>
+   Best practices and usage using VMDP.
+  </para>
+  <sect2 id="sec.vmdp.best.before">
+   <title>Before the installation</title>
    <para>
     Before installing &sle; Virtual Machine Driver Pack in your production
     environment, we strongly recommend that you run it in a test environment
     to ensure that it functions properly with your system.
    </para>
-  </tip>
-  <tip>
+  </sect2>
+  <sect2 id="sec.vmdp.best.network">
+   <title>Network configuration</title>
    <para>
     Do not give the server a fixed IP address before installing the driver
     pack, otherwise you have to switch to a different intermediate IP address
     before finishing the installation.
    </para>
-  </tip>
- </sect1>
-  
-
+  </sect2>
+ </sect1>  
+ 
 </article>
