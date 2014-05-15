@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!DOCTYPE chapter PUBLIC "-//Novell//DTD NovDoc XML V1.0//EN" "novdocx.dtd"
+[
+  <!ENTITY % NOVDOC.DEACTIVATE.IDREF "INCLUDE">
+  <!ENTITY % entities SYSTEM "entity-decl.ent">
+  %entities;
+]>
+
+<chapter id="cha.vmdp.driver">
+ <title>Virtual Machine Drivers</title>
+ <para>
+  SUSE® Linux Enterprise Virtual Machine Driver Pack contains disk and
+  network device drivers for a number of third-party operating systems in
+  order to enable the high-performance hosting of these unmodified guest
+  operating systems on top of &sls; &productnumber; (&slsa; &productnumber;).
+ </para>
+ <sect1 id="sec.vmdp.drivers.introduction">
+  <title>Introduction</title>
+  <para>
+   Virtualization allows the consolidation of Linux workloads on newer, more
+   powerful, energy-efficient hardware. Paravirtualized operating systems
+   such as &sls; are aware of the underlying virtualization platform, and can
+   therefore interact efficiently with it. Unmodified operating systems are
+   unaware of the virtualization platform and expect to interact directly
+   with the hardware. Because this is not possible when consolidating
+   servers, the hardware must be emulated for the operating system. Emulation
+   can be slow, but it is especially troubling for high-throughput disk and
+   network subsystems. Most performance loss occurs in this area.
+  </para>
+ </sect1>
+ <sect1 id="sec.vmdp.drivers.performance">
+  <title>Para virtualized driver brings performance</title>
+  <para>
+   The device drivers in &sle; Virtual Machine Driver Pack bring many of the
+   performance advantages of paravirtualized operating systems to unmodified
+   operating systems because only the paravirtualized device driver (not the
+   rest of the operating system) is aware of the virtualization platform. For
+   example, a paravirtualized disk device driver appears as a normal,
+   physical disk to the operating system. However, the device driver
+   interacts directly with the virtualization platform (with no emulation) to
+   efficiently deliver disk access, allowing the disk and network subsystems
+   to operate at near native speeds in a virtualized environment, without
+   requiring changes to existing operating systems.
+  </para>
+ </sect1>
+ 
+ <sect1 id="sec.vmdp.drivers.subscription">
+  <title>Buying a Support Subscription</title>
+  <para>
+   The customer support you receive for the &sle; Virtual Machine Driver
+   Pack is at the same level as your
+   <ulink url="https://www.suse.com/support/programs/subscriptions/">SUSE Linux
+   Enterprise support subscription</ulink>. You can choose the following
+   levels of support:
+  </para>
+
+  <itemizedlist>
+   <listitem>
+    <para>
+     Basic
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Standard
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Priority
+    </para>
+   </listitem>
+  </itemizedlist>
+ </sect1>
+
+ <sect1>
+  <title>Best Practices</title>
+  <para>
+   Before installing &sle; Virtual Machine Driver Pack in your production
+   environment, we strongly recommend that you run it in a test environment
+   to ensure that it functions properly with your system.
+  </para>
+ </sect1>
+
+</chapter>
