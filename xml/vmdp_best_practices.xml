@@ -11,67 +11,67 @@
  <para>Best practices, usage and problem using VMDP.</para>
  <sect2 id="sec.vmdp.driver.winwizard.vmdp.problems">
   <title>Avoiding Problems with the Drivers</title>
-  <para>                                                                                                
-   To avoid problems and potential failure of the device drivers in the                                 
-   driver pack, you should avoid the following actions:                                                 
+  <para> 
+   To avoid problems and potential failure of the device drivers in the 
+   driver pack, you should avoid the following actions: 
   </para>
   <itemizedlist>
    <listitem>
-    <para>                                                                                              
-     Using the Device Manager to manage (update, disable, uninstall, etc.)                              
-     the device drivers in the driver pack.                                                             
+    <para>
+     Using the Device Manager to manage (update, disable, uninstall, etc.)
+     the device drivers in the driver pack. 
+    </para>
+   </listitem>
+   <listitem>
+    <para> 
+     Deleting driver files manually. Always use the uninstall utility (see 
+     <xref linkend="sec.vmdp.driver.winwizard.vmdp.uninstall" xrefstyle="SectTitleOnPage"/>). 
+    </para>
+   </listitem>
+   <listitem>
+    <para> 
+     Uninstalling the driver pack with the installation CD attached to the
+     virtual machine. 
+    </para>
+   </listitem>
+   <listitem>
+    <para> 
+     Canceling the installation when you see security alert that indicates
+     that the Bus driver has not been properly signed. Click
+     <guimenu>Yes</guimenu> to continue the installation. 
     </para>
    </listitem>
    <listitem>
     <para>                                                                                              
-     Deleting driver files manually. Always use the uninstall utility (see                              
-     <xref linkend="sec.vmdp.driver.winwizard.vmdp.uninstall" xrefstyle="SectTitleOnPage"/>).           
+     Upgrading the Linux<superscript>*</superscript> kernel of the virtual 
+     machine host without upgrading the driver pack at the same time. 
     </para>
    </listitem>
    <listitem>
-    <para>                                                                                              
-     Uninstalling the driver pack with the installation CD attached to the                              
-     virtual machine.                                                                                   
-    </para>
-   </listitem>
-   <listitem>
-    <para>                                                                                              
-     Canceling the installation when you see security alert that indicates                              
-     that the Bus driver has not been properly signed. Click                                            
-     <guimenu>Yes</guimenu> to continue the installation.                                               
-    </para>
-   </listitem>
-   <listitem>
-    <para>                                                                                              
-     Upgrading the Linux<superscript>*</superscript> kernel of the virtual                              
-     machine host without upgrading the driver pack at the same time.                                   
-    </para>
-   </listitem>
-   <listitem>
-    <para>                                                                                              
-     Installing or uninstalling the driver pack by any other process than                               
-     what is documented in this guide (see                                                              
-     <xref linkend="sec.vmdp.driver.winwizard" xrefstyle="SectTitleOnPage"/>                            
-     and                                                                                                
-     <xref linkend="sec.vmdp.driver.winwizard.vmdp.uninstall" xrefstyle="SectTitleOnPage"/>).           
+    <para>
+     Installing or uninstalling the driver pack by any other process than
+     what is documented in this guide (see 
+     <xref linkend="sec.vmdp.driver.winwizard" xrefstyle="SectTitleOnPage"/> 
+     and 
+     <xref linkend="sec.vmdp.driver.winwizard.vmdp.uninstall" xrefstyle="SectTitleOnPage"/>). 
     </para>
    </listitem>
   </itemizedlist>
  </sect2>
  <sect2 id="sec.vmdp.best.before">
   <title>Before the installation</title>
-  <para>                                                                                               
-   Before installing &sle; Virtual Machine Driver Pack in your production                              
-   environment, we strongly recommend that you run it in a test environment                            
-   to ensure that it functions properly with your system.                                              
+  <para> 
+   Before installing &sle; Virtual Machine Driver Pack in your production 
+   environment, we strongly recommend that you run it in a test environment
+   to ensure that it functions properly with your system. 
   </para>
  </sect2>
  <sect2 id="sec.vmdp.best.network">
   <title>Network configuration</title>
-  <para>                                                                                               
-   Do not give the server a fixed IP address before installing the driver                              
-   pack, otherwise you have to switch to a different intermediate IP address                           
-   before finishing the installation.                                                                  
+  <para> 
+   Do not give the server a fixed IP address before installing the driver 
+   pack, otherwise you have to switch to a different intermediate IP address 
+   before finishing the installation. 
   </para>
  </sect2>
  
