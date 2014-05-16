@@ -260,7 +260,7 @@
   <para>
    To uninstall the SUSE Linux Enterprise Virtual Machine Driver Pack,
    execute the <command>uninstall.exe</command> from the 
-   <emphasis>\Program Files\vmdp</emphasis> folder. <command>Uninstall.exe</command>
+   <filename>\Program Files\vmdp</filename> folder. <command>Uninstall.exe</command>
    will uninstall the SUSE Linux Enterprise Virtual Machine Driver Pack and
    remove the associated files for the hypervisor that the VM is currently
    running on. The <command>/virtio</command> and <command>/xen</command>

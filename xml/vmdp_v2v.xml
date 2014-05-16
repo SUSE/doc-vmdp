@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//Novell//DTD NovDoc XML V1.0//EN" "novdocx.dtd"
+[
+  <!ENTITY % NOVDOC.DEACTIVATE.IDREF "INCLUDE">
+  <!ENTITY % entities SYSTEM "entity-decl.ent">
+  %entities;
+]>
+
+
+<sect1 id="sec.vmdp.v2v.intro">
+ <title>VMDP and v2v support</title>
+ <para>
+  We have added support for easier installation in V2V cases, where the guest
+  is migrated from one hypervisor to another (eg. From Xen to KVM). In order
+  to allow for that VMDP will be also distributed as an RPM, allowing for easy
+  integration with <emphasis>v2v</emphasis> tools included in SUSE Linux
+  Enterprise Server 12.
+ </para>
+ 
+ <sect2 id="sec.vmdp.v2v.step">
+  <title>VMDP RPM package</title>
+  <para>
+   how to use it?
+   recomendation?
+  </para>
+ </sect2>
+ 
+ <sect2 id="sec.vmdp.v2v.official.doc">
+  <title>Xen to KVM Documentation</title>
+  <para>
+   See <ulink url="https://www.suse.com/documentation/sles11/singlehtml/art_sles_xen2kvmquick/art_sles_xen2kvmquick.html"/>
+  </para>
+ </sect2>
+ 
+ 
+</sect1>

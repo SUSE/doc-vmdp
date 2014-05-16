@@ -70,11 +70,18 @@
 
  <!-- VMDP QEMU Guest Agent -->
  <xi:include href="vmdp_qemu_guest_agent.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+ <!-- VMDP and v2v -->
+ <xi:include href="vmdp_v2v.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
  
  <!-- VMDP best practices -->
  <xi:include href="vmdp_best_practices.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
  <!-- VMDP expert installation mode -->
   <xi:include href="vmdp_install_expert.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <!-- Legal Stuff -->
+ <xi:include href="common_copyright_sle.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
  
 </article>
