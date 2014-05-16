@@ -8,13 +8,13 @@
 
 
 <sect1 id="sec.vmdp.setup.expert">
- <title>Setup.exe expert mode</title>
+ <title>Advanced installation options</title>
  <para>
   How to deal with VMDP <emphasis>install</emphasis> and <emphasis>uninstall</emphasis>.
  </para>
 
  <sect2 id="sec.vmdp.setup.expert.install">
-  <title>Advanced installation</title>
+  <title>Expert installation</title>
   <para>
    To help with automated installations, <command>setup.exe</command> currently has the
    following:
