@@ -10,6 +10,13 @@
 <sect1 id="vmdp.qemu.guest.agent">
  <title>QEMU Guest Agent</title>
  <para>
+  <remark>aginies 2014-05-16: vmdp.qemu.guest.agent FIXME - :
+  What's is exactly qemu guest agent channel? how to install it?
+  how to check the service? What  kind of features provides qemu-guest agent?
+  What are the limitation?
+  </remark>
+ </para>
+ <para>
   VMDP setup allows for the installation of the qemu guest agent service for
   Windows when invoked with the <command>/qemu-ga</command> command line parameter. The qemu
   guest agent requires the VM to be equipped with the qemu guest agent

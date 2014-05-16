@@ -9,6 +9,10 @@
  <title>&suse; Drivers for Windows</title>
  <procedure>
   <step>
+   <remark>aginies 2014-05-16: sec.vmdp.driver.winwizard FIXME - :
+   This process should be redone from scratch with new screenshot, and perhaps
+   some change.
+   </remark>
    <para>
     Launch the Virtual Machine Manager and start your Windows* virtual machine.
    </para>
@@ -312,6 +316,11 @@
 
  <sect2 id="sec.vmdp.driver.winwizard.vmdp.recover">
   <title>Recovering from a Failure</title>
+  <para>
+   <remark>aginies 2014-05-16: sec.vmdp.driver.winwizard.vmdp.recover FIXME - :
+   Do we have a better process?
+   </remark>
+  </para>
   <para>
    In the event of a failure caused by the driver pack, you can
    safely remove the driver pack and return to your previous system

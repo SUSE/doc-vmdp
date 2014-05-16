@@ -9,6 +9,11 @@
 <sect1 id="sec.vmdp.best"> 
  <title>Best practices</title>
  <para>Best practices, usage and problem using VMDP.</para>
+ <para>
+  <remark>aginies 2014-05-16: sec.vmdp.best FIXME - :
+  please check that they are still valid. Do we have other one?
+  </remark>
+ </para>
  <sect2 id="sec.vmdp.driver.winwizard.vmdp.problems">
   <title>Avoiding Problems with the Drivers</title>
   <para> 

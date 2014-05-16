@@ -10,6 +10,12 @@
 <sect1 id="sec.vmdp.v2v.intro">
  <title>VMDP and v2v support</title>
  <para>
+  <remark>aginies 2014-05-16: sec.vmdp.v2v.intro FIXME - :
+  We need some improvement here, how to use the package, some recommendation
+  and limitation.
+  </remark>
+ </para>
+ <para>
   We have added support for easier installation in V2V cases, where the guest
   is migrated from one hypervisor to another (eg. From Xen to KVM). In order
   to allow for that VMDP will be also distributed as an RPM, allowing for easy
