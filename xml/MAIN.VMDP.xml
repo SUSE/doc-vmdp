@@ -7,7 +7,14 @@
 ]>
 
 <article id="article.vmdp.driver" lang="en">
- <title>Virtual Machine Drivers</title>
+ <?suse-quickstart color="suse"?>
+ <title>Virtual Machine Drivers Pack</title>
+ <articleinfo>
+  <productnumber>&productnumber;</productnumber>
+  <productname>&productname;</productname>
+  <date>May 16, 2014</date>
+ </articleinfo>
+ 
  <sect1 id="sec.vmdp.drivers.vdmp">
   <title>VMDP</title>
   <para>
@@ -79,9 +86,14 @@
  
  <!--VMDP installation -->
  <xi:include href="vmdp_install.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+ <!-- VMDP QEMU Guest Agent -->
+ <xi:include href="vmdp_qemu_guest_agent.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
  
  <!-- VMDP best practices -->
  <xi:include href="vmdp_best_practices.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
+ <!-- VMDP expert installation mode -->
+  <xi:include href="vmdp_install_expert.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
  
 </article>

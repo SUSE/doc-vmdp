@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//Novell//DTD NovDoc XML V1.0//EN" "novdocx.dtd"
+[
+  <!ENTITY % NOVDOC.DEACTIVATE.IDREF "INCLUDE">
+  <!ENTITY % entities SYSTEM "entity-decl.ent">
+  %entities;
+]>
+
+
+<sect1 id="sec.vmdp.setup.expert">
+ <title>Setup.exe expert mode</title>
+ <para>
+  How to deal with VMDP <emphasis>install</emphasis> and <emphasis>uninstall</emphasis>.
+ </para>
+
+ <sect2 id="sec.vmdp.setup.expert.install">
+  <title>Advanced installation</title>
+  <para>
+   To help with automated installations, <command>setup.exe</command> currently has the
+   following:
+  </para>
+  <itemizedlist>
+   <listitem><para>/auto_reboot</para></listitem>
+   <listitem><para>/no_reboot</para></listitem>
+   <listitem><para>/eula_accepted</para></listitem>
+   <listitem><para>/force</para></listitem>
+   <listitem><para>/reset_net_params</para></listitem>
+   <listitem><para>/xen</para></listitem>
+   <listitem><para>/virtio</para></listitem>
+   <listitem><para>/pvvx</para></listitem>
+  </itemizedlist>
+  <para>
+   The default is to install the drivers for the hypervisor that the VM is
+   currently running on.  Howerver, the Xen and virtio drivers can be installed
+   at the same time if both the <command>/xen</command> and
+   <command>/virtio</command>
+   parameters are given.
+  </para>
+  <para>Additional options when running on a Xen hypervisor are:</para>
+  <itemizedlist>
+   <listitem>
+    <para>
+     <command>/auto_reboot</command>: will cause the Windows VM to automatically reboot after the setup has completed
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     <command>/no_reboot</command>: will prevent the reboot prompt from being displayed after the
+     setup has completed
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     <command>/eula_accepted</command>: implies that the EULA has been read, accepted, and agreed
+     to in all aspects.  Accepting the EULA in this manner will therefore prevent the
+     EULA acceptance dialog from being displayed during the setup process.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     <command>/force</command>: will force the installation of the drivers and overwrite any
+     previous drivers that may have been installed
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     <command>/reset_net_params</command>: will remove any net driver parameters that are still set
+     to the default values. This is useful in upgrades when a net driver's
+     parameter default changes. This will allow the new default to be used
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     <command>/xen</command>: will install the Xen drivers
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     <command>/virtio will</command>: install the virtio drivers
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     <command>/pvvx</command>: will install the single binary Xen/virtio drivers. This is the
+     default for Windows 2012 R2.  /pvvx is not valid with /xen or /virtio
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     <command>/boot_vscsi</command>: will configure the Windows vm to boot off a supplied SCSI
+     device. To use the <command>/boot_vscsi</command> option, the vm's config
+     file must contain a <emphasis>vscsi=</emphasis> line and a 
+     <emphasis>disk = [phy:/...]</emphasis> line
+    </para>
+   </listitem>
+  </itemizedlist>
+  <para>
+   Advanced parameters of <command>Setup.exe</command> command:
+  </para>
+  <itemizedlist>
+   <listitem>
+    <para>
+     <command>/xvdisk</command>: tells xenblk to only control disks of type <emphasis>xvd</emphasis>
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     <command>/netfront</command>: tells xennet to only control NICs of 
+     <emphasis>type=netfront</emphasis>
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     <command>/winxp, /w2k3, /w2k8, /win7, and /win8 </command>: are multually
+     exclusive. They allow the specified drivers to be installed in the running OS, if compatible.
+     These parameters for testing purposes only and are not supported
+    </para>
+   </listitem>
+  </itemizedlist>
+ </sect2>
+
+ <sect2 id="sec.vmdp.setup.expert.uninstall">
+  <title>Uninstall expert mode</title>
+  <para>
+   <emphasis>Uninstall</emphasis> has some parameters:
+  </para>
+  <itemizedlist>
+   <listitem>
+    <para>
+     <command>/auto_reboot</command>: will cause the Windows VM to
+     automatically reboot at the completion of the uninstall
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     <command>/virtio</command>: will uninstall virtio drivers
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     <command>/xen</command>: will uninstall Xen drivers
+    </para>
+   </listitem>
+  </itemizedlist>
+ </sect2>
+ 
+
+</sect1>

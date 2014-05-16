@@ -257,87 +257,61 @@
 
  <sect2 id="sec.vmdp.driver.winwizard.vmdp.uninstall">
   <title>Uninstalling the Driver Pack</title>
-  <procedure>
-   <step>
-    <para>
-     Make sure the installation CD is detached from the virtual machine.
-    </para>
-   </step>
-   <step>
-    <para>
-     Browse to <filename>c:\Program Files\SUSE\VMDP</filename>.
-    </para>
-   </step>
-   <step>
-    <para>
-     Double-click <filename>uninstall.exe</filename>.
-    </para>
-    <para>
-     You will be prompted to reboot the system.
-    </para>
-   </step>
-   <step>
-    <para>
-     Close all applications that are running and click
-     <guimenu>OK</guimenu>.
-    </para>
-    <para>
-     The system restarts. The Found New Hardware Wizard appears, indicating
-     that new hardware has been found.
-    </para>
-   </step>
-   <step>
-    <para>
-     Click <guimenu>Yes, this time only</guimenu>, then click
-     <guimenu>Next</guimenu>.
-    </para>
-    <para>
-     The wizard asks to install software for the PCI Device.
-    </para>
-    <informalfigure pgwide="0">
-     <mediaobject>
-      <imageobject role="fo">
-       <imagedata fileref="pcidevice.png" width="57%" format="PNG"/>
-      </imageobject>
-      <imageobject role="html">
-       <imagedata fileref="pcidevice.png" width="57%" format="PNG"/>
-      </imageobject>
-     </mediaobject>
-    </informalfigure>
-   </step>
-   <step>
-    <para>
-     Click <guimenu>Cancel</guimenu>.
-    </para>
-    <para>
-     The driver pack is now uninstalled from your system.
-    </para>
-   </step>
-  </procedure>
+  <para>
+   To uninstall the SUSE Linux Enterprise Virtual Machine Driver Pack,
+   execute the <command>uninstall.exe</command> from the 
+   <emphasis>\Program Files\vmdp</emphasis> folder. <command>Uninstall.exe</command>
+   will uninstall the SUSE Linux Enterprise Virtual Machine Driver Pack and
+   remove the associated files for the hypervisor that the VM is currently
+   running on. The <command>/virtio</command> and <command>/xen</command>
+   parameters forces the uninstall of those
+   drivers reqardless of the running hypervisor. When uninstalling, it is
+   important to <emphasis>reboot</emphasis> the VM on the currently running hypervisor to all allow
+   the uninstall to clean up additional files and registry entries on reboot.
+  </para>
  </sect2>
 
  <sect2 id="sec.vmdp.driver.winwizard.vmdp.upgrade">
   <title>Upgrading the Driver Pack</title>
   <para>
-   To upgrade to a newer version of the driver pack follow these steps:
+   <command>Setup.exe</command> can be used to update most existing
+   installations. To update an existing installation do the following:
   </para>
   <procedure>
    <step>
     <para>
-     Uninstall the current driver pack (see
-     <xref linkend="sec.vmdp.driver.winwizard.vmdp.uninstall" xrefstyle="SectTitleOnPage"/>).
+     Download the <command>VMDP-WIN-VERSION.exe</command> to your Windows VM
     </para>
    </step>
    <step>
     <para>
-     Download and install the new driver pack.
+     Run <command>VMDP-WIN-VERSION.exe</command> to extract the installation program and support
+     files into a subfolder of the folder containing <command>VMDP-WIN-VERSION.exe</command>
+    </para>
+   </step>
+   <step>
+    <para>
+     Run <command>Setup.exe</command> from the root of the extracted subfolder and follow the
+     on-screen instructions
+    </para>
+   </step>
+   <step>
+    <para>
+     Any <emphasis>Found New Hardware Wizard</emphasis> dialogs that pop up after the update can
+     be ignored or canceled
     </para>
    </step>
   </procedure>
+  <para>
+     With some older installations, setup will not be able to perform an
+     update. In these cases, setup will inform you that the existing installation will
+     need to be uninstalled first. Uninstall the existing installation. Once
+     completely uninstalled, setup.exe can then be used to install the new files.
+  </para>
  </sect2>
 
  <sect2 id="sec.vmdp.driver.winwizard.vmdp.recover">
-  <title>Recovering from a Catastrophic Failure</title>
+  <title>Recovering from a Failure</title>
   <para>
    In the event of a catastrophic failure caused by the driver pack, you can
    safely remove the driver pack and return to your previous system
