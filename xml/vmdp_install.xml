@@ -313,7 +313,7 @@
  <sect2 id="sec.vmdp.driver.winwizard.vmdp.recover">
   <title>Recovering from a Failure</title>
   <para>
-   In the event of a catastrophic failure caused by the driver pack, you can
+   In the event of a failure caused by the driver pack, you can
    safely remove the driver pack and return to your previous system
    configuration.
   </para>
