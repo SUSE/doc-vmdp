@@ -66,7 +66,7 @@
  </sect1>
  
  <!--VMDP certification -->
- <xi:inclide href="vmdp_certification.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+ <xi:include href="vmdp_certification.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
  <!--VMDP installation -->
  <xi:include href="vmdp_install.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
