@@ -65,6 +65,9 @@
   </sect2>
  </sect1>
  
+ <!--VMDP certification -->
+ <xi:inclide href="vmdp_certification.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
  <!--VMDP installation -->
  <xi:include href="vmdp_install.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
@@ -80,8 +83,8 @@
  <!-- VMDP expert installation mode -->
   <xi:include href="vmdp_install_expert.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-  <!-- Legal Stuff -->
+  <!-- Legal Stuff 
  <xi:include href="common_copyright_sle.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+-->
  
 </article>

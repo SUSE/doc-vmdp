@@ -14,7 +14,7 @@
 <sect1 id="sec.vmdp.legal">
  <title>Legal notice</title>
  <para>
-  All content is copyright &copy; 2006&ndash;<?dbtimestamp format="Y"?>
+  All content is copyright 2006<?dbtimestamp format="Y"?>
   SUSE, Inc. All rights reserved.
  </para>
  <para>
@@ -46,7 +46,7 @@
    url="https://www.suse.com/company/legal/">https://www.suse.com/company/legal/</ulink>.
   * Linux is a registered trademark of Linus Torvalds. All other third party
   trademarks are the property of their respective owners. A trademark symbol
-  (&reg;, &trade; etc.) denotes a SUSE trademark; an asterisk (*) denotes
+  denotes a SUSE trademark; an asterisk (*) denotes
   a third party trademark.
  </para>
  <para>

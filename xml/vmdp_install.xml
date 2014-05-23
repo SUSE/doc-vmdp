@@ -7,12 +7,12 @@
 ]>
 <sect1 id="sec.vmdp.driver.winwizard">
  <title>&suse; Drivers for Windows</title>
- <procedure>
-  <step>
    <remark>aginies 2014-05-16: sec.vmdp.driver.winwizard FIXME - :
    This process should be redone from scratch with new screenshot, and perhaps
    some change.
    </remark>
+ <procedure>
+  <step>
    <para>
     Launch the Virtual Machine Manager and start your Windows* virtual machine.
    </para>

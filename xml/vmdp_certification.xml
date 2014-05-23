@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//Novell//DTD NovDoc XML V1.0//EN" "novdocx.dtd"
+[
+  <!ENTITY % NOVDOC.DEACTIVATE.IDREF "INCLUDE">
+  <!ENTITY % entities SYSTEM "entity-decl.ent">
+  %entities;
+]>
+
+
+<sect1 id="sec.vmdp.certification">
+ <title>VMDP certification</title>
+ <para>
+     needinfo
+  </remark>
+ </para>
+ 
+ <sect2 id="sec.vmdp.certification.whql">
+  <title>WHQL</title>
+  <para>
+    WHQL
+  </para>
+ </sect2>
+ 
+ <sect2 id="sec.vmdp.certification.svvp">
+  <title>SVVP</title>
+  <para>
+   See <ulink url="https://www.suse.com/documentation/sles11/singlehtml/art_sles_xen2kvmquick/art_sles_xen2kvmquick.html"/>
+  </para>
+ </sect2>
+ 
+</sect1>
