@@ -13,6 +13,10 @@ MAIN="MAIN.VMDP.xml"
 #PROFOS=""
 #PROFARCH=""
 
+REMARKS=1
+COMMENTS=0
+DRAFT=yes
+
 ## Provo
 #HTMLROOT=""
 
