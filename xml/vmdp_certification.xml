@@ -17,15 +17,20 @@
  <sect2 id="sec.vmdp.certification.whql">
   <title>WHQL</title>
   <para>
-    WHQL
+      VMDP has passed WHQL certification.
+      See <ulink url="http://msdn.microsoft.com/en-us/windows/hardware/gg463010.aspx"/>
+      for more information.
   </para>
  </sect2>
  
  <sect2 id="sec.vmdp.certification.svvp">
   <title>SVVP</title>
   <para>
-   See <ulink url="https://www.suse.com/documentation/sles11/singlehtml/art_sles_xen2kvmquick/art_sles_xen2kvmquick.html"/>
+      The SVVP program has validated our VMDP Para-virtualized drivers, so Microsoft
+      customers running copies of Windows Server they have acquired and licensed from
+      Microsoft directly can receive technical support for Windows Server in virtualized
+      environments.
+      See <ulink url="http://www.windowsservercatalog.com/svvp.aspx"/> for more information.
   </para>
  </sect2>
- 
 </sect1>
