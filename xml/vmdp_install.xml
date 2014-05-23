@@ -29,21 +29,6 @@
     <guimenu>Autoplay</guimenu>.
    </para>
    <para>
-    If a security alert appears, indicating the Bus driver has not been
-    properly signed, click <guimenu>Yes</guimenu> to install the Bus driver
-    software. It is important that you do not click <guimenu>No</guimenu>.
-   </para>
-   <informalfigure pgwide="0">
-    <mediaobject>
-     <imageobject role="fo">
-      <imagedata fileref="busdriver.png" width="45%" format="PNG"/>
-     </imageobject>
-     <imageobject role="html">
-      <imagedata fileref="busdriver.png" width="45%" format="PNG"/>
-     </imageobject>
-    </mediaobject>
-   </informalfigure>
-   <para>
     The Novell Virtual Device Driver Installer launches.
    </para>
    <informalfigure pgwide="0">
@@ -84,29 +69,16 @@
     not passed Windows logo testing.
    </para>
    <para>
-    If you are installing Windows XP or Windows Server 2003, you see the
+    If you are installing Windows Server 2003, you see the
     following:
    </para>
    <informalfigure pgwide="0">
     <mediaobject>
      <imageobject role="fo">
-      <imagedata fileref="installer_xp.png" width="45%" format="PNG"/>
+      <imagedata fileref="installer_2003.png" width="45%" format="PNG"/>
      </imageobject>
      <imageobject role="html">
-      <imagedata fileref="installer_xp.png" width="45%" format="PNG"/>
-     </imageobject>
-    </mediaobject>
-   </informalfigure>
-   <para>
-    If you are installing Windows 2000, you see the following:
-   </para>
-   <informalfigure pgwide="0">
-    <mediaobject>
-     <imageobject role="fo">
-      <imagedata fileref="win2k_dig_signature.png" width="50%" format="PNG"/>
-     </imageobject>
-     <imageobject role="html">
-      <imagedata fileref="win2k_dig_signature.png" width="50%" format="PNG"/>
+      <imagedata fileref="installer_2003.png" width="45%" format="PNG"/>
      </imageobject>
     </mediaobject>
    </informalfigure>
@@ -200,29 +172,16 @@
     not passed Windows logo testing.
    </para>
    <para>
-    If you are installing Windows XP or Windows Server 2003, you see the
+    If you are installing Windows Server 2003, you see the
     following:
    </para>
    <informalfigure pgwide="0">
     <mediaobject>
      <imageobject role="fo">
-      <imagedata fileref="installer_xp.png" width="45%" format="PNG"/>
+      <imagedata fileref="installer_2003.png" width="45%" format="PNG"/>
      </imageobject>
      <imageobject role="html">
-      <imagedata fileref="installer_xp.png" width="45%" format="PNG"/>
-     </imageobject>
-    </mediaobject>
-   </informalfigure>
-   <para>
-    If you are installing Windows 2000, you see the following:
-   </para>
-   <informalfigure pgwide="0">
-    <mediaobject>
-     <imageobject role="fo">
-      <imagedata fileref="win2k_dig_signature.png" width="50%" format="PNG"/>
-     </imageobject>
-     <imageobject role="html">
-      <imagedata fileref="win2k_dig_signature.png" width="50%" format="PNG"/>
+      <imagedata fileref="installer_2003.png" width="45%" format="PNG"/>
      </imageobject>
     </mediaobject>
    </informalfigure>
