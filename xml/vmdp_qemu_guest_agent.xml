@@ -29,7 +29,9 @@
   on a Linux system with no modifications to the guest agent source code.
   The guest agent and supporting DLLs remain under their respective GPL licenses.
  </para>
+ <para>
   Currently many of the features of the guest agent supported in Linux vms have
   not yet been implemented for Windows. So usage of guest agent in
   Windows is somewhat limited at present.
+ </para>
 </sect1>
