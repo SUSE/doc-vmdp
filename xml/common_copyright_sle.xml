@@ -1,20 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE article PUBLIC "-//NOVELL//DTD NovDoc XML V1.0//EN" "novdocx.dtd"
+<?xml version="1.0"?>
+<!DOCTYPE article PUBLIC "-//Novell//DTD NovDoc XML V1.0//EN" "novdocx.dtd"
 [
   <!ENTITY % NOVDOC.DEACTIVATE.IDREF "INCLUDE">
   <!ENTITY % entities SYSTEM "entity-decl.ent">
-  %entities;
+   %entities;
 ]>
+
 <!--
      Please keep this document neatly formatted, because a text version
      for LICENSE.txt is created form this source. That means only the
      xml tags will be stripped, the rest of the formatting will appear
      in the txt file as is.
 -->
+
 <sect1 id="sec.vmdp.legal">
  <title>Legal notice</title>
  <para>
-  All content is copyright 2006<?dbtimestamp format="Y"?>
+  All content is copyright 2006-<?dbtimestamp format="Y"?>
   SUSE&reg;, Inc. All rights reserved.
  </para>
  <para>
