@@ -8,20 +8,21 @@
 <sect1 id="sec.vmdp.driver.installation">
  <title>Download and installation</title>
  <para>
-  The SUSE® Linux Enterprise Virtual Machine Driver Pack is available for
-  download as one binary file: a Windows* self-extracting zip file (.exe).
-  There is also a virtual floppy disk (.vfd) for Windows* 2003 and an ISO
-  image (.iso) for Windows* 2008 and newer that may be used for VMs running on KVM.
+  The &sle; Virtual Machine Driver Pack is available for
+  download as one binary file: a Windows self-extracting zip file
+  (<emphasis>.exe</emphasis> extension).
+  There is also a virtual floppy disk (<emphasis>.vfd</emphasis> extension) for Windows* 2003 and an ISO
+  image (<emphasis>.iso</emphasis>) for Windows* 2008 and newer that may be used for VMs running on KVM.
  </para>
  
  <sect2 id="sec.vmdp.driver.prerequisites">
   <title>Prerequisites</title>
   <itemizedlist>
    <listitem><para>
-    SUSE Linux Enterprise Server (SLES) 10 SP4 or later, or SLES 11 SP2 or later
+    &sls; (&productname;) 10 SP4 or later, or &productname; 11 SP2 or later
    </para></listitem>
    <listitem><para>
-    Fully virtualized Windows virtual machines
+    Fully virtualized Windows* virtual machines
    </para></listitem>
   </itemizedlist>
  </sect2>
@@ -32,7 +33,7 @@
   <procedure>
    <step>
     <para>
-     Download the Windows <command>VMDP-WIN-VERSION.exe</command> file directly into your Windows VM
+     Download the Windows* <command>VMDP-WIN-VERSION.exe</command> file directly into your Windows* VM
     </para>
    </step>
    <step>
@@ -66,7 +67,7 @@
    If the devices are present in the VM when setup is run, the drivers are
    installed and loaded at that time. If the VirtIO devices are not present
    when setup is run, shutdown the VM, add the VirtIO devices, and start the
-   VM. Once booted, Windows will discover the new devices and load the
+   VM. Once booted, Windows* will discover the new devices and load the
    previously installed drivers.
   </para>
   <para>
@@ -91,12 +92,12 @@
  <sect2 id="sec.vmdp.driver.install.instruction">
   <title>.vfd and .iso installation instructions</title>
   <para>
-   A Windows VM may attach the VMDP vfd or iso. The <emphasis>vfd</emphasis> is targeted for
-   Windows 2003 VMs running on KVM. It contains VirtIO disk drivers and a
-   self-extracting exe that contain all the VirtIO drivers for only Windows
-   2003. The ISO contains VirtIO disk drivers for Windows 2008 and newer.
+   A Windows* VM may attach the VMDP vfd or iso. The <emphasis>vfd</emphasis> is targeted for
+   Windows* 2003 VMs running on KVM. It contains VirtIO disk drivers and a
+   self-extracting exe that contain all the VirtIO drivers for only Windows*
+   2003. The ISO contains VirtIO disk drivers for Windows* 2008 and newer.
    It also contains the full VMDP exe that contains all the VirtIO and Xen
-   drivers for all supported Windows platforms.
+   drivers for all supported Windows* platforms.
   </para>
  </sect2>
 
@@ -114,7 +115,7 @@
    <step>
     <para>Add the <emphasis>vfd</emphasis> or <emphasis>iso</emphasis> to the VM
     configuration. Use the <emphasis>vfd</emphasis> for
-    Windows 2003 and the <emphasis>iso</emphasis> for Windows 2008 and newer</para>
+    Windows* 2003 and the <emphasis>iso</emphasis> for Windows 2008* and newer</para>
    </step>
    <step>
     <para>Set the boot disk to be of type VirtIO or VirtIO SCSI</para>
@@ -132,7 +133,7 @@
     be selected and installed</para>
    </step>
    <step>
-    <para>For Windows 2008 and newer, on the <guimenu>Where do you want to install
+    <para>For Windows 2008* and newer, on the <guimenu>Where do you want to install
     Windows</guimenu> screen, select <guimenu>Load driver</guimenu> and follow the prompts. This will
     allow the VirtIO disk driver to be installed for the boot disk</para>
    </step>
@@ -173,10 +174,10 @@
  <sect2 id="sec.vmdp.driver.uninstall">
   <title>Uninstalling the Driver Pack</title>
   <para>
-   To uninstall the SUSE Linux Enterprise Virtual Machine Driver Pack,
+   To uninstall the &sle; Virtual Machine Driver Pack,
    execute the <command>uninstall.exe</command> from the 
    <filename>\Program Files\vmdp</filename> folder. <command>Uninstall.exe</command>
-   will uninstall the SUSE Linux Enterprise Virtual Machine Driver Pack and
+   will uninstall the &sle; Virtual Machine Driver Pack and
    remove the associated files for the hypervisor that the VM is currently
    running on. The <command>/virtio</command> and <command>/xen</command>
    parameters forces the uninstall of those
@@ -251,7 +252,7 @@
   <title>Known issues</title>
   <para>
    For information on known issues for this release, see the README file
-   within the archive, or consult the SUSE Linux Enterprise Virtual Machine
+   within the archive, or consult the &sle; Virtual Machine
    Driver Pack Guides.
   </para>
  </sect2>

@@ -12,21 +12,21 @@
  <para>
   The <emphasis>virt-v2v</emphasis> utility provides an easy way to convert virtual machines
   from one hypervisor format to another (e.g. from Xen to KVM). In the
-  case of Windows guests running under Xen, this conversion process
+  case of Windows* guests running under Xen, this conversion process
   includes support for the automatic deployment of the VMDP.
  </para>
  
  <sect2 id="sec.vmdp.v2v.package">
   <title>VMDP RPM package</title>
   <para>
-   The virt-v2v-vmdp RPM is a repackaging of the Windows VMDP drivers into a
+   The virt-v2v-vmdp RPM is a repackaging of the Windows* VMDP drivers into a
    directory structure usable by the virt-v2v utility. Once installed on a KVM
-   host, any Windows guests migrated to that host using the virt-v2v process
+   host, any Windows* guests migrated to that host using the virt-v2v process
    can have the VMDP drivers automatically installed.
   </para>
   <para>
    By default, virt-v2v will first check for the existence of the VMDP on the
-   Windows guest undergoing conversion. If found on the guest, and the
+   Windows* guest undergoing conversion. If found on the guest, and the
    virt-v2v-vmdp RPM is installed on the target host (the machine running the
    virt-v2v process), virt-v2v will automatically install the VMDP drivers as
    part of the conversion. This driver reinstallation is required to replace
@@ -57,7 +57,7 @@
    converted guest. While not required, if the virt-v2v host is configured to
    perform this, the VMDP setup program will be automatically ran upon first
    login. This will ensure the install/uninstall program is registered with
-   Windows and any residual Xen drivers are correctly uninstalled. To allow
+   Windows* and any residual Xen drivers are correctly uninstalled. To allow
    for this capability, the VMDP setup program (<command>VMDP-WIN-2.2.exe</command>) must be
    copied to <filename>/var/lib/virt-v2v/software/windows</filename> on the virt-v2v host. After
    copying the executable in place, ensure the setup executable name is

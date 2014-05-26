@@ -18,7 +18,7 @@
  </para>
  <para>
   VMDP setup allows for the installation of the qemu guest agent service for
-  Windows when invoked with the <command>/qemu-ga</command> command line parameter. The qemu
+  Windows* when invoked with the <command>/qemu-ga</command> command line parameter. The qemu
   guest agent requires the VM to be equipped with the qemu guest agent
   channel. Without the <emphasis>qemu guest agent channel</emphasis>,
   the qemu guest agent can install but will not load. Trying to load without
@@ -31,7 +31,7 @@
  </para>
  <para>
   Currently many of the features of the guest agent supported in Linux vms have
-  not yet been implemented for Windows. So usage of guest agent in
-  Windows is somewhat limited at present.
+  not yet been implemented for Windows*. So usage of guest agent in
+  Windows* is somewhat limited at present.
  </para>
 </sect1>

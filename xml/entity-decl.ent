@@ -119,7 +119,7 @@
 <!ENTITY productreg    "<phrase os='slprof'>openSUSE&reg;</phrase>
                        <phrase os='nld;sles'>&slereg;</phrase>">
 <!ENTITY productname   '<?suse name="productname"?>'>
-<!ENTITY productnumber '<?suse name="productnumber"?>'>
+<!ENTITY productnumber '12'>
 <!ENTITY sdk           "SUSE Software Development Kit">
 <!ENTITY musicplayer   "Banshee">
 <!ENTITY musicplayerreg   "Banshee&trade;">

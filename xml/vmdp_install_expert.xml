@@ -39,7 +39,7 @@
   <itemizedlist>
    <listitem>
     <para>
-     <command>/auto_reboot</command>: will cause the Windows VM to automatically reboot after the setup has completed
+     <command>/auto_reboot</command>: will cause the Windows* VM to automatically reboot after the setup has completed
     </para>
    </listitem>
    <listitem>
@@ -80,7 +80,7 @@
    </listitem>
    <listitem>
     <para>
-     <command>/boot_vscsi</command>: will configure the Windows vm to boot off a supplied SCSI
+     <command>/boot_vscsi</command>: will configure the Windows* VM to boot off a supplied SCSI
      device. To use the <command>/boot_vscsi</command> option, the vm's config
      file must contain a <emphasis>vscsi=</emphasis> line and a 
      <emphasis>disk = [phy:/...]</emphasis> line
@@ -120,7 +120,7 @@
   <itemizedlist>
    <listitem>
     <para>
-     <command>/auto_reboot</command>: will cause the Windows VM to
+     <command>/auto_reboot</command>: will cause the Windows* VM to
      automatically reboot at the completion of the uninstall
     </para>
    </listitem>
