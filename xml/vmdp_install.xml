@@ -5,214 +5,100 @@
   <!ENTITY % entities SYSTEM "entity-decl.ent">
   %entities;
 ]>
-<sect1 id="sec.vmdp.driver.winwizard">
- <title>&suse; Drivers for Windows</title>
- <procedure>
-  <step>
-   <para>
-    Launch the Virtual Machine Manager and start your Windows* virtual machine.
-   </para>
-  </step>
-  <step>
-   <para>
-    Set up the ISO image or CD of the drivers you want to install as a
-    virtual CD reader in the VM. You can use virt-manager to do that.
-   </para>
-  </step>
-  <step>
-   <para>
-    Right-click the virtual CD-ROM you just added, then click
-    <guimenu>Autoplay</guimenu>.
-   </para>
-   <para>
-    The Novell Virtual Device Driver Installer launches.
-   </para>
-   <informalfigure pgwide="0">
-    <mediaobject>
-     <imageobject role="fo">
-      <imagedata fileref="drvr_installer_welcome.png" width="56%" format="PNG"/>
-     </imageobject>
-     <imageobject role="html">
-      <imagedata fileref="drvr_installer_welcome.png" width="56%" format="PNG"/>
-     </imageobject>
-    </mediaobject>
-   </informalfigure>
-  </step>
-  <step>
-   <para>
-    Click <guimenu>Next</guimenu>.
-   </para>
-   <para>
-    The End User License Agreement window appears.
-   </para>
-   <informalfigure pgwide="0">
-    <mediaobject>
-     <imageobject role="fo">
-      <imagedata fileref="drvr_installer_eula.png" width="56%" format="PNG"/>
-     </imageobject>
-     <imageobject role="html">
-      <imagedata fileref="drvr_installer_eula.png" width="56%" format="PNG"/>
-     </imageobject>
-    </mediaobject>
-   </informalfigure>
-  </step>
-  <step>
-   <para>
-    Click <guimenu>Next</guimenu>.
-   </para>
-   <para>
-    A software installation note appears, indicating that the software has
-    not passed Windows logo testing.
-   </para>
-   <para>
-    If you are installing Windows Server 2003, you see the
-    following:
-   </para>
-   <informalfigure pgwide="0">
-    <mediaobject>
-     <imageobject role="fo">
-      <imagedata fileref="installer_2003.png" width="45%" format="PNG"/>
-     </imageobject>
-     <imageobject role="html">
-      <imagedata fileref="installer_2003.png" width="45%" format="PNG"/>
-     </imageobject>
-    </mediaobject>
-   </informalfigure>
-  </step>
-  <step>
-   <para>
-    Click <guimenu>Continue Anyway</guimenu> or click <guimenu>Yes</guimenu>
-    for each occurrence of this window.
-   </para>
-   <para>
-    A Congratulations window indicates that the drivers were installed.
-   </para>
-   <informalfigure pgwide="0">
-    <mediaobject>
-     <imageobject role="fo">
-      <imagedata fileref="drvr_installer_congrats.png" width="56%" format="PNG"/>
-     </imageobject>
-     <imageobject role="html">
-      <imagedata fileref="drvr_installer_congrats.png" width="56%" format="PNG"/>
-     </imageobject>
-    </mediaobject>
-   </informalfigure>
-   <note>
+<sect1 id="sec.vmdp.driver.installation">
+ <title>Download and installation</title>
+ <para>
+  The SUSE® Linux Enterprise Virtual Machine Driver Pack is available for
+  download as one binary file: a Windows* self-extracting zip file (.exe).
+  There is also a virtual floppy disk (.vfd) for Windows* 2003 and an ISO
+  image (.iso) for Windows* 2008 and newer that may be used for VMs running on KVM.
+ </para>
+ 
+ <sect2 id="sec.vmdp.driver.prerequisites">
+  <title>Prerequisites</title>
+  <itemizedlist>
+   <listitem><para>
+    SUSE Linux Enterprise Server (SLES) 10 SP4 or later, or SLES 11 SP2 or later
+   </para></listitem>
+   <listitem><para>
+    Fully virtualized Windows virtual machines
+   </para></listitem>
+  </itemizedlist>
+ </sect2>
+ 
+ 
+ <sect2 id="sec.vmdp.driver.setup.exe">
+  <title>Setup.exe installation instructions for KVM and Xen</title>
+  <procedure>
+   <step>
     <para>
-     Clicking <guimenu>Cancel</guimenu> on this screen does not cancel the
-     installation. If you want to cancel, you have to uninstall (see
-     <xref linkend="sec.vmdp.driver.winwizard.vmdp.uninstall" xrefstyle="SectTitleOnPage"/>).
+     Download the Windows <command>VMDP-WIN-VERSION.exe</command> file directly into your Windows VM
     </para>
-   </note>
-  </step>
-  <step>
+   </step>
+   <step>
+    <para>
+     Launch the <command>VMDP-WIN-VERSION.exe</command> to extract the installation program
+    </para>
+   </step>
+   <step>
+    <para>
+     Launch <command>setup.exe</command> from the root of the newly created directory
+    </para>
+   </step>
+   <step>
+    <para>
+     Accept the <emphasis>EULA</emphasis> and follow the prompts to complete the driver installation
+    </para>
+   </step>
+   <step>
+    <para>
+     Reboot the VM when prompted by the installation program
+    </para>
+   </step>
+  </procedure>
+ </sect2>
+ 
+
+ <sect2 id="sec.vmdp.driver.additionnal.info">
+  <title>Additional KVM VirtIO setup instructions</title>
+  <para>
+   <command>Setup.exe</command> can be run with and without VirtIO devices present in the VM.
+   If the devices are present in the VM when setup is run, the drivers are
+   installed and loaded at that time. If the VirtIO devices are not present
+   when setup is run, shutdown the VM, add the VirtIO devices, and start the
+   VM. Once booted, Windows will discover the new devices and load the
+   previously installed drivers.
+  </para>
+  <para>
+   To boot a running VM on a VirtIO disk, the VirtIO disk driver must be
+   installed on a secondary/temporary (e:) VirtIO disk. After the driver is
+   installed and controlling the disk, shutdown the VM. From virt-manager,
+   delete the secondary VirtIO disk and delete the IDE boot disk. Now add a
+   disk of type VirtIO or VirtIO SCSI and give it the location for the boot
+   disk. Boot the VM. The VirtIO driver will now be controlling the boot disk.
+  </para>
+  <warning>
+   <title>Installation failure</title>
    <para>
-    Click <guimenu>Finish</guimenu>.
+    Failure to install a VirtIO disk driver on a secondary disk before changing
+    the boot disk to a VirtIO or VirtIO SCSI disk will cause the VM to crash
+    with bug check <emphasis>0x7b</emphasis>, inaccessible boot disk.
    </para>
-   <para>
-    A message appears, indicating that you must restart the system.
-   </para>
-   <informalfigure pgwide="0">
-    <mediaobject>
-     <imageobject role="fo">
-      <imagedata fileref="drv_installer_restart.png" width="47%" format="PNG"/>
-     </imageobject>
-     <imageobject role="html">
-      <imagedata fileref="drv_installer_restart.png" width="47%" format="PNG"/>
-     </imageobject>
-    </mediaobject>
-   </informalfigure>
-  </step>
-  <step>
-   <para>
-    Click <guimenu>Yes</guimenu>.
-   </para>
-   <para>
-    The system restarts. The Found New Hardware Wizard appears, indicating
-    that it has found new hardware.
-   </para>
-   <informalfigure pgwide="0">
-    <mediaobject>
-     <imageobject role="fo">
-      <imagedata fileref="fnh_netdriver.png" width="56%" format="PNG"/>
-     </imageobject>
-     <imageobject role="html">
-      <imagedata fileref="fnh_netdriver.png" width="56%" format="PNG"/>
-     </imageobject>
-    </mediaobject>
-   </informalfigure>
-  </step>
-  <step>
-   <para>
-    Click <guimenu>Yes, this time only</guimenu>, then click
-    <guimenu>Next</guimenu>.
-   </para>
-   <informalfigure pgwide="0">
-    <mediaobject>
-     <imageobject role="fo">
-      <imagedata fileref="xen_netdrvr.png" width="56%" format="PNG"/>
-     </imageobject>
-     <imageobject role="html">
-      <imagedata fileref="xen_netdrvr.png" width="56%" format="PNG"/>
-     </imageobject>
-    </mediaobject>
-   </informalfigure>
-  </step>
-  <step>
-   <para>
-    Click <guimenu>Install the Software Automatically</guimenu>, then click
-    <guimenu>Next</guimenu>.
-   </para>
-   <para>
-    A software installation note appears, indicating that the software has
-    not passed Windows logo testing.
-   </para>
-   <para>
-    If you are installing Windows Server 2003, you see the
-    following:
-   </para>
-   <informalfigure pgwide="0">
-    <mediaobject>
-     <imageobject role="fo">
-      <imagedata fileref="installer_2003.png" width="45%" format="PNG"/>
-     </imageobject>
-     <imageobject role="html">
-      <imagedata fileref="installer_2003.png" width="45%" format="PNG"/>
-     </imageobject>
-    </mediaobject>
-   </informalfigure>
-  </step>
-  <step>
-   <para>
-    Click <guimenu>Continue Anyway</guimenu> or click
-    <guimenu>Yes</guimenu>.
-   </para>
-   <para>
-    A message indicates the Found New Hardware Wizard is done.
-   </para>
-   <informalfigure pgwide="0">
-    <mediaobject>
-     <imageobject role="fo">
-      <imagedata fileref="netdrvr_finished.png" width="56%" format="PNG"/>
-     </imageobject>
-     <imageobject role="html">
-      <imagedata fileref="netdrvr_finished.png" width="56%" format="PNG"/>
-     </imageobject>
-    </mediaobject>
-   </informalfigure>
-  </step>
-  <step>
-   <para>
-    Click <guimenu>Finish</guimenu>.
-   </para>
-  </step>
-  <step>
-   <para>
-    If you are installing the Windows 2000 Server, you must reboot the
-    system again.
-   </para>
-  </step>
- </procedure>
+  </warning>
+ </sect2>
+
+ 
+ <sect2 id="sec.vmdp.driver.install.instruction">
+  <title>.vfd and .iso installation instructions</title>
+  <para>
+   A Windows* VM may attach the VMDP vfd or iso. The vfd is targeted for
+   Windows* 2003 VMs running on KVM. It contains VirtIO disk drivers and a
+   self-extracting exe that contain all the VirtIO drivers for only Windows*
+   2003. The ISO contains VirtIO disk drivers for Windows* 2008 and newer.
+   It also contains the full VMDP exe that contains all the VirtIO and Xen
+   drivers for all supported Windows platforms.
+  </para>
+ </sect2>
 
  <sect2 id="sec.vmdp.driver.winwizard.vmdp.uninstall">
   <title>Uninstalling the Driver Pack</title>
@@ -269,7 +155,7 @@
   </para>
  </sect2>
 
- <sect2 id="sec.vmdp.driver.winwizard.vmdp.recover">
+ <sect2 id="sec.vmdp.driver.recover">
   <title>Recovering from a Failure</title>
   <para>
    In the event of a failure caused by the driver pack, you can
@@ -290,5 +176,14 @@
    </step>
   </procedure>
  </sect2>
-
+ 
+ <sect2 id="sec.vmdp.driver.issue">
+  <title>Known issues</title>
+  <para>
+   For information on known issues for this release, see the README file
+   within the archive, or consult the SUSE Linux Enterprise Virtual Machine
+   Driver Pack Guides.
+  </para>
+ </sect2>
+ 
 </sect1>
