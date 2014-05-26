@@ -30,7 +30,7 @@
    <listitem>
     <para> 
      Deleting driver files manually. Always use the uninstall utility (see 
-     <xref linkend="sec.vmdp.driver.winwizard.vmdp.uninstall" xrefstyle="SectTitleOnPage"/>). 
+     <xref linkend="sec.vmdp.driver.uninstall" xrefstyle="SectTitleOnPage"/>). 
     </para>
    </listitem>
    <listitem>
@@ -56,9 +56,9 @@
     <para>
      Installing or uninstalling the driver pack by any other process than
      what is documented in this guide (see 
-     <xref linkend="sec.vmdp.driver.winwizard" xrefstyle="SectTitleOnPage"/> 
+     <xref linkend="sec.vmdp.driver.uninstall" xrefstyle="SectTitleOnPage"/> 
      and 
-     <xref linkend="sec.vmdp.driver.winwizard.vmdp.uninstall" xrefstyle="SectTitleOnPage"/>). 
+     <xref linkend="sec.vmdp.driver.uninstall" xrefstyle="SectTitleOnPage"/>). 
     </para>
    </listitem>
   </itemizedlist>

@@ -72,7 +72,7 @@
   <para>
    To boot a running VM on a VirtIO disk, the VirtIO disk driver must be
    installed on a secondary/temporary (e:) VirtIO disk. After the driver is
-   installed and controlling the disk, shutdown the VM. From virt-manager,
+   installed and controlling the disk, shutdown the VM. From <guimenu>virt-manager</guimenu>,
    delete the secondary VirtIO disk and delete the IDE boot disk. Now add a
    disk of type VirtIO or VirtIO SCSI and give it the location for the boot
    disk. Boot the VM. The VirtIO driver will now be controlling the boot disk.
@@ -91,16 +91,86 @@
  <sect2 id="sec.vmdp.driver.install.instruction">
   <title>.vfd and .iso installation instructions</title>
   <para>
-   A Windows* VM may attach the VMDP vfd or iso. The vfd is targeted for
-   Windows* 2003 VMs running on KVM. It contains VirtIO disk drivers and a
-   self-extracting exe that contain all the VirtIO drivers for only Windows*
-   2003. The ISO contains VirtIO disk drivers for Windows* 2008 and newer.
+   A Windows VM may attach the VMDP vfd or iso. The <emphasis>vfd</emphasis> is targeted for
+   Windows 2003 VMs running on KVM. It contains VirtIO disk drivers and a
+   self-extracting exe that contain all the VirtIO drivers for only Windows
+   2003. The ISO contains VirtIO disk drivers for Windows 2008 and newer.
    It also contains the full VMDP exe that contains all the VirtIO and Xen
    drivers for all supported Windows platforms.
   </para>
  </sect2>
 
- <sect2 id="sec.vmdp.driver.winwizard.vmdp.uninstall">
+ <sect2 id="sec.vmdp.driver.install.at.vm.creation">
+  <title>.vfd and .iso for VirtIO Boot Disk installation at VM creation</title>
+  <para>
+   This method is only used for VMs running on KVM and is used to install the
+   VirtIO disk driver on the boot disk while the VM is being installed.
+  </para>
+  <procedure>
+   <step>
+    <para>See instructions on creating VMs for attaching floppy disks and
+    ISOs as well as setting the boot disk as a VirtIO disk or VirtIO SCSI disk</para>
+   </step>
+   <step>
+    <para>Add the <emphasis>vfd</emphasis> or <emphasis>iso</emphasis> to the VM
+    configuration. Use the <emphasis>vfd</emphasis> for
+    Windows 2003 and the <emphasis>iso</emphasis> for Windows 2008 and newer</para>
+   </step>
+   <step>
+    <para>Set the boot disk to be of type VirtIO or VirtIO SCSI</para>
+   </step>
+   <step>
+    <para>Finish all other VM configuration options</para>
+   </step>
+   <step>
+    <para>Start the VM installation</para>
+   </step>
+   <step>
+    <para>For Windows 2003, at the very beginning of the installation there is
+    an option to press <guimenu>F6</guimenu> for an OEM SCSI disk installation. At that time,
+    press <guimenu>F6</guimenu>. The VirtIO disk driver from the vfd can then
+    be selected and installed</para>
+   </step>
+   <step>
+    <para>For Windows 2008 and newer, on the <guimenu>Where do you want to install
+    Windows</guimenu> screen, select <guimenu>Load driver</guimenu> and follow the prompts. This will
+    allow the VirtIO disk driver to be installed for the boot disk</para>
+   </step>
+   <step>
+    <para>Continue the Windows installation</para>
+   </step>
+   <step>
+    <para>After the VM is completely installed, the remaining VirtIO
+    drivers can be installed by copying the <command>VMDP-WIN-VERSION.exe</command>
+    from the <emphasis>vfd</emphasis> or <emphasis>iso</emphasis> onto the 
+    VM's disk and performing a normal
+    <command>VMDP-WIN-VERSION.exe</command> installation</para>
+   </step>
+  </procedure>  
+ </sect2>
+ 
+ 
+ <sect2 id="sec.vmdp.driver.xen.instructions">
+  <title>Additional Xen setup instructions</title>
+  <para>
+   Setup and the <command>/boot_vscsi</command> option: The Xen VMDP SCSI driver is capable of
+   controlling a physical SCSI disk such as <filename>/dev/sdb</filename>. To run the VMDP SCSI
+   driver on the boot disk, use setup <command>/boot_vscsi</command>. If the
+   <command>/boot_vscsi</command> option is not used in conjunction with
+   setup, <command>pvctrlw.exe</command> can be used later to
+   indicate that the VMDP SCSI driver should control the boot disk. Before
+   using the <command>/boot_vscsi</command> option or
+   <command>pvctrlw.exe</command>, the VM's config file must 
+   already contain the necessary SCSI information for the boot disk:  the disk
+   line needs to reference the physical disk e.g. disk=['phy:/dev/sdb,...']
+   and there must be a <emphasis>vscsi= </emphasis>line that corresponds to the physical disk.
+   SCSI devices and disks, other than the boot disk, that are to be controlled
+   by the VMDP SCSI driver are not placed in the <emphasis>disk=</emphasis> line but are only
+   referenced in the <emphasis>vscsi=</emphasis> line.
+  </para>
+ </sect2>
+
+ <sect2 id="sec.vmdp.driver.uninstall">
   <title>Uninstalling the Driver Pack</title>
   <para>
    To uninstall the SUSE Linux Enterprise Virtual Machine Driver Pack,
@@ -116,7 +186,7 @@
   </para>
  </sect2>
 
- <sect2 id="sec.vmdp.driver.winwizard.vmdp.upgrade">
+ <sect2 id="sec.vmdp.driver.upgrade">
   <title>Upgrading the Driver Pack</title>
   <para>
    <command>Setup.exe</command> can be used to update most existing
@@ -171,7 +241,7 @@
    <step>
     <para>
      Uninstall the driver pack (see
-     <xref linkend="sec.vmdp.driver.winwizard.vmdp.uninstall" xrefstyle="SectTitleOnPage"/>).
+     <xref linkend="sec.vmdp.driver.uninstall" xrefstyle="SectTitleOnPage"/>).
     </para>
    </step>
   </procedure>
