@@ -27,7 +27,6 @@
    <listitem><para>/reset_net_params</para></listitem>
    <listitem><para>/xen</para></listitem>
    <listitem><para>/virtio</para></listitem>
-   <listitem><para>/pvvx</para></listitem>
   </itemizedlist>
   <para>
    The default is to install the drivers for the hypervisor that the VM is
@@ -81,12 +80,6 @@
    </listitem>
    <listitem>
     <para>
-     <command>/pvvx</command>: will install the single binary Xen/virtio drivers. This is the
-     default for Windows 2012 R2.  /pvvx is not valid with /xen or /virtio
-    </para>
-   </listitem>
-   <listitem>
-    <para>
      <command>/boot_vscsi</command>: will configure the Windows vm to boot off a supplied SCSI
      device. To use the <command>/boot_vscsi</command> option, the vm's config
      file must contain a <emphasis>vscsi=</emphasis> line and a 
@@ -111,7 +104,7 @@
    </listitem>
    <listitem>
     <para>
-     <command>/winxp, /w2k3, /w2k8, /win7, and /win8 </command>: are multually
+     <command>/w2k3, /w2k8, /win7, and /win8 </command>: are multually
      exclusive. They allow the specified drivers to be installed in the running OS, if compatible.
      These parameters for testing purposes only and are not supported
     </para>

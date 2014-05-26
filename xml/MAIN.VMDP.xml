@@ -18,10 +18,13 @@
  <sect1 id="sec.vmdp.drivers.vdmp">
   <title>VMDP</title>
   <para>
-   SUSE® Linux Enterprise Virtual Machine Driver Pack contains disk and
-   network device drivers for a number of third-party operating systems in
-   order to enable the high-performance hosting of these unmodified guest
-   operating systems on top of &sls; &productnumber; (&slsa; &productnumber;).
+   SUSE® Linux Enterprise Virtual Machine Driver Pack contains Windows disk and
+   network device drivers, in order to enable the high-performance hosting of
+   these unmodified guest operating systems on top of &sls; &productnumber; (&slsa; &productnumber;).
+   Paravirtualized drivers for SUSE Linux Enterprise Server are available,
+   but not included in this Driver Pack. These drivers are distributed under an
+   open source license and included in both physical and electronic media of SUSE
+   Linux Enterprise Server and corresponding Customer Center update channels.
   </para>
   <sect2 id="sec.vmdp.drivers.introduction">
    <title>Introduction</title>
@@ -48,7 +51,7 @@
     example, a paravirtualized disk device driver appears as a normal,
     physical disk to the operating system. However, the device driver
     interacts directly with the virtualization platform (with no emulation) to
-    efficiently deliver disk access, allowing the disk and network subsystems
+    efficiently deliver disk access, allowing the disk subsystems
     to operate at near native speeds in a virtualized environment, without
     requiring changes to existing operating systems.
    </para>
