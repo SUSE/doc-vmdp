@@ -86,10 +86,10 @@
  <!-- VMDP expert installation mode -->
   <xi:include href="vmdp_install_expert.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-  <!-- Legal Stuff -->
- <xi:include href="common_copyright_sle.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
  <!-- Step by step with Windows 7 -->    
  <xi:include href="vmdp_step_by_step.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+ <!-- Legal Stuff -->
+ <xi:include href="common_copyright_sle.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
 </article>
