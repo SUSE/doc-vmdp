@@ -6,7 +6,7 @@
   %entities;
 ]>
 <sect1 id="sec.vmdp.driver.installation">
- <title>Download and installation</title>
+ <title>General installation</title>
  <para>
   The &sle; Virtual Machine Driver Pack is available for
   download as one binary file: a Windows self-extracting zip file
@@ -109,8 +109,7 @@
   </para>
   <procedure>
    <step>
-    <para>See instructions on creating VMs for attaching floppy disks and
-    ISOs as well as setting the boot disk as a VirtIO disk or VirtIO SCSI disk</para>
+       <para>See <xref linkend="sec.vmdp.step.virt-manager" xrefstyle="SectTitleOnPage"/>) for attaching an ISO, setting up<emphasis>Virtio Network</emphasis>, and a VirtIO disk disk for the Windows* VM</para>
    </step>
    <step>
     <para>Add the <emphasis>vfd</emphasis> or <emphasis>iso</emphasis> to the VM

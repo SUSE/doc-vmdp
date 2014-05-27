@@ -9,29 +9,33 @@
 
 <sect1 id="vmdp.qemu.guest.agent">
  <title>QEMU Guest Agent</title>
- <para>
-  <remark>aginies 2014-05-16: vmdp.qemu.guest.agent FIXME - :
-  What's is exactly qemu guest agent channel? how to install it?
-  how to check the service? What  kind of features provides qemu-guest agent?
-  What are the limitation?
-  </remark>
- </para>
- <para>
-  VMDP setup allows for the installation of the qemu guest agent service for
-  Windows* when invoked with the <command>/qemu-ga</command> command line parameter. The qemu
-  guest agent requires the VM to be equipped with the qemu guest agent
-  channel. Without the <emphasis>qemu guest agent channel</emphasis>,
-  the qemu guest agent can install but will not load. Trying to load without
-  the channel results in errors in the event log.
- </para>
- <para>
-  The qemu guest agent is built in the <emphasis>mingw</emphasis> environment
-  on a Linux system with no modifications to the guest agent source code.
-  The guest agent and supporting DLLs remain under their respective GPL licenses.
- </para>
- <para>
-  Currently many of the features of the guest agent supported in Linux vms have
-  not yet been implemented for Windows*. So usage of guest agent in
-  Windows* is somewhat limited at present.
- </para>
+ <para>This section explain what's <emphasis>qemu-ga</emphasis> and how to install it.</para>
+ <sect2 id="vmdp.qemu.guest.agent.info">
+  <title>Qemu guest agent</title>
+  <para>
+   VMDP setup allows for the installation of the qemu guest agent service for
+   Windows* when invoked with the <command>/qemu-ga</command> command line parameter. The qemu
+   guest agent requires the VM to be equipped with the qemu guest agent
+   channel (see <xref linkend="vmdp.qemu.guest.agent.channel" xrefstyle="SectTitleOnPage"/>). Without the <emphasis>qemu guest agent channel</emphasis>,
+   the qemu guest agent can install but will not load. Trying to load without
+   the channel results in errors in the event log.
+  </para>
+  <para>
+   The qemu guest agent is built in the <emphasis>mingw</emphasis> environment
+   on a Linux system with no modifications to the guest agent source code.
+   The guest agent and supporting DLLs remain under their respective GPL licenses.
+  </para>
+  <para>
+   Currently many of the features of the guest agent supported in Linux vms have
+   not yet been implemented for Windows*. So usage of guest agent in
+   Windows* is somewhat limited at present.
+  </para>
+ </sect2>
+ 
+ <sect2 id="vmdp.qemu.guest.agent.installation">
+  <title>Qemu guest agent installation</title>
+  <para>
+   TODO
+  </para>
+ </sect2>
 </sect1>
