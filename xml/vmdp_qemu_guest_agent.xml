@@ -35,7 +35,23 @@
  <sect2 id="vmdp.qemu.guest.agent.installation">
   <title>Qemu guest agent installation</title>
   <para>
-   TODO
+   Open a <guimenu>cmd.exe</guimenu> from the start menu.
+   Go to the path which contains the <filename>qemu-ga</filename> directory.
+   The <command>qemu-ga.exe --help</command> command will show you the help.
+   To install the service use:
   </para>
+  <screen>qemu-ga.exe --service install</screen>
+  <para>To start the service:</para>
+  <screen>net start qemu-ga.exe</screen>
+  <informalfigure pgwide="0">
+   <mediaobject>
+    <imageobject role="fo">
+     <imagedata fileref="vmdp_qemu-ga.png" width="56%" format="PNG"/>
+    </imageobject>
+    <imageobject role="html">
+     <imagedata fileref="vmdp_qemu-ga.png" width="56%" format="PNG"/>
+    </imageobject>
+   </mediaobject>
+  </informalfigure>
  </sect2>
 </sect1>
