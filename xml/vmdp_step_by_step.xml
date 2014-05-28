@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//Novell//DTD NovDoc XML V1.0//EN" "novdocx.dtd"
+[
+  <!ENTITY % NOVDOC.DEACTIVATE.IDREF "INCLUDE">
+  <!ENTITY % entities SYSTEM "entity-decl.ent">
+  %entities;
+]>
+
+<sect1 id="sec.vmdp.step.virt-manager">
+ <title>Step by step installation</title>
+ <para>This section describe how to configure the Windows* VM under
+ <guimenu>virt-manager</guimenu> and how to install the VMPD while installing
+ Windows* 7.</para>
+ <sect2>
+  <title>Virt-manager for Windows* 7</title>
+  <procedure>
+   <step>
+    <para>
+     The virtio Network interface
+    </para>
+    <informalfigure pgwide="0">
+     <mediaobject>
+      <imageobject role="fo">
+       <imagedata fileref="virt-manager_network_virtio.png" width="56%" format="PNG"/>
+      </imageobject>                                     
+      <imageobject role="html">
+       <imagedata fileref="virt-manager_network_virtio.png" width="56%" format="PNG"/>
+      </imageobject>
+     </mediaobject>
+    </informalfigure>
+   </step>
+   <step>
+    <para>
+     The VMDP <emphasis>iso</emphasis> Virtual CD-Rom:
+    </para>
+    <informalfigure pgwide="0">
+     <mediaobject>
+      <imageobject role="fo">
+       <imagedata fileref="virt-manager_vmdp_iso.png" width="56%" format="PNG"/>
+      </imageobject>
+      <imageobject role="html">
+       <imagedata fileref="virt-manager_vmdp_iso.png" width="56%" format="PNG"/>
+      </imageobject>
+     </mediaobject>
+    </informalfigure>
+   </step>
+   <step>
+    <para>
+     The Windows* VM Virtio disk:
+    </para>
+    <informalfigure pgwide="0">
+     <mediaobject>
+      <imageobject role="fo">
+       <imagedata fileref="virt-manager_virtio_disk.png" width="56%" format="PNG"/>
+      </imageobject>
+      <imageobject role="html">
+       <imagedata fileref="virt-manager_virtio_disk.png" width="56%" format="PNG"/>
+      </imageobject>
+     </mediaobject>
+    </informalfigure>
+   </step>
+   <step id="vmdp.qemu.guest.agent.channel">
+    <para>
+     The Windows* VM Qemu-ga Channel device with Device parameters set to: <emphasis>org.qemu.guest_agent.0</emphasis>
+    </para>
+    <informalfigure pgwide="0">
+     <mediaobject>
+      <imageobject role="fo">
+       <imagedata fileref="virt-manager_channel_device.png" width="56%" format="PNG"/>
+      </imageobject>
+      <imageobject role="html">
+       <imagedata fileref="virt-manager_channel_device.png" width="56%" format="PNG"/>
+      </imageobject>
+     </mediaobject>
+    </informalfigure>
+   </step>
+  </procedure>
+ </sect2>
+ 
+ <sect2 id="sec.vmdp.step.win7.install">
+  <title>Windows* 7 installation</title>
+  <procedure>
+   <step>
+    <para>
+     Boot the Windows* 7 installation CD-Rom, and a <guimenu>Select driver to be
+     installed</guimenu> dialog box will be displayed:
+    </para>
+    <informalfigure pgwide="0">
+     <mediaobject>
+      <imageobject role="fo">
+       <imagedata fileref="vmdp_install_windows_select.png" width="56%" format="PNG"/>
+      </imageobject>
+      <imageobject role="html">
+       <imagedata fileref="vmdp_install_windows_select.png" width="56%" format="PNG"/>
+      </imageobject>
+     </mediaobject>
+    </informalfigure>
+   </step>
+   <step>
+    <para>
+     Browse to the directory which contains the VMDP driver:
+    </para>
+    <informalfigure pgwide="0">
+     <mediaobject>
+      <imageobject role="fo">
+       <imagedata fileref="vmdp_install_windows_from_cd.png" width="56%" format="PNG"/>
+      </imageobject>
+      <imageobject role="html">
+       <imagedata fileref="vmdp_install_windows_from_cd.png" width="56%" format="PNG"/>
+      </imageobject>
+     </mediaobject>
+    </informalfigure>
+   </step>
+   <step>
+    <para>
+     Select the SUSE driver:
+    </para>
+    <informalfigure pgwide="0">
+     <mediaobject>
+      <imageobject role="fo">
+       <imagedata fileref="vmdp_install_windows_suse_block_driver.png" width="56%" format="PNG"/>
+      </imageobject>
+      <imageobject role="html">
+       <imagedata fileref="vmdp_install_windows_suse_block_driver.png" width="56%" format="PNG"/>
+      </imageobject>
+     </mediaobject>
+    </informalfigure>
+   </step>
+   <step>
+    <para>Then finish the instalation of the Windows* 7.</para>
+   </step>
+   <step>
+    <para>
+     At first boot, go to the directory which contains the VMPD driver,
+     this should be a CD-Rom as defined in virt-manager, then Double click on the
+    <command>Setup.exe</command> program.</para>
+   </step>
+   <step>
+    <para>
+     A popup window will appear, to confirm the action, click
+     <guimenu>Yes</guimenu>:
+    </para>
+    <informalfigure pgwide="0">
+     <mediaobject>
+      <imageobject role="fo">
+       <imagedata fileref="vmdp_signed_driver.png" width="56%" format="PNG"/>
+      </imageobject>
+      <imageobject role="html">
+       <imagedata fileref="vmdp_signed_driver.png" width="56%" format="PNG"/>
+      </imageobject>
+     </mediaobject>
+    </informalfigure>
+   </step>
+   <step>
+    <para>
+     You should accept the End User License Agreement: vmdp_accept_eula.png
+    </para>
+    <informalfigure pgwide="0">
+     <mediaobject>
+      <imageobject role="fo">
+       <imagedata fileref="vmdp_accept_eula.png" width="56%" format="PNG"/>
+      </imageobject>
+      <imageobject role="html">
+       <imagedata fileref="vmdp_accept_eula.png" width="56%" format="PNG"/>
+      </imageobject>
+     </mediaobject>
+    </informalfigure>
+   </step>
+   <step>
+    <para>
+     The program will install the SUSE Drivers for Windows* 7:
+    </para>
+    <informalfigure pgwide="0">
+     <mediaobject>
+      <imageobject role="fo">
+       <imagedata fileref="vmpd_installation_in_progress.png" width="56%" format="PNG"/>
+      </imageobject>
+      <imageobject role="html">
+       <imagedata fileref="vmpd_installation_in_progress.png" width="56%" format="PNG"/>
+      </imageobject>
+     </mediaobject>
+    </informalfigure>
+   </step>
+   <step>
+    <para>
+     Now you need to restart your computer:
+    </para>
+    <informalfigure pgwide="0">
+     <mediaobject>
+      <imageobject role="fo">
+       <imagedata fileref="vmdp_computer_restart.png" width="56%" format="PNG"/>
+      </imageobject>
+      <imageobject role="html">
+       <imagedata fileref="vmdp_computer_restart.png" width="56%" format="PNG"/>
+      </imageobject>
+     </mediaobject>
+    </informalfigure>
+   </step>
+   <step>
+    <para>
+     You can check using the Windows device manager that all drivers hsa been
+     iunstalled with success:
+    </para>
+    <informalfigure pgwide="0">
+     <mediaobject>
+      <imageobject role="fo">
+       <imagedata fileref="vmdp_driver_installed_device_manager.png" width="56%" format="PNG"/>
+      </imageobject>
+      <imageobject role="html">
+       <imagedata fileref="vmdp_driver_installed_device_manager.png" width="56%" format="PNG"/>
+      </imageobject>
+     </mediaobject>
+    </informalfigure>
+   </step>
+  </procedure>
+ </sect2>
+ 
+</sect1>
+
