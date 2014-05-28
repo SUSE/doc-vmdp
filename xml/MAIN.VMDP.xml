@@ -17,6 +17,7 @@
  
  <sect1 id="sec.vmdp.drivers.vdmp">
   <title>VMDP</title>
+  <remark>aginies 2014-05-28: sec.vmdp.drivers.vdmp - : need to re-phrase about license</remark>
   <para>
    &slereg; Virtual Machine Driver Pack contains Windows* disk and
    network device drivers, in order to enable the high-performance hosting of
