@@ -41,7 +41,7 @@
    To install the service use:
   </para>
   <screen>qemu-ga.exe --service install</screen>
-  <para>To start the service:</para>
+  <para>To start the service you can use the Windows* Service Administrative tools, or the command line:</para>
   <screen>net start qemu-ga.exe</screen>
   <informalfigure pgwide="0">
    <mediaobject>
