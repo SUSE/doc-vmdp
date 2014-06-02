@@ -35,7 +35,6 @@
    <command>/virtio</command>
    parameters are given.
   </para>
-  <para>Additional options when running on a Xen hypervisor are:</para>
   <itemizedlist>
    <listitem>
     <para>
@@ -75,9 +74,12 @@
    </listitem>
    <listitem>
     <para>
-     <command>/virtio will</command>: install the virtio drivers
+     <command>/virtio</command>: will install the virtio drivers
     </para>
    </listitem>
+   </itemizedlist>
+   <para>Additional options when running on a Xen hypervisor are:</para>
+   <itemizedlist>
    <listitem>
     <para>
      <command>/boot_vscsi</command>: will configure the Windows* VM to boot off a supplied SCSI
@@ -86,11 +88,6 @@
      <emphasis>disk = [phy:/...]</emphasis> line
     </para>
    </listitem>
-  </itemizedlist>
-  <para>
-   Advanced parameters of <command>Setup.exe</command> command:
-  </para>
-  <itemizedlist>
    <listitem>
     <para>
      <command>/xvdisk</command>: tells xenblk to only control disks of type <emphasis>xvd</emphasis>
@@ -102,16 +99,21 @@
      <emphasis>type=netfront</emphasis>
     </para>
    </listitem>
+
+  </itemizedlist>
+  <para>
+   Advanced parameters of <command>Setup.exe</command> command:
+  </para>
+  <itemizedlist>
    <listitem>
     <para>
      <command>/w2k3, /w2k8, /win7, and /win8 </command>: are multually
      exclusive. They allow the specified drivers to be installed in the running OS, if compatible.
-     These parameters for testing purposes only and are not supported
+     These parameters are for testing purposes only and are not supported
     </para>
    </listitem>
   </itemizedlist>
  </sect2>
-
  <sect2 id="sec.vmdp.setup.expert.uninstall">
   <title>Uninstall expert mode</title>
   <para>

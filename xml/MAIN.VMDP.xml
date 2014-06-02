@@ -17,13 +17,12 @@
  
  <sect1 id="sec.vmdp.drivers.vdmp">
   <title>VMDP</title>
-  <remark>aginies 2014-05-28: sec.vmdp.drivers.vdmp - : need to re-phrase about license</remark>
   <para>
    &slereg; Virtual Machine Driver Pack contains Windows* disk and
    network device drivers, in order to enable the high-performance hosting of
    these unmodified guest operating systems on top of &sls;.
    Paravirtualized drivers for &sls; are available,
-   but not included in this Driver Pack. These drivers are distributed under an
+   but not included in this Driver Pack. Paravirtualized drivers for &sls; are distributed under an
    open source license and included in both physical and electronic media of &sls;
    and corresponding Customer Center update channels.
   </para>

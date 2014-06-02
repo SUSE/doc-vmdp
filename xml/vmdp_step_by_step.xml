@@ -10,7 +10,9 @@
  <title>Step by step installation</title>
  <para>This section describe how to configure the Windows* VM under
  <guimenu>virt-manager</guimenu> and how to install the VMPD while installing
- Windows* 7.</para>
+ Windows* 7. This example is an installation of a KVM host. Using the ISO is only valid on
+ KVM host.
+</para>
  <sect2>
   <title>Virt-manager for Windows* 7</title>
   <procedure>
@@ -131,8 +133,7 @@
    </step>
    <step>
     <para>
-     At first boot, go to the directory which contains the VMPD driver,
-     this should be a CD-Rom as defined in virt-manager, then Double click on the
+     At first boot, go to the directory which contains the VMPD driver (this should be a CD-Rom as defined in virt-manager). The <command>VMDP-xxx.exe</command> needs to be copied from the CD (ISO) onto the hard drive and expanded. Then Double click on the
     <command>Setup.exe</command> program.</para>
    </step>
    <step>
