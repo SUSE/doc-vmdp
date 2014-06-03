@@ -19,7 +19,7 @@
   <title>Prerequisites</title>
   <itemizedlist>
    <listitem><para>
-    &sls; (&productname;) 10 SP4 or later, or &productname; 11 SP2 or later
+    &sls; 10 SP4 or later, or &sls; 11 SP2 or later
    </para></listitem>
    <listitem><para>
     Fully virtualized Windows* virtual machines

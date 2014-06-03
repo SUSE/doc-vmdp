@@ -114,11 +114,7 @@
 <!ENTITY nld           "SUSE Linux Enterprise Desktop">
 <!ENTITY nlda          "SLED">
 <!ENTITY nldreg        "SUSE&reg; Linux Enterprise Desktop">
-<!ENTITY product      "<phrase os='slprof'>openSUSE</phrase>
-                       <phrase os='nld;sles'>&sle;</phrase>">
-<!ENTITY productreg    "<phrase os='slprof'>openSUSE&reg;</phrase>
-                       <phrase os='nld;sles'>&slereg;</phrase>">
-<!ENTITY productname   '<?suse name="productname"?>'>
+<!ENTITY productname   'Virtual Machine Drivers Pack'>
 <!ENTITY productnumber '12'>
 <!ENTITY sdk           "SUSE Software Development Kit">
 <!ENTITY musicplayer   "Banshee">

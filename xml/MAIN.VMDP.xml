@@ -8,17 +8,16 @@
 
 <article id="article.vmdp.driver" lang="en">
  <?suse-quickstart color="suse"?>
- <title>Virtual Machine Drivers Pack</title>
+ <title>Installation Guide</title>
  <articleinfo>
   <productnumber>&productnumber;</productnumber>
-  <productname>&productname;</productname>
   <date>May 26, 2014</date>
  </articleinfo>
  
  <sect1 id="sec.vmdp.drivers.vdmp">
   <title>VMDP</title>
   <para>
-   &slereg; Virtual Machine Driver Pack contains Windows* disk and
+   &sle; Virtual Machine Driver Pack contains Windows* disk and
    network device drivers, in order to enable the high-performance hosting of
    these unmodified guest operating systems on top of &sls;.
    Paravirtualized drivers for &sls; are available,
