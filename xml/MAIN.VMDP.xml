@@ -10,7 +10,7 @@
  <?suse-quickstart color="suse"?>
  <title>Installation Guide</title>
  <articleinfo>
-  <productnumber>&productnumber;</productnumber>
+  <productnname>&sle; &productname;</productname>
   <date>May 26, 2014</date>
  </articleinfo>
  
