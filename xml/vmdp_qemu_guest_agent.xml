@@ -37,7 +37,7 @@
   <para>
    Open a <guimenu>cmd.exe</guimenu> from the start menu.
    Go to the path which contains the <filename>qemu-ga</filename> directory.
-   The <command>qemu-ga.exe --help</command> command will show you the help.
+   The <command>qemu-ga.exe</command> <option>--help</option> command will show you the help.
    To install the service use:
   </para>
   <screen>qemu-ga.exe --service install</screen>

@@ -38,18 +38,18 @@
   <title>v2v --vmpd parameter</title>
   <para>
    Installation of the VMDP can be manually influenced during virt-v2v
-   migration using the <command>–-vmdp</command> parameter:
+   migration using the <option>–-vmdp</option> parameter:
   </para>
   <itemizedlist>
    <listitem>
-   <para><command>--vmdp=auto</command>: only install the VMDP if already
+   <para><option>--vmdp=auto</option>: only install the VMDP if already
    installed on source image</para>
    </listitem>
    <listitem>
-   <para><command>--vmdp=always</command>: always install the VMDP during
+   <para><option>--vmdp=always</option>: always install the VMDP during
    Windows* guest conversions</para></listitem>
    <listitem>
-   <para><command>--vmdp=never</command>: never install the VMDP</para></listitem>
+   <para><option>--vmdp=never</option>: never install the VMDP</para></listitem>
   </itemizedlist>
   <para>
    In addition to installing the drivers included with the virt-v2v-vmdp RPM,
@@ -71,7 +71,7 @@
    </app>]]></screen>
   
    <para>
-    The virt-v2v-vmdp RPM is available in the same download location as the VMDP setup
+       The <filename>virt-v2v-vmdp</filename> RPM is available in the same download location as the VMDP setup
     program.
    </para>
  </sect2>

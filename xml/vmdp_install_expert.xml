@@ -31,50 +31,50 @@
   <para>
    The default is to install the drivers for the hypervisor that the VM is
    currently running on.  Howerver, the Xen and virtio drivers can be installed
-   at the same time if both the <command>/xen</command> and
-   <command>/virtio</command>
+   at the same time if both the <option>/xen</option> and
+   <option>/virtio</option>
    parameters are given.
   </para>
   <itemizedlist>
    <listitem>
     <para>
-     <command>/auto_reboot</command>: will cause the Windows* VM to automatically reboot after the setup has completed
+     <option>/auto_reboot</option>: will cause the Windows* VM to automatically reboot after the setup has completed
     </para>
    </listitem>
    <listitem>
     <para>
-     <command>/no_reboot</command>: will prevent the reboot prompt from being displayed after the
+     <option>/no_reboot</option>: will prevent the reboot prompt from being displayed after the
      setup has completed
     </para>
    </listitem>
    <listitem>
     <para>
-     <command>/eula_accepted</command>: implies that the EULA has been read, accepted, and agreed
+     <option>/eula_accepted</option>: implies that the EULA has been read, accepted, and agreed
      to in all aspects.  Accepting the EULA in this manner will therefore prevent the
      EULA acceptance dialog from being displayed during the setup process.
     </para>
    </listitem>
    <listitem>
     <para>
-     <command>/force</command>: will force the installation of the drivers and overwrite any
+     <option>/force</option>: will force the installation of the drivers and overwrite any
      previous drivers that may have been installed
     </para>
    </listitem>
    <listitem>
     <para>
-     <command>/reset_net_params</command>: will remove any net driver parameters that are still set
+        <option>/reset_net_params</option>: will remove any net driver parameters that are still set
      to the default values. This is useful in upgrades when a net driver's
      parameter default changes. This will allow the new default to be used
     </para>
    </listitem>
    <listitem>
     <para>
-     <command>/xen</command>: will install the Xen drivers
+     <option>/xen</option>: will install the Xen drivers
     </para>
    </listitem>
    <listitem>
     <para>
-     <command>/virtio</command>: will install the virtio drivers
+     <option>/virtio</option>: will install the virtio drivers
     </para>
    </listitem>
    </itemizedlist>
@@ -82,20 +82,20 @@
    <itemizedlist>
    <listitem>
     <para>
-     <command>/boot_vscsi</command>: will configure the Windows* VM to boot off a supplied SCSI
-     device. To use the <command>/boot_vscsi</command> option, the vm's config
+     <option>/boot_vscsi</option>: will configure the Windows* VM to boot off a supplied SCSI
+     device. To use the <option>/boot_vscsi</option> option, the vm's config
      file must contain a <emphasis>vscsi=</emphasis> line and a 
      <emphasis>disk = [phy:/...]</emphasis> line
     </para>
    </listitem>
    <listitem>
     <para>
-     <command>/xvdisk</command>: tells xenblk to only control disks of type <emphasis>xvd</emphasis>
+     <option>/xvdisk</option>: tells xenblk to only control disks of type <emphasis>xvd</emphasis>
     </para>
    </listitem>
    <listitem>
     <para>
-     <command>/netfront</command>: tells xennet to only control NICs of 
+     <option>/netfront</option>: tells xennet to only control NICs of 
      <emphasis>type=netfront</emphasis>
     </para>
    </listitem>
@@ -107,7 +107,7 @@
   <itemizedlist>
    <listitem>
     <para>
-     <command>/w2k3, /w2k8, /win7, and /win8 </command>: are multually
+     <option>/w2k3, /w2k8, /win7, and /win8 </option>: are multually
      exclusive. They allow the specified drivers to be installed in the running OS, if compatible.
      These parameters are for testing purposes only and are not supported
     </para>
@@ -122,18 +122,18 @@
   <itemizedlist>
    <listitem>
     <para>
-     <command>/auto_reboot</command>: will cause the Windows* VM to
+     <option>/auto_reboot</option>: will cause the Windows* VM to
      automatically reboot at the completion of the uninstall
     </para>
    </listitem>
    <listitem>
     <para>
-     <command>/virtio</command>: will uninstall virtio drivers
+     <option>/virtio</option>: will uninstall virtio drivers
     </para>
    </listitem>
    <listitem>
     <para>
-     <command>/xen</command>: will uninstall Xen drivers
+     <option>/xen</option>: will uninstall Xen drivers
     </para>
    </listitem>
   </itemizedlist>
