@@ -153,16 +153,16 @@
  <sect2 id="sec.vmdp.driver.xen.instructions">
   <title>Additional Xen setup instructions</title>
   <para>
-   Setup and the <command>/boot_vscsi</command> option: The Xen VMDP SCSI driver is capable of
+   Setup and the <option>/boot_vscsi</option> option: The Xen VMDP SCSI driver is capable of
    controlling a physical SCSI disk such as <filename>/dev/sdb</filename>. To run the VMDP SCSI
-   driver on the boot disk, use setup <command>/boot_vscsi</command>. If the
-   <command>/boot_vscsi</command> option is not used in conjunction with
+   driver on the boot disk, use setup <option>/boot_vscsi</option>. If the
+   <option>/boot_vscsi</option> option is not used in conjunction with
    setup, <command>pvctrlw.exe</command> can be used later to
    indicate that the VMDP SCSI driver should control the boot disk. Before
-   using the <command>/boot_vscsi</command> option or
+   using the <option>/boot_vscsi</option> option or
    <command>pvctrlw.exe</command>, the VM's config file must 
    already contain the necessary SCSI information for the boot disk:  the disk
-   line needs to reference the physical disk e.g. disk=['phy:/dev/sdb,...']
+   line needs to reference the physical disk <emphasis>e.g. disk=['phy:/dev/sdb,...']</emphasis>
    and there must be a <emphasis>vscsi= </emphasis>line that corresponds to the physical disk.
    SCSI devices and disks, other than the boot disk, that are to be controlled
    by the VMDP SCSI driver are not placed in the <emphasis>disk=</emphasis> line but are only
@@ -178,7 +178,7 @@
    <filename>\Program Files\vmdp</filename> folder. <command>Uninstall.exe</command>
    will uninstall the &sle; Virtual Machine Driver Pack and
    remove the associated files for the hypervisor that the VM is currently
-   running on. The <command>/virtio</command> and <command>/xen</command>
+   running on. The <option>/virtio</option> and <option>/xen</option>
    parameters forces the uninstall of those
    drivers reqardless of the running hypervisor. When uninstalling, it is
    important to <emphasis>reboot</emphasis> the VM on the currently running hypervisor to all allow
