@@ -7,9 +7,9 @@
 ]>
 
 <sect1 id="sec.vmdp.step.virt-manager">
- <title>Step by step installation</title>
- <para>This section describe how to configure the Windows* VM under
- <guimenu>virt-manager</guimenu> and how to install the VMPD while installing
+ <title>Step-by-step Installation</title>
+ <para>This section describes how to configure the Windows* VM under
+ <guimenu>virt-manager</guimenu> and how to install the VMDP while installing
  Windows* 7. This example is an installation of a KVM host. Using the ISO is only valid on
  KVM host.
 </para>
@@ -33,7 +33,7 @@
    </step>
    <step>
     <para>
-     The VMDP <emphasis>iso</emphasis> Virtual CD-Rom:
+     The VMDP <emphasis>iso</emphasis> Virtual CD-ROM:
     </para>
     <informalfigure pgwide="0">
      <mediaobject>
@@ -84,7 +84,7 @@
   <procedure>
    <step>
     <para>
-     Boot the Windows* 7 installation CD-Rom, and a <guimenu>Select driver to be
+     Boot the Windows* 7 installation CD-ROM, and a <guimenu>Select driver to be
      installed</guimenu> dialog box will be displayed:
     </para>
     <informalfigure pgwide="0">
@@ -129,11 +129,11 @@
     </informalfigure>
    </step>
    <step>
-    <para>Then finish the instalation of the Windows* 7.</para>
+    <para>Then finish the installation of the Windows* 7.</para>
    </step>
    <step>
     <para>
-     At first boot, go to the directory which contains the VMPD driver (this should be a CD-Rom as defined in virt-manager). The <command>VMDP-xxx.exe</command> needs to be copied from the CD (ISO) onto the hard drive and expanded. Then Double click on the
+     On first boot, go to the directory which contains the VMDP driver (this should be a CD-ROM as defined in virt-manager). The <command>VMDP-xxx.exe</command> needs to be copied from the CD (ISO) onto the hard drive and expanded. Then double-click the
     <command>Setup.exe</command> program.</para>
    </step>
    <step>
@@ -154,7 +154,7 @@
    </step>
    <step>
     <para>
-     You should accept the End User License Agreement:
+     Accept the End User License Agreement:
     </para>
     <informalfigure pgwide="0">
      <mediaobject>
@@ -199,8 +199,8 @@
    </step>
    <step>
     <para>
-     You can check using the Windows device manager that all drivers hsa been
-     iunstalled with success:
+     You can check using the Windows device manager that all drivers have been
+     successfully installed:
     </para>
     <informalfigure pgwide="0">
      <mediaobject>

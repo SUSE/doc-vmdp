@@ -35,7 +35,7 @@
  </sect2>
  
  <sect2 id="sec.vmdp.v2v.installation">
-  <title>v2v --vmpd parameter</title>
+  <title>v2v --vmdp parameter</title>
   <para>
    Installation of the VMDP can be manually influenced during virt-v2v
    migration using the <option>–-vmdp</option> parameter:
