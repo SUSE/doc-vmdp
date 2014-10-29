@@ -8,16 +8,16 @@
 
 
 <sect1 id="sec.vmdp.setup.expert">
- <title>Advanced installation options</title>
+ <title>Advanced Installation Options</title>
  <para>
   How to deal with VMDP <emphasis>install</emphasis> and <emphasis>uninstall</emphasis>.
  </para>
 
  <sect2 id="sec.vmdp.setup.expert.install">
-  <title>Expert installation</title>
+  <title>Expert iInstallation</title>
   <para>
    To help with automated installations, <command>setup.exe</command> currently has the
-   following:
+   following parameters:
   </para>
   <itemizedlist>
    <listitem><para>/auto_reboot</para></listitem>
@@ -102,20 +102,21 @@
 
   </itemizedlist>
   <para>
-   Advanced parameters of <command>Setup.exe</command> command:
+   Advanced parameters of the <command>Setup.exe</command> command:
   </para>
   <itemizedlist>
    <listitem>
     <para>
      <option>/w2k3, /w2k8, /win7, and /win8 </option>: are mutually
-     exclusive. They allow the specified drivers to be installed in the running OS, if compatible.
+     exclusive. They allow the specified drivers to be installed in the running
+     operating system, if compatible.
      These parameters are for testing purposes only and are not supported
     </para>
    </listitem>
   </itemizedlist>
  </sect2>
  <sect2 id="sec.vmdp.setup.expert.uninstall">
-  <title>Uninstall expert mode</title>
+  <title>Uninstall Expert Mode</title>
   <para>
    <emphasis>Uninstall</emphasis> has some parameters:
   </para>

@@ -7,11 +7,11 @@
 ]>
 
 <sect1 id="sec.vmdp.step.virt-manager">
- <title>Step-by-step Installation</title>
+ <title>Step-by-Step Installation</title>
  <para>This section describes how to configure the Windows* VM under
  <guimenu>virt-manager</guimenu> and how to install the VMDP while installing
  Windows* 7. This example is an installation of a KVM host. Using the ISO is only valid on
- KVM host.
+ KVM hosts.
 </para>
  <sect2 id="sec.vmdp.step.virt-manager.win7" >
   <title>Virt-manager for Windows* 7</title>
@@ -80,11 +80,11 @@
  </sect2>
  
  <sect2 id="sec.vmdp.step.win7.install">
-  <title>Windows* 7 installation</title>
+  <title>Windows* 7 Installation</title>
   <procedure>
    <step>
     <para>
-     Boot the Windows* 7 installation CD-ROM, and a <guimenu>Select driver to be
+     Boot the Windows* 7 installation CD-ROM. The <guimenu>Select driver to be
      installed</guimenu> dialog will be displayed:
     </para>
     <informalfigure pgwide="0">
@@ -129,7 +129,7 @@
     </informalfigure>
    </step>
    <step>
-    <para>Then finish the installation of the Windows* 7.</para>
+    <para>Finish the installation of the Windows* 7.</para>
    </step>
    <step>
     <para>
@@ -138,10 +138,11 @@
      <command>VMDP-xxx.exe</command> needs to be copied from the CD (ISO) onto
      the hard disk and expanded. Then double-click the
     <command>Setup.exe</command> program.</para>
+    <para>A pop-up window will appear.</para> 
    </step>
    <step>
     <para>
-     A pop-up window will appear, to confirm the action, click
+     To confirm the action, click
      <guimenu>Yes</guimenu>:
     </para>
     <informalfigure pgwide="0">
@@ -187,7 +188,7 @@
    </step>
    <step>
     <para>
-     Now you need to restart your computer:
+     Restart your computer:
     </para>
     <informalfigure pgwide="0">
      <mediaobject>
@@ -202,7 +203,7 @@
    </step>
    <step>
     <para>
-     You can check using the Windows device manager that all drivers have been
+     Use the Windows device manager to check if all drivers have been
      successfully installed:
     </para>
     <informalfigure pgwide="0">

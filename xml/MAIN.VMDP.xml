@@ -41,7 +41,7 @@
   </sect2>
   
   <sect2 id="sec.vmdp.drivers.performance">
-   <title>Bringing performance</title>
+   <title>Bringing Performance</title>
    <para>
     The device drivers in &sle; Virtual Machine Driver Pack bring many of the
     performance advantages of paravirtualized operating systems to unmodified

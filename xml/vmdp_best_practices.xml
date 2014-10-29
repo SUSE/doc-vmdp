@@ -7,8 +7,8 @@
 ]>
 
 <sect1 id="sec.vmdp.best"> 
- <title>Best practices</title>
- <para>Best practices, usage and problem using VMDP.</para>
+ <title>Best Practices</title>
+ <para>This section describes best practices, usage and potential problems using VMDP.</para>
  <para>
  </para>
  <sect2 id="sec.vmdp.driver.winwizard.vmdp.problems">
@@ -38,8 +38,8 @@
    </listitem>
    <listitem>
     <para> 
-     Canceling the installation when you see security alert that indicates
-     that the Bus driver has not been properly signed. Click
+     Canceling the installation when you see a security alert that indicates
+     that the bus driver has not been properly signed. Click
      <guimenu>Yes</guimenu> to continue the installation. 
     </para>
    </listitem>
@@ -61,7 +61,7 @@
   </itemizedlist>
  </sect2>
  <sect2 id="sec.vmdp.best.before">
-  <title>Before the installation</title>
+  <title>Before the Installation</title>
   <para> 
    Before installing &sle; Virtual Machine Driver Pack in your production 
    environment, we strongly recommend that you run it in a test environment
@@ -69,7 +69,7 @@
   </para>
  </sect2>
  <sect2 id="sec.vmdp.best.network">
-  <title>Network configuration</title>
+  <title>Network Configuration</title>
   <para> 
    Do not give the server a fixed IP address before installing the driver 
    pack, otherwise you need to switch to a different intermediate IP address 

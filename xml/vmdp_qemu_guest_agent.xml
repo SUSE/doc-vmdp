@@ -9,7 +9,7 @@
 
 <sect1 id="sec.vmdp.qemu.guest.agent">
  <title>QEMU Guest Agent</title>
- <para>This section explain what's <emphasis>qemu-ga</emphasis> and how to install it.</para>
+ <para>This section explain what <emphasis>qemu-ga</emphasis> is and how to install it.</para>
  <sect2 id="vmdp.qemu.guest.agent.info">
   <title>Qemu guest agent</title>
   <para>
@@ -26,18 +26,18 @@
    The guest agent and supporting DLLs remain under their respective GPL licenses.
   </para>
   <para>
-   Currently many of the features of the guest agent supported in Linux vms have
-   not yet been implemented for Windows*. So usage of guest agent in
+   Currently many of the features of the guest agent supported in Linux VMs have
+   not yet been implemented for Windows*. Therefore the usage of guest agent in
    Windows* is somewhat limited at present.
   </para>
  </sect2>
  
  <sect2 id="sec.vmdp.qemu.guest.agent.installation">
-  <title>Qemu guest agent installation</title>
+  <title>Qemu Guest Agent Installation</title>
   <para>
    Open a <guimenu>cmd.exe</guimenu> from the start menu.
-   Go to the path which contains the <filename>qemu-ga</filename> directory.
-   The <command>qemu-ga.exe</command> <option>--help</option> command will show you the help.
+   Go to the path that contains the <filename>qemu-ga</filename> directory.
+   View the help with the command <command>qemu-ga.exe</command> <option>--help</option>.
    To install the service use:
   </para>
   <screen>qemu-ga.exe --service install</screen>
