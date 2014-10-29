@@ -66,14 +66,14 @@
    <command>Setup.exe</command> can be run with and without VirtIO devices present in the VM.
    If the devices are present in the VM when setup is run, the drivers are
    installed and loaded at that time. If the VirtIO devices are not present
-   when setup is run, shutdown the VM, add the VirtIO devices, and start the
+   when setup is run, shut down the VM, add the VirtIO devices, and start the
    VM. Once booted, Windows* will discover the new devices and load the
    previously installed drivers.
   </para>
   <para>
    To boot a running VM on a VirtIO disk, the VirtIO disk driver must be
    installed on a secondary/temporary (e:) VirtIO disk. After the driver is
-   installed and controlling the disk, shutdown the VM. From <guimenu>virt-manager</guimenu>,
+   installed and controlling the disk, shut down the VM. From <guimenu>virt-manager</guimenu>,
    delete the secondary VirtIO disk and delete the IDE boot disk. Now add a
    disk of type VirtIO or VirtIO SCSI and give it the location for the boot
    disk. Boot the VM. The VirtIO driver will now be controlling the boot disk.
@@ -83,7 +83,7 @@
    <para>
     Failure to install a VirtIO disk driver on a secondary disk before changing
     the boot disk to a VirtIO or VirtIO SCSI disk will cause the VM to crash
-    with bug check <emphasis>0x7b</emphasis>, inaccessible boot disk.
+    with bug check <emphasis>0x7b</emphasis> (inaccessible boot disk).
    </para>
   </warning>
  </sect2>
@@ -109,7 +109,8 @@
   </para>
   <procedure>
    <step>
-       <para>See <xref linkend="sec.vmdp.step.virt-manager" xrefstyle="SectTitleOnPage"/>) for attaching an ISO, setting up<emphasis>Virtio Network</emphasis>, and a VirtIO disk disk for the Windows* VM</para>
+       <para>See <xref linkend="sec.vmdp.step.virt-manager"
+        xrefstyle="SectTitleOnPage"/> for attaching an ISO, setting up<emphasis>Virtio Network</emphasis>, and a VirtIO disk for the Windows* VM</para>
    </step>
    <step>
     <para>Add the <emphasis>vfd</emphasis> or <emphasis>iso</emphasis> to the VM
@@ -156,13 +157,13 @@
    Setup and the <option>/boot_vscsi</option> option: The Xen VMDP SCSI driver is capable of
    controlling a physical SCSI disk such as <filename>/dev/sdb</filename>. To run the VMDP SCSI
    driver on the boot disk, use setup <option>/boot_vscsi</option>. If the
-   <option>/boot_vscsi</option> option is not used in conjunction with
+   <option>/boot_vscsi</option> option is not used with
    setup, <command>pvctrlw.exe</command> can be used later to
    indicate that the VMDP SCSI driver should control the boot disk. Before
    using the <option>/boot_vscsi</option> option or
-   <command>pvctrlw.exe</command>, the VM's config file must 
+   <command>pvctrlw.exe</command>, the VM's configuration file must 
    already contain the necessary SCSI information for the boot disk:  the disk
-   line needs to reference the physical disk <emphasis>e.g. disk=['phy:/dev/sdb,...']</emphasis>
+   line needs to reference the physical disk, for example <emphasis>disk=['phy:/dev/sdb,...']</emphasis>
    and there must be a <emphasis>vscsi= </emphasis>line that corresponds to the physical disk.
    SCSI devices and disks, other than the boot disk, that are to be controlled
    by the VMDP SCSI driver are not placed in the <emphasis>disk=</emphasis> line but are only
@@ -218,17 +219,17 @@
    </step>
   </procedure>
   <para>
-     With some older installations, setup will not be able to perform an
+     With some older installations, setup cannot perform an
      update. In these cases, setup will inform you that the existing installation will
-     need to be uninstalled first. Uninstall the existing installation. Once
-     completely uninstalled, setup.exe can then be used to install the new files.
+     need to be uninstalled first. Uninstall the existing installation. After
+     being completely uninstalled, setup.exe can then be used to install the new files.
   </para>
  </sect2>
 
  <sect2 id="sec.vmdp.driver.recover">
   <title>Recovering from a Failure</title>
   <para>
-   In the event of a failure caused by the driver pack, you can
+   If a failure is caused by the driver pack, you can
    safely remove the driver pack and return to your previous system
    configuration.
   </para>

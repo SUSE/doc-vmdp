@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE article PUBLIC "-//Novell//DTD NovDoc XML V1.0//EN" "novdocx.dtd"
+<!DOCTYPE sect1 PUBLIC "-//Novell//DTD NovDoc XML V1.0//EN" "novdocx.dtd"
 [
   <!ENTITY % NOVDOC.DEACTIVATE.IDREF "INCLUDE">
   <!ENTITY % entities SYSTEM "entity-decl.ent">
@@ -13,7 +13,7 @@
  Windows* 7. This example is an installation of a KVM host. Using the ISO is only valid on
  KVM host.
 </para>
- <sect2>
+ <sect2 id="sec.vmdp.step.virt-manager.win7" >
   <title>Virt-manager for Windows* 7</title>
   <procedure>
    <step>
@@ -85,7 +85,7 @@
    <step>
     <para>
      Boot the Windows* 7 installation CD-ROM, and a <guimenu>Select driver to be
-     installed</guimenu> dialog box will be displayed:
+     installed</guimenu> dialog will be displayed:
     </para>
     <informalfigure pgwide="0">
      <mediaobject>
@@ -133,12 +133,15 @@
    </step>
    <step>
     <para>
-     On first boot, go to the directory which contains the VMDP driver (this should be a CD-ROM as defined in virt-manager). The <command>VMDP-xxx.exe</command> needs to be copied from the CD (ISO) onto the hard drive and expanded. Then double-click the
+     On first boot, go to the directory which contains the VMDP driver (this
+     should be a CD-ROM as defined in virt-manager). The
+     <command>VMDP-xxx.exe</command> needs to be copied from the CD (ISO) onto
+     the hard disk and expanded. Then double-click the
     <command>Setup.exe</command> program.</para>
    </step>
    <step>
     <para>
-     A popup window will appear, to confirm the action, click
+     A pop-up window will appear, to confirm the action, click
      <guimenu>Yes</guimenu>:
     </para>
     <informalfigure pgwide="0">

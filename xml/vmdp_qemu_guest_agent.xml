@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE article PUBLIC "-//Novell//DTD NovDoc XML V1.0//EN" "novdocx.dtd"
+<!DOCTYPE sect1 PUBLIC "-//Novell//DTD NovDoc XML V1.0//EN" "novdocx.dtd"
 [
   <!ENTITY % NOVDOC.DEACTIVATE.IDREF "INCLUDE">
   <!ENTITY % entities SYSTEM "entity-decl.ent">
@@ -7,7 +7,7 @@
 ]>
 
 
-<sect1 id="vmdp.qemu.guest.agent">
+<sect1 id="sec.vmdp.qemu.guest.agent">
  <title>QEMU Guest Agent</title>
  <para>This section explain what's <emphasis>qemu-ga</emphasis> and how to install it.</para>
  <sect2 id="vmdp.qemu.guest.agent.info">
@@ -32,7 +32,7 @@
   </para>
  </sect2>
  
- <sect2 id="vmdp.qemu.guest.agent.installation">
+ <sect2 id="sec.vmdp.qemu.guest.agent.installation">
   <title>Qemu guest agent installation</title>
   <para>
    Open a <guimenu>cmd.exe</guimenu> from the start menu.

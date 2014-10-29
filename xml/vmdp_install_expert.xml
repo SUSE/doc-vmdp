@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE article PUBLIC "-//Novell//DTD NovDoc XML V1.0//EN" "novdocx.dtd"
+<!DOCTYPE sect1 PUBLIC "-//Novell//DTD NovDoc XML V1.0//EN" "novdocx.dtd"
 [
   <!ENTITY % NOVDOC.DEACTIVATE.IDREF "INCLUDE">
   <!ENTITY % entities SYSTEM "entity-decl.ent">
@@ -83,8 +83,8 @@
    <listitem>
     <para>
      <option>/boot_vscsi</option>: will configure the Windows* VM to boot off a supplied SCSI
-     device. To use the <option>/boot_vscsi</option> option, the vm's config
-     file must contain a <emphasis>vscsi=</emphasis> line and a 
+     device. To use the <option>/boot_vscsi</option> option, the VM's
+     configuration file must contain a <emphasis>vscsi=</emphasis> line and a 
      <emphasis>disk = [phy:/...]</emphasis> line
     </para>
    </listitem>
@@ -107,7 +107,7 @@
   <itemizedlist>
    <listitem>
     <para>
-     <option>/w2k3, /w2k8, /win7, and /win8 </option>: are multually
+     <option>/w2k3, /w2k8, /win7, and /win8 </option>: are mutually
      exclusive. They allow the specified drivers to be installed in the running OS, if compatible.
      These parameters are for testing purposes only and are not supported
     </para>

@@ -18,11 +18,11 @@
   <title>VMDP</title>
   <para>
    &sle; Virtual Machine Driver Pack contains Windows* disk and
-   network device drivers, in order to enable the high-performance hosting of
+   network device drivers to enable the high-performance hosting of
    these unmodified guest operating systems on top of &sls;.
    Paravirtualized drivers for &sls; are available,
    but not included in this Driver Pack. Paravirtualized drivers for &sls; are distributed under an
-   open source license and included in both physical and electronic media of &sls;
+   open source license. They are included in both physical and electronic media of &sls;
    and corresponding Customer Center update channels.
   </para>
   <sect2 id="sec.vmdp.drivers.introduction">
@@ -45,7 +45,7 @@
    <para>
     The device drivers in &sle; Virtual Machine Driver Pack bring many of the
     performance advantages of paravirtualized operating systems to unmodified
-    operating systems because only the paravirtualized device driver (not the
+    operating systems: Only the paravirtualized device driver (not the
     rest of the operating system) is aware of the virtualization platform. For
     example, a paravirtualized disk device driver appears as a normal,
     physical disk to the operating system. However, the device driver
