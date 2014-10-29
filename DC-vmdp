@@ -10,8 +10,8 @@ MAIN="MAIN.VMDP.xml"
 #ROOTID=""
 
 ## Profiling
-#PROFOS=""
-#PROFARCH=""
+PROFOS="noprofile"
+PROFARCH="noprofile"
 
 REMARKS=1
 COMMENTS=0
