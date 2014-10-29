@@ -81,8 +81,7 @@
   <title>Xen to KVM Documentation</title>
   <para>For &sls; 11, see <ulink
   url="https://www.suse.com/documentation/sles11/singlehtml/art_sles_xen2kvmquick/art_sles_xen2kvmquick.html"/>.
-   For &sls; 12, refer to <xref
-    linkend="https://www.suse.com/documentation/sles-12/singlehtml/art_sles_xen2kvmquick/art_sles_xen2kvmquick.html"/>.
+   For &sls; 12, refer to <ulink url="https://www.suse.com/documentation/sles-12/singlehtml/art_sles_xen2kvmquick/art_sles_xen2kvmquick.html"/>.
   </para>
  </sect2>
 
