@@ -100,7 +100,7 @@
    </step>
    <step>
     <para>
-     Browse to the directory which contains the VMDP driver:
+     Browse to the directory that contains the VMDP driver:
     </para>
     <informalfigure pgwide="0">
      <mediaobject>
@@ -129,7 +129,7 @@
     </informalfigure>
    </step>
    <step>
-    <para>Finish the installation of the Windows* 7.</para>
+    <para>Finish the installation of Windows* 7.</para>
    </step>
    <step>
     <para>
