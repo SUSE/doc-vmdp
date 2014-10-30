@@ -13,9 +13,9 @@ MAIN="MAIN.VMDP.xml"
 PROFOS="noprofile"
 PROFARCH="noprofile"
 
-REMARKS=1
-COMMENTS=0
-DRAFT=yes
+#REMARKS=1
+#COMMENTS=0
+#DRAFT=yes
 
 ## Provo
 #HTMLROOT=""
