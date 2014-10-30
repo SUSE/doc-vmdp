@@ -115,7 +115,7 @@
 <!ENTITY nlda          "SLED">
 <!ENTITY nldreg        "SUSE&reg; Linux Enterprise Desktop">
 <!ENTITY productname   'Virtual Machine Drivers Pack'>
-<!ENTITY productnumber '12'>
+<!ENTITY productnumber '2.2'>
 <!ENTITY sdk           "SUSE Software Development Kit">
 <!ENTITY musicplayer   "Banshee">
 <!ENTITY musicplayerreg   "Banshee&trade;">
