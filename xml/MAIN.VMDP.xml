@@ -11,8 +11,9 @@
 <article id="article.vmdp.driver" lang="en">
  <?suse-quickstart color="suse"?>
  <title>Installation Guide</title>
+ <subtitle>&sle; &productname; &productnumber;</subtitle>
  <articleinfo>
-  <productname>&sle; &productname;</productname>
+  <productnumber>&productnumber;</productnumber><productname>&sle; &productname;</productname>
  <!-- <date>May 26, 2014</date>-->
  </articleinfo>
  
