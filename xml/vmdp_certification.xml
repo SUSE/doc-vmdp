@@ -9,13 +9,9 @@
 
 <sect1 id="sec.vmdp.certification">
  <title>VMDP Certification</title>
-     <remark>
-         aginies 2014-05-16: sec.vmdp.certification FIXME - :
-         We need to point the the VMDP2.2 when available.
-     </remark>
  <para>
      VMDP has been certified by Microsoft:
-     <ulink url="http://www.windowsservercatalog.com/item.aspx?idItem=26f4d846-5935-5244-8942-37cf8f6c1724"/>
+     <ulink url="http://www.windowsservercatalog.com/item.aspx?idItem=979ea66f-7f52-a04c-df5b-88ecc4dfa5b0&bCatID=1282"/>
  </para>
  
  <sect2 id="sec.vmdp.certification.whql">
