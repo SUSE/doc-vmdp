@@ -11,7 +11,7 @@
  <title>VMDP Certification</title>
  <para>
      VMDP has been certified by Microsoft:
-     <ulink url="http://www.windowsservercatalog.com/item.aspx?idItem=979ea66f-7f52-a04c-df5b-88ecc4dfa5b0&bCatID=1282"/>
+     <ulink url="http://www.windowsservercatalog.com/item.aspx?idItem=979ea66f-7f52-a04c-df5b-88ecc4dfa5b0&amp;bCatID=1282"/>
  </para>
  
  <sect2 id="sec.vmdp.certification.whql">
