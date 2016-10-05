@@ -1,19 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE sect1 PUBLIC "-//Novell//DTD NovDoc XML V1.0//EN" "novdocx.dtd"
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1
 [
-  <!ENTITY % NOVDOC.DEACTIVATE.IDREF "INCLUDE">
   <!ENTITY % entities SYSTEM "entity-decl.ent">
-  %entities;
+    %entities;
 ]>
-
-<sect1 id="sec.vmdp.step.virt-manager">
+<!-- Converted by suse-upgrade version 1.1 -->
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec.vmdp.step.virt-manager">
  <title>Step-by-Step Installation</title>
- <para>This section describes how to configure the Windows* VM under
- <guimenu>virt-manager</guimenu> and how to install the VMDP while installing
- Windows* 7. This example is an installation of a KVM host. Using the ISO is only valid on
- KVM hosts.
-</para>
- <sect2 id="sec.vmdp.step.virt-manager.win7" >
+
+ <para>
+  This section describes how to configure the Windows* VM under
+  <guimenu>virt-manager</guimenu> and how to install the VMDP while installing
+  Windows* 7. This example is an installation of a KVM host. Using the ISO is
+  only valid on KVM hosts.
+ </para>
+
+ <sect2 xml:id="sec.vmdp.step.virt-manager.win7">
   <title>Virt-manager for Windows* 7</title>
   <procedure>
    <step>
@@ -24,7 +26,7 @@
      <mediaobject>
       <imageobject role="fo">
        <imagedata fileref="virt-manager_network_virtio.png" width="56%" format="PNG"/>
-      </imageobject>                                     
+      </imageobject>
       <imageobject role="html">
        <imagedata fileref="virt-manager_network_virtio.png" width="56%" format="PNG"/>
       </imageobject>
@@ -61,9 +63,10 @@
      </mediaobject>
     </informalfigure>
    </step>
-   <step id="vmdp.qemu.guest.agent.channel">
+   <step xml:id="vmdp.qemu.guest.agent.channel">
     <para>
-     The Windows* VM Qemu-ga Channel device with Device parameters set to: <emphasis>org.qemu.guest_agent.0</emphasis>
+     The Windows* VM Qemu-ga Channel device with Device parameters set to:
+     <emphasis>org.qemu.guest_agent.0</emphasis>
     </para>
     <informalfigure pgwide="0">
      <mediaobject>
@@ -78,8 +81,8 @@
    </step>
   </procedure>
  </sect2>
- 
- <sect2 id="sec.vmdp.step.win7.install">
+
+ <sect2 xml:id="sec.vmdp.step.win7.install">
   <title>Windows* 7 Installation</title>
   <procedure>
    <step>
@@ -129,7 +132,9 @@
     </informalfigure>
    </step>
    <step>
-    <para>Finish the installation of Windows* 7.</para>
+    <para>
+     Finish the installation of Windows* 7.
+    </para>
    </step>
    <step>
     <para>
@@ -137,13 +142,15 @@
      should be a CD-ROM as defined in virt-manager). The
      <command>VMDP-xxx.exe</command> needs to be copied from the CD (ISO) onto
      the hard disk and expanded. Then double-click the
-    <command>Setup.exe</command> program.</para>
-    <para>A pop-up window will appear.</para> 
+     <command>Setup.exe</command> program.
+    </para>
+    <para>
+     A pop-up window will appear.
+    </para>
    </step>
    <step>
     <para>
-     To confirm the action, click
-     <guimenu>Yes</guimenu>:
+     To confirm the action, click <guimenu>Yes</guimenu>:
     </para>
     <informalfigure pgwide="0">
      <mediaobject>
@@ -219,6 +226,4 @@
    </step>
   </procedure>
  </sect2>
- 
 </sect1>
-

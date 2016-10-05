@@ -1,70 +1,100 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE sect1 PUBLIC "-//Novell//DTD NovDoc XML V1.0//EN" "novdocx.dtd"
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1
 [
-  <!ENTITY % NOVDOC.DEACTIVATE.IDREF "INCLUDE">
   <!ENTITY % entities SYSTEM "entity-decl.ent">
-  %entities;
+    %entities;
 ]>
-
-
-<sect1 id="sec.vmdp.setup.expert">
+<!-- Converted by suse-upgrade version 1.1 -->
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec.vmdp.setup.expert">
  <title>Advanced Installation Options</title>
+
  <para>
-  How to deal with VMDP <emphasis>install</emphasis> and <emphasis>uninstall</emphasis>.
+  How to deal with VMDP <emphasis>install</emphasis> and
+  <emphasis>uninstall</emphasis>.
  </para>
 
- <sect2 id="sec.vmdp.setup.expert.install">
+ <sect2 xml:id="sec.vmdp.setup.expert.install">
   <title>Expert iInstallation</title>
   <para>
-   To help with automated installations, <command>setup.exe</command> currently has the
-   following parameters:
+   To help with automated installations, <command>setup.exe</command> currently
+   has the following parameters:
   </para>
   <itemizedlist>
-   <listitem><para>/auto_reboot</para></listitem>
-   <listitem><para>/no_reboot</para></listitem>
-   <listitem><para>/eula_accepted</para></listitem>
-   <listitem><para>/force</para></listitem>
-   <listitem><para>/reset_net_params</para></listitem>
-   <listitem><para>/xen</para></listitem>
-   <listitem><para>/virtio</para></listitem>
+   <listitem>
+    <para>
+     /auto_reboot
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     /no_reboot
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     /eula_accepted
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     /force
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     /reset_net_params
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     /xen
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     /virtio
+    </para>
+   </listitem>
   </itemizedlist>
   <para>
    The default is to install the drivers for the hypervisor that the VM is
-   currently running on.  Howerver, the Xen and virtio drivers can be installed
+   currently running on. Howerver, the Xen and virtio drivers can be installed
    at the same time if both the <option>/xen</option> and
-   <option>/virtio</option>
-   parameters are given.
+   <option>/virtio</option> parameters are given.
   </para>
   <itemizedlist>
    <listitem>
     <para>
-     <option>/auto_reboot</option>: will cause the Windows* VM to automatically reboot after the setup has completed
+     <option>/auto_reboot</option>: will cause the Windows* VM to automatically
+     reboot after the setup has completed
     </para>
    </listitem>
    <listitem>
     <para>
-     <option>/no_reboot</option>: will prevent the reboot prompt from being displayed after the
-     setup has completed
+     <option>/no_reboot</option>: will prevent the reboot prompt from being
+     displayed after the setup has completed
     </para>
    </listitem>
    <listitem>
     <para>
-     <option>/eula_accepted</option>: implies that the EULA has been read, accepted, and agreed
-     to in all aspects.  Accepting the EULA in this manner will therefore prevent the
-     EULA acceptance dialog from being displayed during the setup process.
+     <option>/eula_accepted</option>: implies that the EULA has been read,
+     accepted, and agreed to in all aspects. Accepting the EULA in this manner
+     will therefore prevent the EULA acceptance dialog from being displayed
+     during the setup process.
     </para>
    </listitem>
    <listitem>
     <para>
-     <option>/force</option>: will force the installation of the drivers and overwrite any
-     previous drivers that may have been installed
+     <option>/force</option>: will force the installation of the drivers and
+     overwrite any previous drivers that may have been installed
     </para>
    </listitem>
    <listitem>
     <para>
-        <option>/reset_net_params</option>: will remove any net driver parameters that are still set
-     to the default values. This is useful in upgrades when a net driver's
-     parameter default changes. This will allow the new default to be used
+     <option>/reset_net_params</option>: will remove any net driver parameters
+     that are still set to the default values. This is useful in upgrades when
+     a net driver's parameter default changes. This will allow the new default
+     to be used
     </para>
    </listitem>
    <listitem>
@@ -77,29 +107,31 @@
      <option>/virtio</option>: will install the virtio drivers
     </para>
    </listitem>
-   </itemizedlist>
-   <para>Additional options when running on a Xen hypervisor are:</para>
-   <itemizedlist>
+  </itemizedlist>
+  <para>
+   Additional options when running on a Xen hypervisor are:
+  </para>
+  <itemizedlist>
    <listitem>
     <para>
-     <option>/boot_vscsi</option>: will configure the Windows* VM to boot off a supplied SCSI
-     device. To use the <option>/boot_vscsi</option> option, the VM's
-     configuration file must contain a <emphasis>vscsi=</emphasis> line and a 
-     <emphasis>disk = [phy:/...]</emphasis> line
+     <option>/boot_vscsi</option>: will configure the Windows* VM to boot off a
+     supplied SCSI device. To use the <option>/boot_vscsi</option> option, the
+     VM's configuration file must contain a <emphasis>vscsi=</emphasis> line
+     and a <emphasis>disk = [phy:/...]</emphasis> line
     </para>
    </listitem>
    <listitem>
     <para>
-     <option>/xvdisk</option>: tells xenblk to only control disks of type <emphasis>xvd</emphasis>
+     <option>/xvdisk</option>: tells xenblk to only control disks of type
+     <emphasis>xvd</emphasis>
     </para>
    </listitem>
    <listitem>
     <para>
-     <option>/netfront</option>: tells xennet to only control NICs of 
+     <option>/netfront</option>: tells xennet to only control NICs of
      <emphasis>type=netfront</emphasis>
     </para>
    </listitem>
-
   </itemizedlist>
   <para>
    Advanced parameters of the <command>Setup.exe</command> command:
@@ -107,15 +139,16 @@
   <itemizedlist>
    <listitem>
     <para>
-     <option>/w2k3, /w2k8, /win7, and /win8 </option>: are mutually
-     exclusive. They allow the specified drivers to be installed in the running
-     operating system, if compatible.
-     These parameters are for testing purposes only and are not supported
+     <option>/w2k3, /w2k8, /win7, and /win8 </option>: are mutually exclusive.
+     They allow the specified drivers to be installed in the running operating
+     system, if compatible. These parameters are for testing purposes only and
+     are not supported
     </para>
    </listitem>
   </itemizedlist>
  </sect2>
- <sect2 id="sec.vmdp.setup.expert.uninstall">
+
+ <sect2 xml:id="sec.vmdp.setup.expert.uninstall">
   <title>Uninstall Expert Mode</title>
   <para>
    <emphasis>Uninstall</emphasis> has some parameters:
@@ -123,8 +156,8 @@
   <itemizedlist>
    <listitem>
     <para>
-     <option>/auto_reboot</option>: will cause the Windows* VM to
-     automatically reboot at the completion of the uninstall
+     <option>/auto_reboot</option>: will cause the Windows* VM to automatically
+     reboot at the completion of the uninstall
     </para>
    </listitem>
    <listitem>
@@ -139,6 +172,4 @@
    </listitem>
   </itemizedlist>
  </sect2>
- 
-
 </sect1>

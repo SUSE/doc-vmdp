@@ -1,36 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE sect1 PUBLIC "-//Novell//DTD NovDoc XML V1.0//EN" "novdocx.dtd"
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1
 [
-  <!ENTITY % NOVDOC.DEACTIVATE.IDREF "INCLUDE">
   <!ENTITY % entities SYSTEM "entity-decl.ent">
-  %entities;
+    %entities;
 ]>
-
-
-<sect1 id="sec.vmdp.certification">
+<!-- Converted by suse-upgrade version 1.1 -->
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec.vmdp.certification">
  <title>VMDP Certification</title>
+
  <para>
-     VMDP has been certified by Microsoft:
-     <ulink url="http://www.windowsservercatalog.com/item.aspx?idItem=979ea66f-7f52-a04c-df5b-88ecc4dfa5b0&amp;bCatID=1282"/>
+  VMDP has been certified by Microsoft:
+  <link xlink:href="http://www.windowsservercatalog.com/item.aspx?idItem=979ea66f-7f52-a04c-df5b-88ecc4dfa5b0&amp;bCatID=1282"/>
  </para>
- 
- <sect2 id="sec.vmdp.certification.whql">
+
+ <sect2 xml:id="sec.vmdp.certification.whql">
   <title>WHQL</title>
   <para>
-      VMDP has passed WHQL certification.
-      See <ulink url="http://msdn.microsoft.com/en-us/windows/hardware/gg463010.aspx"/>
-      for more information.
+   VMDP has passed WHQL certification. See
+   <link xlink:href="http://msdn.microsoft.com/en-us/windows/hardware/gg463010.aspx"/>
+   for more information.
   </para>
  </sect2>
- 
- <sect2 id="sec.vmdp.certification.svvp">
+
+ <sect2 xml:id="sec.vmdp.certification.svvp">
   <title>SVVP</title>
   <para>
-      The SVVP program has validated our VMDP paravirtualized drivers. Thus, Microsoft
-      customers running copies of Windows* Server they have acquired and licensed from
-      Microsoft directly can receive technical support for Windows* Server in virtualized
-      environments.
-      See <ulink url="http://www.windowsservercatalog.com/svvp.aspx"/> for more information.
+   The SVVP program has validated our VMDP paravirtualized drivers. Thus,
+   Microsoft customers running copies of Windows* Server they have acquired and
+   licensed from Microsoft directly can receive technical support for Windows*
+   Server in virtualized environments. See
+   <link xlink:href="http://www.windowsservercatalog.com/svvp.aspx"/> for more
+   information.
   </para>
  </sect2>
 </sect1>

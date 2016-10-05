@@ -1,48 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE sect1 PUBLIC "-//Novell//DTD NovDoc XML V1.0//EN" "novdocx.dtd"
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1
 [
-  <!ENTITY % NOVDOC.DEACTIVATE.IDREF "INCLUDE">
   <!ENTITY % entities SYSTEM "entity-decl.ent">
-  %entities;
+    %entities;
 ]>
-
-
-<sect1 id="sec.vmdp.qemu.guest.agent">
+<!-- Converted by suse-upgrade version 1.1 -->
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec.vmdp.qemu.guest.agent">
  <title>QEMU Guest Agent</title>
- <para>This section explain what <emphasis>qemu-ga</emphasis> is and how to install it.</para>
- <sect2 id="vmdp.qemu.guest.agent.info">
+
+ <para>
+  This section explain what <emphasis>qemu-ga</emphasis> is and how to install
+  it.
+ </para>
+
+ <sect2 xml:id="vmdp.qemu.guest.agent.info">
   <title>Qemu guest agent</title>
   <para>
    VMDP setup allows for the installation of the qemu guest agent service for
-   Windows* when invoked with the <command>/qemu-ga</command> command line parameter. The qemu
-   guest agent requires the VM to be equipped with the qemu guest agent
-   channel (see <xref linkend="vmdp.qemu.guest.agent.channel" xrefstyle="SectTitleOnPage"/>). Without the <emphasis>qemu guest agent channel</emphasis>,
-   the qemu guest agent can install but will not load. Trying to load without
-   the channel results in errors in the event log.
+   Windows* when invoked with the <command>/qemu-ga</command> command line
+   parameter. The qemu guest agent requires the VM to be equipped with the qemu
+   guest agent channel (see
+   <xref linkend="vmdp.qemu.guest.agent.channel" xrefstyle="SectTitleOnPage"/>).
+   Without the <emphasis>qemu guest agent channel</emphasis>, the qemu guest
+   agent can install but will not load. Trying to load without the channel
+   results in errors in the event log.
   </para>
   <para>
    The qemu guest agent is built in the <emphasis>mingw</emphasis> environment
-   on a Linux system with no modifications to the guest agent source code.
-   The guest agent and supporting DLLs remain under their respective GPL licenses.
+   on a Linux system with no modifications to the guest agent source code. The
+   guest agent and supporting DLLs remain under their respective GPL licenses.
   </para>
   <para>
-   Currently many of the features of the guest agent supported in Linux VMs have
-   not yet been implemented for Windows*. Therefore the usage of guest agent in
-   Windows* is somewhat limited at present.
+   Currently many of the features of the guest agent supported in Linux VMs
+   have not yet been implemented for Windows*. Therefore the usage of guest
+   agent in Windows* is somewhat limited at present.
   </para>
  </sect2>
- 
- <sect2 id="sec.vmdp.qemu.guest.agent.installation">
+
+ <sect2 xml:id="sec.vmdp.qemu.guest.agent.installation">
   <title>Qemu Guest Agent Installation</title>
   <para>
-   Open a <guimenu>cmd.exe</guimenu> from the start menu.
-   Go to the path that contains the <filename>qemu-ga</filename> directory.
-   View the help with the command <command>qemu-ga.exe</command> <option>--help</option>.
-   To install the service use:
+   Open a <guimenu>cmd.exe</guimenu> from the start menu. Go to the path that
+   contains the <filename>qemu-ga</filename> directory. View the help with the
+   command <command>qemu-ga.exe</command> <option>--help</option>. To install
+   the service use:
   </para>
-  <screen>qemu-ga.exe --service install</screen>
-  <para>To start the service you can use the Windows* Service Administrative tools, or the command line:</para>
-  <screen>net start qemu-ga.exe</screen>
+<screen>qemu-ga.exe --service install</screen>
+  <para>
+   To start the service you can use the Windows* Service Administrative tools,
+   or the command line:
+  </para>
+<screen>net start qemu-ga.exe</screen>
   <informalfigure pgwide="0">
    <mediaobject>
     <imageobject role="fo">

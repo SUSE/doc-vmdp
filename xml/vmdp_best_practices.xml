@@ -1,80 +1,85 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE sect1 PUBLIC "-//Novell//DTD NovDoc XML V1.0//EN" "novdocx.dtd"
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1
 [
-  <!ENTITY % NOVDOC.DEACTIVATE.IDREF "INCLUDE">
   <!ENTITY % entities SYSTEM "entity-decl.ent">
-  %entities;
+    %entities;
 ]>
-
-<sect1 id="sec.vmdp.best"> 
+<!-- Converted by suse-upgrade version 1.1 -->
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec.vmdp.best">
  <title>Best Practices</title>
- <para>This section describes best practices, usage and potential problems using VMDP.</para>
+
  <para>
+  This section describes best practices, usage and potential problems using
+  VMDP.
  </para>
- <sect2 id="sec.vmdp.driver.winwizard.vmdp.problems">
+
+ <para></para>
+
+ <sect2 xml:id="sec.vmdp.driver.winwizard.vmdp.problems">
   <title>Avoiding Problems with the Drivers</title>
-  <para> 
-   To avoid problems and potential failure of the device drivers in the 
-   driver pack, you should avoid the following actions: 
+  <para>
+   To avoid problems and potential failure of the device drivers in the driver
+   pack, you should avoid the following actions:
   </para>
   <itemizedlist>
    <listitem>
     <para>
-     Using the Device Manager to manage (update, disable, uninstall, etc.)
-     the device drivers in the driver pack. 
-    </para>
-   </listitem>
-   <listitem>
-    <para> 
-     Deleting driver files manually. Always use the uninstall utility (see 
-     <xref linkend="sec.vmdp.driver.uninstall" xrefstyle="SectTitleOnPage"/>). 
-    </para>
-   </listitem>
-   <listitem>
-    <para> 
-     Uninstalling the driver pack with the installation CD attached to the
-     virtual machine. 
-    </para>
-   </listitem>
-   <listitem>
-    <para> 
-     Canceling the installation when you see a security alert that indicates
-     that the bus driver has not been properly signed. Click
-     <guimenu>Yes</guimenu> to continue the installation. 
-    </para>
-   </listitem>
-   <listitem>
-    <para>                                                                                              
-     Upgrading the Linux<superscript>*</superscript> kernel of the virtual 
-     machine host without upgrading the driver pack at the same time. 
+     Using the Device Manager to manage (update, disable, uninstall, etc.) the
+     device drivers in the driver pack.
     </para>
    </listitem>
    <listitem>
     <para>
-     Installing or uninstalling the driver pack by any other process than
-     what is documented in this guide (see 
-     <xref linkend="sec.vmdp.driver.uninstall" xrefstyle="SectTitleOnPage"/> 
-     and 
-     <xref linkend="sec.vmdp.driver.uninstall" xrefstyle="SectTitleOnPage"/>). 
+     Deleting driver files manually. Always use the uninstall utility (see
+     <xref linkend="sec.vmdp.driver.uninstall" xrefstyle="SectTitleOnPage"/>).
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Uninstalling the driver pack with the installation CD attached to the
+     virtual machine.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Canceling the installation when you see a security alert that indicates
+     that the bus driver has not been properly signed. Click
+     <guimenu>Yes</guimenu> to continue the installation.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Upgrading the Linux<superscript>*</superscript> kernel of the virtual
+     machine host without upgrading the driver pack at the same time.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Installing or uninstalling the driver pack by any other process than what
+     is documented in this guide (see
+     <xref linkend="sec.vmdp.driver.uninstall" xrefstyle="SectTitleOnPage"/>
+     and
+     <xref linkend="sec.vmdp.driver.uninstall" xrefstyle="SectTitleOnPage"/>).
     </para>
    </listitem>
   </itemizedlist>
  </sect2>
- <sect2 id="sec.vmdp.best.before">
+
+ <sect2 xml:id="sec.vmdp.best.before">
   <title>Before the Installation</title>
-  <para> 
-   Before installing &sle; Virtual Machine Driver Pack in your production 
-   environment, we strongly recommend that you run it in a test environment
-   to ensure that it functions properly with your system. 
+  <para>
+   Before installing &sle; Virtual Machine Driver Pack in your production
+   environment, we strongly recommend that you run it in a test environment to
+   ensure that it functions properly with your system.
   </para>
  </sect2>
- <sect2 id="sec.vmdp.best.network">
+
+ <sect2 xml:id="sec.vmdp.best.network">
   <title>Network Configuration</title>
-  <para> 
-   Do not give the server a fixed IP address before installing the driver 
-   pack, otherwise you need to switch to a different intermediate IP address 
-   before finishing the installation. 
+  <para>
+   Do not give the server a fixed IP address before installing the driver pack,
+   otherwise you need to switch to a different intermediate IP address before
+   finishing the installation.
   </para>
  </sect2>
- 
 </sect1>

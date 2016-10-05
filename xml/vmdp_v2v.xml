@@ -1,29 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE sect1 PUBLIC "-//Novell//DTD NovDoc XML V1.0//EN" "novdocx.dtd"
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1
 [
-  <!ENTITY % NOVDOC.DEACTIVATE.IDREF "INCLUDE">
   <!ENTITY % entities SYSTEM "entity-decl.ent">
-  %entities;
+    %entities;
 ]>
-
-
-<sect1 id="sec.vmdp.v2v.intro">
+<!-- Converted by suse-upgrade version 1.1 -->
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec.vmdp.v2v.intro">
  <title>VMDP and <emphasis>v2v</emphasis> Support</title>
+
  <para>
-  The <emphasis>virt-v2v</emphasis> utility provides an easy way to convert virtual machines
-  from one hypervisor format to another (for example, from Xen to KVM). In the
-  case of Windows* guests running under Xen, this conversion process
-  includes support for the automatic deployment of the VMDP.
+  The <emphasis>virt-v2v</emphasis> utility provides an easy way to convert
+  virtual machines from one hypervisor format to another (for example, from Xen
+  to KVM). In the case of Windows* guests running under Xen, this conversion
+  process includes support for the automatic deployment of the VMDP.
  </para>
- 
- <sect2 id="sec.vmdp.v2v.package">
+
+ <sect2 xml:id="sec.vmdp.v2v.package">
   <title>VMDP RPM Package</title>
   <para>
-   The <systemitem class="resource">virt-v2v-vmdp</systemitem> RPM is a 
-   repackaging of the Windows* VMDP drivers into a
-   directory structure usable by the virt-v2v utility. After being installed on a KVM
-   host, any Windows* guests migrated to that host using the virt-v2v process
-   can have the VMDP drivers automatically installed.
+   The <systemitem class="resource">virt-v2v-vmdp</systemitem> RPM is a
+   repackaging of the Windows* VMDP drivers into a directory structure usable
+   by the virt-v2v utility. After being installed on a KVM host, any Windows*
+   guests migrated to that host using the virt-v2v process can have the VMDP
+   drivers automatically installed.
   </para>
   <para>
    By default, virt-v2v will first check for the existence of the VMDP on the
@@ -34,8 +33,8 @@
    Xen specific drivers with virtio drivers for use with KVM.
   </para>
  </sect2>
- 
- <sect2 id="sec.vmdp.v2v.installation">
+
+ <sect2 xml:id="sec.vmdp.v2v.installation">
   <title>v2v --vmdp Parameter</title>
   <para>
    Installation of the VMDP can be manually influenced during virt-v2v
@@ -43,14 +42,22 @@
   </para>
   <itemizedlist>
    <listitem>
-   <para><option>--vmdp=auto</option>: only install the VMDP if already
-   installed on source image</para>
+    <para>
+     <option>--vmdp=auto</option>: only install the VMDP if already installed
+     on source image
+    </para>
    </listitem>
    <listitem>
-   <para><option>--vmdp=always</option>: always install the VMDP during
-   Windows* guest conversions</para></listitem>
+    <para>
+     <option>--vmdp=always</option>: always install the VMDP during Windows*
+     guest conversions
+    </para>
+   </listitem>
    <listitem>
-   <para><option>--vmdp=never</option>: never install the VMDP</para></listitem>
+    <para>
+     <option>--vmdp=never</option>: never install the VMDP
+    </para>
+   </listitem>
   </itemizedlist>
   <para>
    In addition to installing the drivers included with the virt-v2v-vmdp RPM,
@@ -59,30 +66,31 @@
    perform this, the VMDP setup program will be automatically ran upon first
    login. This will ensure the install/uninstall program is registered with
    Windows* and any residual Xen drivers are correctly uninstalled. To allow
-   for this capability, the VMDP setup program (<command>VMDP-WIN-2.2.exe</command>) must be
-   copied to <filename>/var/lib/virt-v2v/software/windows</filename> on the virt-v2v host. After
-   copying the executable in place, ensure the setup executable name is
-   correctly specified in <filename>/var/lib/virt-v2v/virt-v2v.db</filename>
-   as follows:
+   for this capability, the VMDP setup program
+   (<command>VMDP-WIN-2.2.exe</command>) must be copied to
+   <filename>/var/lib/virt-v2v/software/windows</filename> on the virt-v2v
+   host. After copying the executable in place, ensure the setup executable
+   name is correctly specified in
+   <filename>/var/lib/virt-v2v/virt-v2v.db</filename> as follows:
   </para>
-  <screen>
-   <![CDATA[<!-- SUSE Virtual Machine Driver Pack (VMDP) setup program -->
-   <app os='windows' name='vmdp'>
-     <path>windows/VMDP-WIN-2.2.exe</path>
-   </app>]]></screen>
-  
-   <para>
-       The <filename>virt-v2v-vmdp</filename> RPM is available in the same download location as the VMDP setup
-    program.
-   </para>
- </sect2>
- 
- <sect2 id="sec.vmdp.v2v.official.doc">
-  <title>Xen to KVM Documentation</title>
-  <para>For &sls; 11, see <ulink
-  url="https://www.suse.com/documentation/sles11/singlehtml/art_sles_xen2kvmquick/art_sles_xen2kvmquick.html"/>.
-   For &sls; 12, refer to <ulink url="https://www.suse.com/documentation/sles-12/singlehtml/art_sles_xen2kvmquick/art_sles_xen2kvmquick.html"/>.
+<screen>
+   &lt;!-- SUSE Virtual Machine Driver Pack (VMDP) setup program --&gt;
+   &lt;app os='windows' name='vmdp'&gt;
+     &lt;path&gt;windows/VMDP-WIN-2.2.exe&lt;/path&gt;
+   &lt;/app&gt;</screen>
+  <para>
+   The <filename>virt-v2v-vmdp</filename> RPM is available in the same download
+   location as the VMDP setup program.
   </para>
  </sect2>
 
+ <sect2 xml:id="sec.vmdp.v2v.official.doc">
+  <title>Xen to KVM Documentation</title>
+  <para>
+   For &sls; 11, see
+   <link xlink:href="https://www.suse.com/documentation/sles11/singlehtml/art_sles_xen2kvmquick/art_sles_xen2kvmquick.html"/>.
+   For &sls; 12, refer to
+   <link xlink:href="https://www.suse.com/documentation/sles-12/singlehtml/art_sles_xen2kvmquick/art_sles_xen2kvmquick.html"/>.
+  </para>
+ </sect2>
 </sect1>

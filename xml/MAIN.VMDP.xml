@@ -1,100 +1,88 @@
-<?xml version="1.0"?>
-<?xml-stylesheet href="urn:x-suse:xslt:profiling:novdoc-profile.xsl" type="text/xml" title="Profiling step"?>
-
-<!DOCTYPE article PUBLIC "-//Novell//DTD NovDoc XML V1.0//EN" "novdocx.dtd"
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
 [
-  <!ENTITY % NOVDOC.DEACTIVATE.IDREF "INCLUDE">
   <!ENTITY % entities SYSTEM "entity-decl.ent">
-  %entities;
+    %entities;
 ]>
-
-<article id="article.vmdp.driver" lang="en">
- <?suse-quickstart color="suse"?>
+<!-- Converted by suse-upgrade version 1.1 -->
+<?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook50-profile.xsl" type="text/xml" title="Profiling step"?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="article.vmdp.driver" xml:lang="en">
+<?suse-quickstart color="suse"?>
  <title>Installation Guide</title>
  <subtitle>&sle; &productname; &productnumber;</subtitle>
- <articleinfo>
+ <info>
   <productnumber>&productnumber;</productnumber><productname>&sle; &productname;</productname>
- <!-- <date>May 26, 2014</date>-->
- </articleinfo>
- 
- <sect1 id="sec.vmdp.drivers.vdmp">
+ </info>
+ <sect1 xml:id="sec.vmdp.drivers.vdmp">
   <title>VMDP</title>
+
   <para>
-   &sle; Virtual Machine Driver Pack contains Windows* disk and
-   network device drivers to enable the high-performance hosting of
-   these unmodified guest operating systems on top of &sls;.
-   Paravirtualized drivers for &sls; are available,
-   but not included in this Driver Pack. Paravirtualized drivers for &sls; are distributed under an
-   open source license. They are included in both physical and electronic media of &sls;
+   &sle; Virtual Machine Driver Pack contains Windows* disk and network
+   device drivers to enable the high-performance hosting of these unmodified
+   guest operating systems on top of &sls;. Paravirtualized drivers for
+   &sls; are available, but not included in this Driver Pack.
+   Paravirtualized drivers for &sls; are distributed under an open source
+   license. They are included in both physical and electronic media of &sls;
    and corresponding Customer Center update channels.
   </para>
-  <sect2 id="sec.vmdp.drivers.introduction">
+
+  <sect2 xml:id="sec.vmdp.drivers.introduction">
    <title>Introduction</title>
    <para>
     Virtualization allows the consolidation of Linux workloads on newer, more
-    powerful, energy-efficient hardware. Paravirtualized operating systems
-    such as &sls; are aware of the underlying virtualization platform, and can
+    powerful, energy-efficient hardware. Paravirtualized operating systems such
+    as &sls; are aware of the underlying virtualization platform, and can
     therefore interact efficiently with it. Unmodified operating systems are
-    unaware of the virtualization platform and expect to interact directly
-    with the hardware. Because this is not possible when consolidating
-    servers, the hardware must be emulated for the operating system. Emulation
-    can be slow, but it is especially troubling for high-throughput disk and
-    network subsystems. Most performance loss occurs in this area.
+    unaware of the virtualization platform and expect to interact directly with
+    the hardware. Because this is not possible when consolidating servers, the
+    hardware must be emulated for the operating system. Emulation can be slow,
+    but it is especially troubling for high-throughput disk and network
+    subsystems. Most performance loss occurs in this area.
    </para>
   </sect2>
-  
-  <sect2 id="sec.vmdp.drivers.performance">
+
+  <sect2 xml:id="sec.vmdp.drivers.performance">
    <title>Bringing Performance</title>
    <para>
-    The device drivers in &sle; Virtual Machine Driver Pack bring many of the
-    performance advantages of paravirtualized operating systems to unmodified
-    operating systems: Only the paravirtualized device driver (not the
-    rest of the operating system) is aware of the virtualization platform. For
-    example, a paravirtualized disk device driver appears as a normal,
-    physical disk to the operating system. However, the device driver
-    interacts directly with the virtualization platform (with no emulation) to
-    efficiently deliver disk access, allowing the disk subsystems
-    to operate at near native speeds in a virtualized environment, without
-    requiring changes to existing operating systems.
+    The device drivers in &sle; Virtual Machine Driver Pack bring many of
+    the performance advantages of paravirtualized operating systems to
+    unmodified operating systems: Only the paravirtualized device driver (not
+    the rest of the operating system) is aware of the virtualization platform.
+    For example, a paravirtualized disk device driver appears as a normal,
+    physical disk to the operating system. However, the device driver interacts
+    directly with the virtualization platform (with no emulation) to
+    efficiently deliver disk access, allowing the disk subsystems to operate at
+    near native speeds in a virtualized environment, without requiring changes
+    to existing operating systems.
    </para>
   </sect2>
-  
-  <sect2 id="sec.vmdp.drivers.subscription">
+
+  <sect2 xml:id="sec.vmdp.drivers.subscription">
    <title>Support Subscription</title>
    <para>
     The customer support you receive for the &sle; Virtual Machine Driver
     Pack is at the same level as your
-    <ulink url="https://www.suse.com/support/programs/subscriptions/">SUSE Linux
-    Enterprise support subscription</ulink>.
+    <link xlink:href="https://www.suse.com/support/programs/subscriptions/">SUSE
+    Linux Enterprise support subscription</link>.
    </para>
   </sect2>
  </sect1>
- 
- <!--VMDP certification -->
- <xi:include href="vmdp_certification.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
- <!--VMDP installation -->
- <xi:include href="vmdp_install.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
- <!-- VMDP QEMU Guest Agent -->
- <xi:include href="vmdp_qemu_guest_agent.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
- <!-- VMDP and v2v -->
- <xi:include href="vmdp_v2v.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
- 
- <!-- VMDP best practices -->
- <xi:include href="vmdp_best_practices.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
- <!-- VMDP expert installation mode -->
-  <xi:include href="vmdp_install_expert.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
- <!-- Step by step with Windows 7 -->    
- <xi:include href="vmdp_step_by_step.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
- <!-- Legal Stuff -->
- <xi:include href="common_copyright_sle.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
- 
+<!--VMDP certification -->
+ <xi:include href="vmdp_certification.xml"/>
+<!--VMDP installation -->
+ <xi:include href="vmdp_install.xml"/>
+<!-- VMDP QEMU Guest Agent -->
+ <xi:include href="vmdp_qemu_guest_agent.xml"/>
+<!-- VMDP and v2v -->
+ <xi:include href="vmdp_v2v.xml"/>
+<!-- VMDP best practices -->
+ <xi:include href="vmdp_best_practices.xml"/>
+<!-- VMDP expert installation mode -->
+ <xi:include href="vmdp_install_expert.xml"/>
+<!-- Step by step with Windows 7 -->
+ <xi:include href="vmdp_step_by_step.xml"/>
+<!-- Legal Stuff -->
+ <xi:include href="common_copyright_sle.xml"/>
 <!-- Documentation License -->
- <xi:include href="common_gfdl1.2_i.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+ <xi:include href="common_gfdl1.2_i.xml"/>
 </article>
