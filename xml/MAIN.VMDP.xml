@@ -66,6 +66,29 @@
     Linux Enterprise support subscription</link>.
    </para>
   </sect2>
+  <sect2 xml:id="sec.vmdp.drivers.whatsnew">
+    <title>What's New in 2.5</title>
+    <para>
+      The key update in version 2.5 are:
+    </para>
+    <itemizedlist>
+      <listitem>
+	<para>Support for SUSE Linux Enterprise Server 12 SP3 and 15GA</para>
+      </listitem>
+      <listitem>
+	<para>copy/paste interaction between Virtual Machine and host</para>
+      </listitem>
+      <listitem>
+	<para>Native support of 10gbis NIC</para>
+      </listitem>
+      <listitem>
+	<para>RNG device support (random device)</para>
+      </listitem>
+      <listitem>
+	<para>Numerous bug fixes and enhancements</para>
+      </listitem>
+    </itemizedlist>
+  </sect2>
  </sect1>
 <!--VMDP certification -->
  <xi:include href="vmdp_certification.xml"/>
