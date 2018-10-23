@@ -67,7 +67,7 @@
    login. This will ensure the install/uninstall program is registered with
    Windows* and any residual Xen drivers are correctly uninstalled. To allow
    for this capability, the VMDP setup program
-   (<command>VMDP-WIN-2.2.exe</command>) must be copied to
+   (<command>VMDP-WIN-2.5.exe</command>) must be copied to
    <filename>/var/lib/virt-v2v/software/windows</filename> on the virt-v2v
    host. After copying the executable in place, ensure the setup executable
    name is correctly specified in
@@ -76,7 +76,7 @@
 <screen>
    &lt;!-- SUSE Virtual Machine Driver Pack (VMDP) setup program --&gt;
    &lt;app os='windows' name='vmdp'&gt;
-     &lt;path&gt;windows/VMDP-WIN-2.2.exe&lt;/path&gt;
+     &lt;path&gt;windows/VMDP-WIN-2.5.exe&lt;/path&gt;
    &lt;/app&gt;</screen>
   <para>
    The <filename>virt-v2v-vmdp</filename> RPM is available in the same download
