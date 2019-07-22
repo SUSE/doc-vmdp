@@ -4,7 +4,6 @@
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<!-- Converted by suse-upgrade version 1.1 -->
 <sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec.vmdp.step.virt-manager">
  <title>Step-by-Step Installation</title>
 
@@ -35,7 +34,7 @@
    </step>
    <step>
     <para>
-     The VMDP <emphasis>iso</emphasis> Virtual CD-ROM:
+     The &vmdpa; Virtual CD-ROM ISO:
     </para>
     <informalfigure pgwide="0">
      <mediaobject>
@@ -103,7 +102,7 @@
    </step>
    <step>
     <para>
-     Browse to the directory that contains the VMDP driver:
+     Browse to the directory that contains the &vmdpa; driver:
     </para>
     <informalfigure pgwide="0">
      <mediaobject>
@@ -138,7 +137,7 @@
    </step>
    <step>
     <para>
-     On first boot, go to the directory which contains the VMDP driver (this
+     On first boot, go to the directory which contains the &vmdpa; driver (this
      should be a CD-ROM as defined in virt-manager). The
      <command>VMDP-xxx.exe</command> needs to be copied from the CD (ISO) onto
      the hard disk and expanded. Then double-click the

@@ -4,12 +4,11 @@
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<!-- Converted by suse-upgrade version 1.1 -->
 <sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec.vmdp.driver.installation">
  <title>General Installation</title>
 
  <para>
-  The &sle; Virtual Machine Driver Pack is available for download as one
+  The &productname; is available for download as one
   binary file: a Windows self-extracting zip file (<emphasis>.exe</emphasis>
   extension). There is also a virtual floppy disk (<emphasis>.vfd</emphasis>
   extension) for Windows* 2003 and an ISO image (<emphasis>.iso</emphasis>) for
@@ -99,12 +98,12 @@
  <sect2 xml:id="sec.vmdp.driver.install.instruction">
   <title>Installation Instructions for <literal>.vfd</literal> and <literal>.iso</literal></title>
   <para>
-   A Windows* VM may attach the VMDP <emphasis>vfd</emphasis> or
+   A Windows* VM may attach the &vmdpa; <emphasis>vfd</emphasis> or
    <emphasis>iso</emphasis>. The <emphasis>vfd</emphasis> is targeted for
    Windows* 2003 VMs running on KVM. It contains VirtIO disk drivers and a
    self-extracting <filename>*.exe</filename> file that contain all the VirtIO
    drivers for only Windows* 2003. The ISO contains VirtIO disk drivers for
-   Windows* 2008 and newer. It also contains the full VMDP
+   Windows* 2008 and newer. It also contains the full &vmdpa;
    <filename>*.exe</filename> file that contains all the VirtIO and Xen drivers
    for all supported Windows* platforms.
   </para>
@@ -183,12 +182,12 @@
  <sect2 xml:id="sec.vmdp.driver.xen.instructions">
   <title>Additional Xen Setup Instructions</title>
   <para>
-   Setup and the <option>/boot_vscsi</option> option: The Xen VMDP SCSI driver
+   Setup and the <option>/boot_vscsi</option> option: The Xen &vmdpa; SCSI driver
    is capable of controlling a physical SCSI disk such as
-   <filename>/dev/sdb</filename>. To run the VMDP SCSI driver on the boot disk,
+   <filename>/dev/sdb</filename>. To run the &vmdpa; SCSI driver on the boot disk,
    use setup <option>/boot_vscsi</option>. If the <option>/boot_vscsi</option>
    option is not used with setup, <command>pvctrlw.exe</command> can be used
-   later to indicate that the VMDP SCSI driver should control the boot disk.
+   later to indicate that the &vmdpa; SCSI driver should control the boot disk.
    Before using the <option>/boot_vscsi</option> option or
    <command>pvctrlw.exe</command>, the VM's configuration file must already
    contain the necessary SCSI information for the boot disk: the disk line
@@ -196,7 +195,7 @@
    <emphasis>disk=['phy:/dev/sdb,...']</emphasis> and there must be a
    <emphasis>vscsi= </emphasis>line that corresponds to the physical disk. SCSI
    devices and disks, other than the boot disk, that are to be controlled by
-   the VMDP SCSI driver are not placed in the <emphasis>disk=</emphasis> line
+   the &vmdpa; SCSI driver are not placed in the <emphasis>disk=</emphasis> line
    but are only referenced in the <emphasis>vscsi=</emphasis> line.
   </para>
  </sect2>
@@ -204,10 +203,10 @@
  <sect2 xml:id="sec.vmdp.driver.uninstall">
   <title>Uninstalling the Driver Pack</title>
   <para>
-   To uninstall the &sle; Virtual Machine Driver Pack, execute the
+   To uninstall the &productname;, execute the
    <command>uninstall.exe</command> from the <filename>\Program
    Files\vmdp</filename> folder. <command>Uninstall.exe</command> will
-   uninstall the &sle; Virtual Machine Driver Pack and remove the associated
+   uninstall the &productname; and remove the associated
    files for the hypervisor that the VM is currently running on. The
    <option>/virtio</option> and <option>/xen</option> parameters forces the
    uninstall of those drivers reqardless of the running hypervisor. When
@@ -283,7 +282,7 @@
   <title>Known Issues</title>
   <para>
    For information on known issues for this release, see the README file within
-   the archive, or consult the &sle; Virtual Machine Driver Pack Guides.
+   the archive, or consult the &productname; guides.
   </para>
  </sect2>
 </sect1>

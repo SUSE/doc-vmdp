@@ -37,63 +37,21 @@
 <!ENTITY rootuser       '<systemitem class="username">root</systemitem>'>
 
 <!ENTITY grub           "GRUB">
-<!ENTITY lilo           "LILO">
-<!ENTITY sax            "SaX">
-<!ENTITY saxii          "SaX2">
-<!ENTITY suse           "SUSE">
-<!ENTITY suseconfig     "SuSEconfig">
 <!ENTITY suselinux      "&suse; Linux">
 <!ENTITY xfree          "X.Org">
 <!ENTITY xvendor        "X.Org">
 <!ENTITY yast           "YaST">
 <!ENTITY ay             "AutoYaST">
 <!ENTITY nm             "NetworkManager">
-<!ENTITY fspot          "f-spot">
-<!ENTITY digikam        "digiKam">
-<!ENTITY yelp           "Yelp">
-<!ENTITY khc            "KDE help center">
-<!ENTITY umtsmon        "UMTSmon">
-<!ENTITY ooo        "OpenOffice.org">
-
-<!-- ============================================================= -->
-<!--                    Books                                      -->
-<!-- ============================================================= -->
-<!ENTITY inst           "<emphasis>Start-Up Guide</emphasis>">
-<!ENTITY prep           "<emphasis>Architecture-Specific Information</emphasis>">
-<!ENTITY sleddepl       "<emphasis>Deployment Guide</emphasis>"> 
-<!ENTITY kdeuser        "<emphasis>KDE User Guide</emphasis>">
-<!ENTITY gnuser         "<emphasis>GNOME User Guide</emphasis>">
-<!ENTITY instqs         "<emphasis>Installation Quick Start</emphasis>">
-<!ENTITY gnqs           "<emphasis>GNOME Quick Start</emphasis>">
-<!ENTITY kdeqs          "<emphasis>KDE Quick Start</emphasis>">
-<!ENTITY appl          "<emphasis>Application Guide</emphasis>">
-<!ENTITY slsadguide     "<emphasis>Installation and Administration</emphasis>">
-<!ENTITY adguide        "<emphasis>Reference</emphasis>">
-<!ENTITY userguide     	"<emphasis>Start-Up</emphasis>"> 
-<!ENTITY apparm         "<emphasis>AppArmor</emphasis>">
-<!ENTITY apparm_admin   "<emphasis>Novell AppArmor Administration Guide</emphasis>">
-<!ENTITY apparm_inst    "<emphasis>Novell AppArmor Installation and Quick Start Guide</emphasis>">
-<!ENTITY apparmqs       "<emphasis>Novell AppArmor Quick Start</emphasis>">
-<!ENTITY lfl            "<emphasis>Lessons For Lizards</emphasis>">
-<!ENTITY stor_guide     "<emphasis>Storage Administration Guide</emphasis>">
-<!ENTITY hbguide        "<emphasis>Heartbeat Guide</emphasis>">
-<!ENTITY virtuser       "<emphasis>Novell Virtualization Technology User Guide</emphasis>">
-<!ENTITY auditguide      "<emphasis>The Linux Audit Framework</emphasis>">
-<!ENTITY auditquick       "<emphasis>Linux Audit Quick Start</emphasis>"> 
 
 <!-- ============================================================= -->
 <!--                    Platforms                                  -->
 <!-- ============================================================= -->
 
-<!ENTITY x86           "x86">
 <!ENTITY amd64         "AMD64">
 <!ENTITY s390          "S/390">
-<!ENTITY zseries       "System z">
-<!ENTITY ipf           "Itanium">
-<!ENTITY ipseries      "POWER">
+<!ENTITY zseries       "IBM Z/IBM LinuxONE">
 <!ENTITY ppc           "POWER">
-<!ENTITY em64t         "Intel EM64T">
-<!ENTITY intel64       "Intel 64">
 
 
 <!-- ============================================================= -->
@@ -101,10 +59,13 @@
 <!-- ============================================================= -->
 
 <!-- please change product to anything that makes sense in your current release -->
+<!ENTITY vmdp          '&sle; Virtual Machine Driver Pack'>
+<!ENTITY vmdpa         'SLE-VMDP'>
+<!ENTITY productname   '&vmdp;'>
+<!ENTITY productnumber '2.5'>
 
 <!ENTITY opensuse      "openSUSE">
 <!ENTITY sle           "SUSE Linux Enterprise">
-<!ENTITY sas           "&sle; Advanced Server">
 <!ENTITY slereg        "SUSE&reg; Linux Enterprise">
 <!ENTITY slert         "&sle; Real Time">
 <!ENTITY slertreg      "&slereg; Real Time">
@@ -114,34 +75,13 @@
 <!ENTITY nld           "SUSE Linux Enterprise Desktop">
 <!ENTITY nlda          "SLED">
 <!ENTITY nldreg        "SUSE&reg; Linux Enterprise Desktop">
-<!ENTITY productname   'Virtual Machine Drivers Pack'>
-<!ENTITY productnumber '2.5'>
+
 <!ENTITY sdk           "SUSE Software Development Kit">
-<!ENTITY musicplayer   "Banshee">
-<!ENTITY musicplayerreg   "Banshee&trade;">
-<!ENTITY zenup         "Software Updater">
-<!ENTITY updater       "openSUSE Updater">
-<!ENTITY aa            "AppArmor">
-<!ENTITY naa           "Novell AppArmor">
-<!ENTITY naareg        "Novell&reg; AppArmor">
 <!ENTITY slreg         "SUSE&reg; Linux">
-<!ENTITY version       "11">
 <!ENTITY slepos        "SUSE Linux Enterprise Point of Service">
 <!ENTITY sleposreg     "SUSE&reg; Linux Enterprise Point of Service">
 <!ENTITY slert         "&sle; Real Time">
 <!ENTITY slertreg      "&slereg; Real Time">
-<!ENTITY hb            "Heartbeat">
-<!ENTITY hbvs          "Heartbeat 2">
-<!ENTITY hbgui         "HA Management Client">
-<!ENTITY smtool        "Subscription Management Tool">
-<!ENTITY smt           "SMT">
-<!ENTITY sletcreg      "&slereg; Thin Client">
-<!ENTITY sletc         "&sle; Thin Client">
-<!ENTITY sletca        "SLETC">
-<!ENTITY tc            "Thin Client">
-<!ENTITY nu            "NU">
-<!ENTITY ncc           "Novell Customer Center">
-<!ENTITY yup           "yup">
 <!ENTITY xen           "Xen">
 <!ENTITY xenreg        "Xen&reg;">
 <!ENTITY vmhost        "VM Host Server">
@@ -152,11 +92,6 @@
 <!-- oddities -->
 <!ENTITY thrdmrk "*">
 
-<!-- ============================================================= -->
-<!--                    yast desktop entities                      -->
-<!-- ============================================================= -->
-
-<!ENTITY ycc_runlevel  "System Services (Runlevel)">
 
 <!-- Additional Entities                                           -->
 <!ENTITY euro "&#x20AC;">

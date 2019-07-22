@@ -4,13 +4,12 @@
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<!-- Converted by suse-upgrade version 1.1 -->
 <sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec.vmdp.best">
  <title>Best Practices</title>
 
  <para>
   This section describes best practices, usage and potential problems using
-  VMDP.
+  &productname;.
  </para>
 
  <para></para>
@@ -68,7 +67,7 @@
  <sect2 xml:id="sec.vmdp.best.before">
   <title>Before the Installation</title>
   <para>
-   Before installing &sle; Virtual Machine Driver Pack in your production
+   Before installing &productname; in your production
    environment, we strongly recommend that you run it in a test environment to
    ensure that it functions properly with your system.
   </para>

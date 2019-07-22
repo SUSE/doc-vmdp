@@ -4,20 +4,18 @@
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<!-- Converted by suse-upgrade version 1.1 -->
 <?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook50-profile.xsl" type="text/xml" title="Profiling step"?>
 <article xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="article.vmdp.driver" xml:lang="en">
-<?suse-quickstart color="suse"?>
  <title>Installation Guide</title>
- <subtitle>&sle; &productname; &productnumber;</subtitle>
  <info>
-  <productnumber>&productnumber;</productnumber><productname>&sle; &productname;</productname>
+  <productname>&productname;</productname>
+  <productnumber>&productnumber;</productnumber>
  </info>
  <sect1 xml:id="sec.vmdp.drivers.vdmp">
-  <title>VMDP</title>
+  <title>About &vmdpa;</title>
 
   <para>
-   &sle; Virtual Machine Driver Pack contains Windows* disk and network
+   &productname; contains Windows* disk and network
    device drivers to enable the high-performance hosting of these unmodified
    guest operating systems on top of &sls;. Paravirtualized drivers for
    &sls; are available, but not included in this Driver Pack.
@@ -44,7 +42,7 @@
   <sect2 xml:id="sec.vmdp.drivers.performance">
    <title>Bringing Performance</title>
    <para>
-    The device drivers in &sle; Virtual Machine Driver Pack bring many of
+    The device drivers in &productname; bring many of
     the performance advantages of paravirtualized operating systems to
     unmodified operating systems: Only the paravirtualized device driver (not
     the rest of the operating system) is aware of the virtualization platform.
@@ -60,10 +58,10 @@
   <sect2 xml:id="sec.vmdp.drivers.subscription">
    <title>Support Subscription</title>
    <para>
-    The customer support you receive for the &sle; Virtual Machine Driver
-    Pack is at the same level as your
-    <link xlink:href="https://www.suse.com/support/programs/subscriptions/">SUSE
-    Linux Enterprise support subscription</link>.
+    The customer support you receive for the &productname; is at the same level
+    as your
+    <link xlink:href="https://www.suse.com/support/programs/subscriptions/">&sle;
+    support subscription</link>.
    </para>
   </sect2>
   <sect2 xml:id="sec.vmdp.drivers.whatsnew">
@@ -73,7 +71,7 @@
     </para>
     <itemizedlist>
       <listitem>
-	<para>Support for SUSE Linux Enterprise Server 12 SP3 and 15GA</para>
+	<para>Support for &sls; 12 SP3 and 15 GA</para>
       </listitem>
       <listitem>
 	<para>copy/paste interaction between Virtual Machine and host</para>
