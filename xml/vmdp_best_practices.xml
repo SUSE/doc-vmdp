@@ -4,7 +4,7 @@
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec.vmdp.best">
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-vmdp-best">
  <title>Best Practices</title>
 
  <para>
@@ -14,7 +14,7 @@
 
  <para></para>
 
- <sect2 xml:id="sec.vmdp.driver.winwizard.vmdp.problems">
+ <sect2 xml:id="sec-vmdp-driver-winwizard-vmdp-problems">
   <title>Avoiding Problems with the Drivers</title>
   <para>
    To avoid problems and potential failure of the device drivers in the driver
@@ -30,7 +30,7 @@
    <listitem>
     <para>
      Deleting driver files manually. Always use the uninstall utility (see
-     <xref linkend="sec.vmdp.driver.uninstall" xrefstyle="SectTitleOnPage"/>).
+     <xref linkend="sec-vmdp-driver-uninstall" xrefstyle="SectTitleOnPage"/>).
     </para>
    </listitem>
    <listitem>
@@ -56,15 +56,15 @@
     <para>
      Installing or uninstalling the driver pack by any other process than what
      is documented in this guide (see
-     <xref linkend="sec.vmdp.driver.uninstall" xrefstyle="SectTitleOnPage"/>
+     <xref linkend="sec-vmdp-driver-uninstall" xrefstyle="SectTitleOnPage"/>
      and
-     <xref linkend="sec.vmdp.driver.uninstall" xrefstyle="SectTitleOnPage"/>).
+     <xref linkend="sec-vmdp-driver-uninstall" xrefstyle="SectTitleOnPage"/>).
     </para>
    </listitem>
   </itemizedlist>
  </sect2>
 
- <sect2 xml:id="sec.vmdp.best.before">
+ <sect2 xml:id="sec-vmdp-best-before">
   <title>Before the Installation</title>
   <para>
    Before installing &productname; in your production
@@ -73,7 +73,7 @@
   </para>
  </sect2>
 
- <sect2 xml:id="sec.vmdp.best.network">
+ <sect2 xml:id="sec-vmdp-best-network">
   <title>Network Configuration</title>
   <para>
    Do not give the server a fixed IP address before installing the driver pack,

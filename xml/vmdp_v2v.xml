@@ -4,7 +4,7 @@
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec.vmdp.v2v.intro">
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-vmdp-v2v-intro">
  <title>&vmdpa; and <emphasis>v2v</emphasis> Support</title>
 
  <para>
@@ -14,7 +14,7 @@
   process includes support for the automatic deployment of the &vmdpa;.
  </para>
 
- <sect2 xml:id="sec.vmdp.v2v.package">
+ <sect2 xml:id="sec-vmdp-v2v-package">
   <title>&vmdpa; RPM Package</title>
   <para>
    The <systemitem class="resource">virt-v2v-vmdp</systemitem> RPM is a
@@ -33,7 +33,7 @@
   </para>
  </sect2>
 
- <sect2 xml:id="sec.vmdp.v2v.installation">
+ <sect2 xml:id="sec-vmdp-v2v-installation">
   <title>v2v --vmdp Parameter</title>
   <para>
    Installation of the &vmdpa; can be manually influenced during virt-v2v
@@ -83,7 +83,7 @@
   </para>
  </sect2>
 
- <sect2 xml:id="sec.vmdp.v2v.official.doc">
+ <sect2 xml:id="sec-vmdp-v2v-official-doc">
   <title>Xen to KVM Documentation</title>
   <para>
    For &sls; 11, see

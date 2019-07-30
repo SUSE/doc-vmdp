@@ -4,7 +4,7 @@
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec.vmdp.step.virt-manager">
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-vmdp-step-virt-manager">
  <title>Step-by-Step Installation</title>
 
  <para>
@@ -14,7 +14,7 @@
   only valid on KVM hosts.
  </para>
 
- <sect2 xml:id="sec.vmdp.step.virt-manager.win7">
+ <sect2 xml:id="sec-vmdp-step-virt-manager-win7">
   <title>Virt-manager for Windows* 7</title>
   <procedure>
    <step>
@@ -62,7 +62,7 @@
      </mediaobject>
     </informalfigure>
    </step>
-   <step xml:id="vmdp.qemu.guest.agent.channel">
+   <step xml:id="vmdp-qemu-guest-agent-channel">
     <para>
      The Windows* VM Qemu-ga Channel device with Device parameters set to:
      <emphasis>org.qemu.guest_agent.0</emphasis>
@@ -81,7 +81,7 @@
   </procedure>
  </sect2>
 
- <sect2 xml:id="sec.vmdp.step.win7.install">
+ <sect2 xml:id="sec-vmdp-step-win7-install">
   <title>Windows* 7 Installation</title>
   <procedure>
    <step>

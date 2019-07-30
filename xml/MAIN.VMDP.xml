@@ -5,13 +5,13 @@
     %entities;
 ]>
 <?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook50-profile.xsl" type="text/xml" title="Profiling step"?>
-<article xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="article.vmdp.driver" xml:lang="en">
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="article-vmdp-driver" xml:lang="en">
  <title>Installation Guide</title>
  <info>
   <productname>&productname;</productname>
   <productnumber>&productnumber;</productnumber>
  </info>
- <sect1 xml:id="sec.vmdp.drivers.vdmp">
+ <sect1 xml:id="sec-vmdp-drivers-vdmp">
   <title>About &vmdpa;</title>
 
   <para>
@@ -24,7 +24,7 @@
    and corresponding Customer Center update channels.
   </para>
 
-  <sect2 xml:id="sec.vmdp.drivers.introduction">
+  <sect2 xml:id="sec-vmdp-drivers-introduction">
    <title>Introduction</title>
    <para>
     Virtualization allows the consolidation of Linux workloads on newer, more
@@ -39,7 +39,7 @@
    </para>
   </sect2>
 
-  <sect2 xml:id="sec.vmdp.drivers.performance">
+  <sect2 xml:id="sec-vmdp-drivers-performance">
    <title>Bringing Performance</title>
    <para>
     The device drivers in &productname; bring many of
@@ -55,7 +55,7 @@
    </para>
   </sect2>
 
-  <sect2 xml:id="sec.vmdp.drivers.subscription">
+  <sect2 xml:id="sec-vmdp-drivers-subscription">
    <title>Support Subscription</title>
    <para>
     The customer support you receive for the &productname; is at the same level
@@ -64,7 +64,7 @@
     support subscription</link>.
    </para>
   </sect2>
-  <sect2 xml:id="sec.vmdp.drivers.whatsnew">
+  <sect2 xml:id="sec-vmdp-drivers-whatsnew">
     <title>What's New in 2.5</title>
     <para>
       The key update in version 2.5 are:

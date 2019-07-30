@@ -4,7 +4,7 @@
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec.vmdp.certification">
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-vmdp-certification">
  <title>&vmdpa; Certification</title>
 
  <para>
@@ -12,7 +12,7 @@
   <link xlink:href="http://www.windowsservercatalog.com/item.aspx?idItem=979ea66f-7f52-a04c-df5b-88ecc4dfa5b0&amp;bCatID=1282"/>
  </para>
 
- <sect2 xml:id="sec.vmdp.certification.whql">
+ <sect2 xml:id="sec-vmdp-certification-whql">
   <title>WHQL</title>
   <para>
    &vmdpa; has passed WHQL certification. See
@@ -21,7 +21,7 @@
   </para>
  </sect2>
 
- <sect2 xml:id="sec.vmdp.certification.svvp">
+ <sect2 xml:id="sec-vmdp-certification-svvp">
   <title>SVVP</title>
   <para>
    The SVVP program has validated our &vmdpa; paravirtualized drivers. Thus,

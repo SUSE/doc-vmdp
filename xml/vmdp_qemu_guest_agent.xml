@@ -4,7 +4,7 @@
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec.vmdp.qemu.guest.agent">
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-vmdp-qemu-guest-agent">
  <title>QEMU Guest Agent</title>
 
  <para>
@@ -12,14 +12,14 @@
   it.
  </para>
 
- <sect2 xml:id="vmdp.qemu.guest.agent.info">
+ <sect2 xml:id="vmdp-qemu-guest-agent-info">
   <title>Qemu guest agent</title>
   <para>
    &vmdpa; setup allows for the installation of the qemu guest agent service for
    Windows* when invoked with the <command>/qemu-ga</command> command line
    parameter. The qemu guest agent requires the VM to be equipped with the qemu
    guest agent channel (see
-   <xref linkend="vmdp.qemu.guest.agent.channel" xrefstyle="SectTitleOnPage"/>).
+   <xref linkend="vmdp-qemu-guest-agent-channel" xrefstyle="SectTitleOnPage"/>).
    Without the <emphasis>qemu guest agent channel</emphasis>, the qemu guest
    agent can install but will not load. Trying to load without the channel
    results in errors in the event log.
@@ -36,7 +36,7 @@
   </para>
  </sect2>
 
- <sect2 xml:id="sec.vmdp.qemu.guest.agent.installation">
+ <sect2 xml:id="sec-vmdp-qemu-guest-agent-installation">
   <title>Qemu Guest Agent Installation</title>
   <para>
    Open a <guimenu>cmd.exe</guimenu> from the start menu. Go to the path that
