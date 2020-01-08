@@ -85,11 +85,25 @@
 
  <sect2 xml:id="sec-vmdp-v2v-official-doc">
   <title>Xen to KVM Documentation</title>
-  <para>
-   For &sls; 11, see
-   <link xlink:href="https://www.suse.com/documentation/sles11/singlehtml/art_sles_xen2kvmquick/art_sles_xen2kvmquick.html"/>.
-   For &sls; 12, refer to
-   <link xlink:href="https://www.suse.com/documentation/sles-12/singlehtml/art_sles_xen2kvmquick/art_sles_xen2kvmquick.html"/>.
-  </para>
+  <itemizedlist>
+   <listitem>
+    <para>
+     For &sls; 11, see
+     <link xlink:href="https://documentation.suse.com/sles-11/html/SLES-xen2kvmquick/art-sles-xen2kvmquick.html"/>.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     For &sls; 12, see
+     <link xlink:href="https://documentation.suse.com/sles-12/html/SLES-all/art-sles-xen2kvmquick.html"/>.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     For &sls; 15, see
+     <link xlink:href="https://documentation.suse.com/sles-15/html/SLES-all/art-sles-xen2kvmquick.html"/>.
+    </para>
+   </listitem>
+  </itemizedlist>
  </sect2>
 </sect1>
