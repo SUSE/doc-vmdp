@@ -37,7 +37,6 @@
 <!ENTITY rootuser       '<systemitem class="username">root</systemitem>'>
 
 <!ENTITY grub           "GRUB">
-<!ENTITY suselinux      "&suse; Linux">
 <!ENTITY xfree          "X.Org">
 <!ENTITY xvendor        "X.Org">
 <!ENTITY yast           "YaST">
@@ -58,6 +57,8 @@
 <!--                    Products                                   -->
 <!-- ============================================================= -->
 
+<!ENTITY suse          "SUSE">
+
 <!-- please change product to anything that makes sense in your current release -->
 <!ENTITY vmdp          '&sle; Virtual Machine Driver Pack'>
 <!ENTITY vmdpa         'SLE-VMDP'>
@@ -65,21 +66,21 @@
 <!ENTITY productnumber '2.5'>
 
 <!ENTITY opensuse      "openSUSE">
-<!ENTITY sle           "SUSE Linux Enterprise">
-<!ENTITY slereg        "SUSE&reg; Linux Enterprise">
+<!ENTITY sle           "&suse; Linux Enterprise">
+<!ENTITY slereg        "&suse;&reg; Linux Enterprise">
 <!ENTITY slert         "&sle; Real Time">
 <!ENTITY slertreg      "&slereg; Real Time">
-<!ENTITY sls           "SUSE Linux Enterprise Server">
+<!ENTITY sls           "&suse; Linux Enterprise Server">
 <!ENTITY slsa          "SLES">
-<!ENTITY slsreg        "SUSE&reg; Linux Enterprise Server">
-<!ENTITY nld           "SUSE Linux Enterprise Desktop">
+<!ENTITY slsreg        "&suse;&reg; Linux Enterprise Server">
+<!ENTITY nld           "&suse; Linux Enterprise Desktop">
 <!ENTITY nlda          "SLED">
-<!ENTITY nldreg        "SUSE&reg; Linux Enterprise Desktop">
+<!ENTITY nldreg        "&suse;&reg; Linux Enterprise Desktop">
+<!ENTITY scc           "&suse; Customer Center">
 
-<!ENTITY sdk           "SUSE Software Development Kit">
-<!ENTITY slreg         "SUSE&reg; Linux">
-<!ENTITY slepos        "SUSE Linux Enterprise Point of Service">
-<!ENTITY sleposreg     "SUSE&reg; Linux Enterprise Point of Service">
+<!ENTITY sdk           "&suse; Software Development Kit">
+<!ENTITY slepos        "&suse; Linux Enterprise Point of Service">
+<!ENTITY sleposreg     "&suse;&reg; Linux Enterprise Point of Service">
 <!ENTITY slert         "&sle; Real Time">
 <!ENTITY slertreg      "&slereg; Real Time">
 <!ENTITY xen           "Xen">
