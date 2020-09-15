@@ -2,8 +2,8 @@
 
 This is the source of the VMDP documentation.
 
-Released versions of the VMDP documentatuin are published at
-https://www.suse.com/documentation.
+Released versions of the VMDP documentation are published at
+https://documentation.suse.com/sle-vmdp.
 
 == Editing DocBook
 
