@@ -5,7 +5,7 @@
     %entities;
 ]>
 <sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-vmdp-v2v-intro">
- <title>&vmdpa; and <emphasis>v2v</emphasis> Support</title>
+ <title>&vmdpa; and <emphasis>v2v</emphasis> support</title>
 
  <para>
   The <emphasis>virt-v2v</emphasis> utility provides an easy way to convert
@@ -15,7 +15,7 @@
  </para>
 
  <sect2 xml:id="sec-vmdp-v2v-package">
-  <title>&vmdpa; RPM Package</title>
+  <title>&vmdpa; RPM package</title>
   <para>
    The <systemitem class="resource">virt-v2v-vmdp</systemitem> RPM is a
    repackaging of the Windows* &vmdpa; drivers into a directory structure usable
@@ -34,7 +34,7 @@
  </sect2>
 
  <sect2 xml:id="sec-vmdp-v2v-installation">
-  <title>v2v --vmdp Parameter</title>
+  <title>v2v --vmdp parameter</title>
   <para>
    Installation of the &vmdpa; can be manually influenced during virt-v2v
    migration using the <option>–-vmdp</option> parameter:
@@ -84,7 +84,7 @@
  </sect2>
 
  <sect2 xml:id="sec-vmdp-v2v-official-doc">
-  <title>Xen to KVM Documentation</title>
+  <title>Xen to KVM documentation</title>
   <itemizedlist>
    <listitem>
     <para>

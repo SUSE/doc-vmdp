@@ -5,7 +5,7 @@
     %entities;
 ]>
 <sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-vmdp-qemu-guest-agent">
- <title>QEMU Guest Agent</title>
+ <title>QEMU guest agent</title>
 
  <para>
   This section explain what <emphasis>qemu-ga</emphasis> is and how to install
@@ -37,7 +37,7 @@
  </sect2>
 
  <sect2 xml:id="sec-vmdp-qemu-guest-agent-installation">
-  <title>Qemu Guest Agent Installation</title>
+  <title>Qemu guest agent installation</title>
   <para>
    Open a <guimenu>cmd.exe</guimenu> from the start menu. Go to the path that
    contains the <filename>qemu-ga</filename> directory. View the help with the

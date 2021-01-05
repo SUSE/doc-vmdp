@@ -5,7 +5,7 @@
     %entities;
 ]>
 <sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-vmdp-driver-installation">
- <title>General Installation</title>
+ <title>General installation</title>
 
  <para>
   The &productname; is available for download as one
@@ -32,7 +32,7 @@
  </sect2>
 
  <sect2 xml:id="sec-vmdp-driver-setup-exe">
-  <title>Setup.exe Installation Instructions for KVM and Xen</title>
+  <title>Setup.exe installation instructions for KVM and Xen</title>
   <procedure>
    <step>
     <para>
@@ -67,7 +67,7 @@
  </sect2>
 
  <sect2 xml:id="sec-vmdp-driver-additionnal-info">
-  <title>Additional KVM VirtIO Setup Instructions</title>
+  <title>Additional KVM VirtIO setup instructions</title>
   <para>
    <command>Setup.exe</command> can be run with and without VirtIO devices
    present in the VM. If the devices are present in the VM when setup is run,
@@ -86,7 +86,7 @@
    controlling the boot disk.
   </para>
   <warning>
-   <title>Installation Failure</title>
+   <title>Installation failure</title>
    <para>
     Failure to install a VirtIO disk driver on a secondary disk before changing
     the boot disk to a VirtIO or VirtIO SCSI disk will cause the VM to crash
@@ -96,7 +96,7 @@
  </sect2>
 
  <sect2 xml:id="sec-vmdp-driver-install-instruction">
-  <title>Installation Instructions for <literal>.vfd</literal> and <literal>.iso</literal></title>
+  <title>Installation instructions for <literal>.vfd</literal> and <literal>.iso</literal></title>
   <para>
    A Windows* VM may attach the &vmdpa; <emphasis>vfd</emphasis> or
    <emphasis>iso</emphasis>. The <emphasis>vfd</emphasis> is targeted for
@@ -110,7 +110,7 @@
  </sect2>
 
  <sect2 xml:id="sec-vmdp-driver-install-at-vm-creation">
-  <title><literal>.vfd</literal> and <literal>.iso</literal> for VirtIO Boot Disk Installation at VM Creation</title>
+  <title><literal>.vfd</literal> and <literal>.iso</literal> for VirtIO boot disk installation at VM creation</title>
   <para>
    This method is only used for VMs running on KVM and is used to install the
    VirtIO disk driver on the boot disk while the VM is being installed.
@@ -180,7 +180,7 @@
  </sect2>
 
  <sect2 xml:id="sec-vmdp-driver-xen-instructions">
-  <title>Additional Xen Setup Instructions</title>
+  <title>Additional Xen setup instructions</title>
   <para>
    Setup and the <option>/boot_vscsi</option> option: The Xen &vmdpa; SCSI driver
    is capable of controlling a physical SCSI disk such as
@@ -201,7 +201,7 @@
  </sect2>
 
  <sect2 xml:id="sec-vmdp-driver-uninstall">
-  <title>Uninstalling the Driver Pack</title>
+  <title>Uninstalling the driver pack</title>
   <para>
    To uninstall the &productname;, execute the
    <command>uninstall.exe</command> from the <filename>\Program
@@ -217,7 +217,7 @@
  </sect2>
 
  <sect2 xml:id="sec-vmdp-driver-upgrade">
-  <title>Upgrading the Driver Pack</title>
+  <title>Upgrading the driver pack</title>
   <para>
    <command>Setup.exe</command> can be used to update most existing
    installations. To update an existing installation do the following:
@@ -258,7 +258,7 @@
  </sect2>
 
  <sect2 xml:id="sec-vmdp-driver-recover">
-  <title>Recovering from a Failure</title>
+  <title>Recovering from a failure</title>
   <para>
    If a failure is caused by the driver pack, you can safely remove the driver
    pack and return to your previous system configuration.
@@ -279,7 +279,7 @@
  </sect2>
 
  <sect2 xml:id="sec-vmdp-driver-issue">
-  <title>Known Issues</title>
+  <title>Known issues</title>
   <para>
    For information on known issues for this release, see the README file within
    the archive, or consult the &productname; guides.

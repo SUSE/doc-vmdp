@@ -5,7 +5,7 @@
     %entities;
 ]>
 <sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-vmdp-setup-expert">
- <title>Advanced Installation Options</title>
+ <title>Advanced installation options</title>
 
  <para>
   How to deal with &vmdpa; <emphasis>install</emphasis> and
@@ -148,7 +148,7 @@
  </sect2>
 
  <sect2 xml:id="sec-vmdp-setup-expert-uninstall">
-  <title>Uninstall Expert Mode</title>
+  <title>Uninstall expert mode</title>
   <para>
    <emphasis>Uninstall</emphasis> has some parameters:
   </para>

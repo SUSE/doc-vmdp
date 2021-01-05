@@ -5,7 +5,7 @@
     %entities;
 ]>
 <sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-vmdp-certification">
- <title>&vmdpa; Certification</title>
+ <title>&vmdpa; certification</title>
 
  <para>
   &vmdpa; has been certified by Microsoft:

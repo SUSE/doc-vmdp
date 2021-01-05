@@ -40,7 +40,7 @@
   </sect2>
 
   <sect2 xml:id="sec-vmdp-drivers-performance">
-   <title>Bringing Performance</title>
+   <title>Bringing performance</title>
    <para>
     The device drivers in &productname; bring many of
     the performance advantages of paravirtualized operating systems to
@@ -56,7 +56,7 @@
   </sect2>
 
   <sect2 xml:id="sec-vmdp-drivers-subscription">
-   <title>Support Subscription</title>
+   <title>Support subscription</title>
    <para>
     The customer support you receive for the &productname; is at the same level
     as your
@@ -65,7 +65,7 @@
    </para>
   </sect2>
   <sect2 xml:id="sec-vmdp-drivers-whatsnew">
-    <title>What's New in 2.5</title>
+    <title>What is new in 2.5</title>
     <para>
       The key update in version 2.5 are:
     </para>

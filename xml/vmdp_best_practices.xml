@@ -5,7 +5,7 @@
     %entities;
 ]>
 <sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-vmdp-best">
- <title>Best Practices</title>
+ <title>Best practices</title>
 
  <para>
   This section describes best practices, usage and potential problems using
@@ -15,7 +15,7 @@
  <para></para>
 
  <sect2 xml:id="sec-vmdp-driver-winwizard-vmdp-problems">
-  <title>Avoiding Problems with the Drivers</title>
+  <title>Avoiding problems with the drivers</title>
   <para>
    To avoid problems and potential failure of the device drivers in the driver
    pack, you should avoid the following actions:
@@ -65,7 +65,7 @@
  </sect2>
 
  <sect2 xml:id="sec-vmdp-best-before">
-  <title>Before the Installation</title>
+  <title>Before the installation</title>
   <para>
    Before installing &productname; in your production
    environment, we strongly recommend that you run it in a test environment to
@@ -74,7 +74,7 @@
  </sect2>
 
  <sect2 xml:id="sec-vmdp-best-network">
-  <title>Network Configuration</title>
+  <title>Network configuration</title>
   <para>
    Do not give the server a fixed IP address before installing the driver pack,
    otherwise you need to switch to a different intermediate IP address before
