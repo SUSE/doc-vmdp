@@ -71,7 +71,7 @@
     </para>
     <itemizedlist>
       <listitem>
-	<para>Support for &sls; 12 SP3 and 15 GA</para>
+	<para>Support starting from &sls; 12 SP3 and 15 GA up to latest version, currently &sls; 12 SP5 and 15 SP3</para>
       </listitem>
       <listitem>
 	<para>copy/paste interaction between Virtual Machine and host</para>
