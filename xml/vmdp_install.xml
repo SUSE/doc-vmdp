@@ -9,7 +9,7 @@
 
  <para>
   The &productname; is available at <link xlink:href="https://www.suse.com/download/suse-vmdp/"/>
-  for download as one binary file: a Windows self-extracting zip file (<emphasis>.exe</emphasis>
+  for download as one binary file - a Windows self-extracting ZIP file (<emphasis>.exe</emphasis>
   extension). There is also an ISO image (<emphasis>.iso</emphasis>) for
   Windows* 2008 and newer that may be used for VMs running on KVM.
  </para>
