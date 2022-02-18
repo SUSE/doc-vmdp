@@ -10,12 +10,12 @@
  <para>
   This section describes how to configure the Windows* VM under
   <guimenu>virt-manager</guimenu> and how to install the VMDP while installing
-  Windows* 7. This example is an installation of a KVM host. Using the ISO is
+  Windows Server 2022. This example is an installation of a KVM host. Using the ISO is
   only valid on KVM hosts.
  </para>
 
- <sect2 xml:id="sec-vmdp-step-virt-manager-win7">
-  <title>Virt-manager for Windows* 7</title>
+ <sect2 xml:id="sec-vmdp-step-virt-manager-win2022">
+  <title>Virt-manager for Windows Server 2022</title>
   <procedure>
    <step>
     <para>
@@ -81,12 +81,12 @@
   </procedure>
  </sect2>
 
- <sect2 xml:id="sec-vmdp-step-win7-install">
-  <title>Windows* 7 installation</title>
+ <sect2 xml:id="sec-vmdp-step-win2022-install">
+  <title>Windows Server 2022 installation</title>
   <procedure>
    <step>
     <para>
-     Boot the Windows* 7 installation CD-ROM. The <guimenu>Select driver to be
+     Boot the Windows Server 2022 installation CD-ROM. The <guimenu>Select driver to be
      installed</guimenu> dialog will be displayed:
     </para>
     <informalfigure pgwide="0">
@@ -132,7 +132,7 @@
    </step>
    <step>
     <para>
-     Finish the installation of Windows* 7.
+     Finish the installation of Windows Server 2022.
     </para>
    </step>
    <step>
@@ -179,7 +179,7 @@
    </step>
    <step>
     <para>
-     The program will install the SUSE Drivers for Windows* 7:
+     The program will install the SUSE Drivers for Windows Server 2022:
     </para>
     <informalfigure pgwide="0">
      <mediaobject>
