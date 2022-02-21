@@ -54,7 +54,40 @@
     to existing operating systems.
    </para>
   </sect2>
-
+  <sect2 xml:id="sec-vmdp-signature">
+   <title>VMDP signature</title>
+   <sect3 xml:id="sec-vmdp-signature-vmdp-win">
+    <title>VMDP-WIN-VERSION</title>
+    <para>
+     VMDP-WIN-VERSION contains the Microsoft WHQL signed sys and cat files for the
+     Windows Server versions of the drivers contained in vmdp-211015.  The Windows
+     Server drivers will also run in the corresponding Windows client versions.
+     Windows 10 32 bit client drivers are SUSE signed and Microsoft attestation
+     signed. All other 32 bit client drivers are SUSE signed only.
+    </para>
+    <para>
+     The 64 bit SUSE signed only drivers can only be installed after the initial
+     Windows installation. Windows must set Testsigning mode on for the drivers
+     to load on reboot.
+    </para>
+   </sect3>
+   <sect3 xml:id="sec-vmdp-signature-vmdp-win-community">
+    <title>VMDP Community</title>
+    <para>
+     VMDP-WIN-VERSION-Community contains the same drivers as found in vmdp-211015.
+     The Windows 10 (32/64 bit)/Server versions have SUSE signed and Microsoft
+     attestation signed drivers.  All other 32/64 bit drivers are SUSE signed only.
+    </para>
+   </sect3>
+   <sect3 xml:id="sec-vmdp-signature-win2008r2">
+    <title>Windows Server 2008 R2</title>
+    <para>
+     Windows Server 2008 R2 VMs need to be updated to recognize the new WHQL signing
+     format. Without the update, the WHQL signatures are treated as unknown and
+     the drivers will not load.
+    </para>
+   </sect3>
+  </sect2>
   <sect2 xml:id="sec-vmdp-drivers-subscription">
    <title>Support subscription</title>
    <para>
@@ -65,25 +98,50 @@
    </para>
   </sect2>
   <sect2 xml:id="sec-vmdp-drivers-whatsnew">
-    <title>What is new in 2.5</title>
+    <title>What is new in 2.5.3</title>
     <para>
-      The key update in version 2.5 are:
+      The key update in version 2.5.3 are:
     </para>
     <itemizedlist>
       <listitem>
-	<para>Support starting from &sls; 12 SP3 and 15 GA up to the latest versions, currently &sls; 12 SP5 and 15 SP3</para>
+        <para>Added native drivers for Windows 10-2004/Windows Server 2022</para>
       </listitem>
       <listitem>
-	<para>copy/paste interaction between Virtual Machine and host</para>
+        <para>Better support for wsl2</para>
+      </listitem>
+    </itemizedlist>
+    <para>What's new in the PV block driver:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Handle force unit access commands for virtio</para>
       </listitem>
       <listitem>
-	<para>Native support of 10gbis NIC</para>
+        <para>Add support for IOCTL_SCSI_MINIPORT_FIRMWARE</para>
+      </listitem>
+    </itemizedlist>
+    <para>What's new in the PV scsi driver:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Process Srbs at DPC time rather than interrupt time</para>
+      </listitem>
+    </itemizedlist>
+    <para>What's new in the PV net driver:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Update to NDIS 6.85 spec for w2k22</para>
       </listitem>
       <listitem>
-	<para>RNG device support (random device)</para>
+        <para>Add priority vlan tagging support</para>
       </listitem>
       <listitem>
-	<para>Numerous bug fixes and enhancements</para>
+        <para>Add packet length to IP header for IPv4 LS0v2</para>
+      </listitem>
+      <listitem>
+       <para>Added the ability to use indirect descriptors for TX packets.</para>
+      </listitem>
+      <listitem>
+        <para>Added parameters to enable/disable IndirectDescriptors and TxSgCnt to specify
+        the maximum number of TX descriptors to use</para>
       </listitem>
     </itemizedlist>
   </sect2>
