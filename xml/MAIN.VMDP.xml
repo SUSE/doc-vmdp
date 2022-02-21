@@ -123,7 +123,7 @@
         <para>Process Srbs at DPC time rather than interrupt time</para>
       </listitem>
     </itemizedlist>
-    <para>What's new in the PV net driver:</para>
+    <para>What is new in the PV net driver:</para>
     <itemizedlist>
       <listitem>
         <para>Update to NDIS 6.85 spec for w2k22</para>
