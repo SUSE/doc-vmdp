@@ -138,7 +138,7 @@
        <para>Added the ability to use indirect descriptors for TX packets.</para>
       </listitem>
       <listitem>
-        <para>Added parameters to enable/disable IndirectDescriptors and TxSgCnt to specify
+        <para>Added parameters to enable or disable IndirectDescriptors and TxSgCnt to specify
         the maximum number of TX descriptors to use</para>
       </listitem>
     </itemizedlist>
