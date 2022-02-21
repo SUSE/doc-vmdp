@@ -59,7 +59,7 @@
    <sect3 xml:id="sec-vmdp-signature-vmdp-win">
     <title>VMDP-WIN-VERSION</title>
     <para>
-     VMDP-WIN-VERSION contains the Microsoft WHQL signed sys and cat files for the
+     VMDP-WIN-VERSION contains the Microsoft WHQL signed driver files for the
      Windows Server versions of the drivers contained in vmdp-211015.  The Windows
      Server drivers will also run in the corresponding Windows client versions.
      Windows 10 32-bit client drivers are signed by SUSE and certified by Microsoft. 
