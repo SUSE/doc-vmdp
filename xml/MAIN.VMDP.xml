@@ -66,9 +66,8 @@
      All other 32-bit client drivers are signed by SUSE only.
     </para>
     <para>
-     The 64 bit SUSE signed only drivers can only be installed after the initial
-     Windows installation. Windows must set Testsigning mode on for the drivers
-     to load on reboot.
+     The 64-bit drivers signed only by SUSE can be installed only after the initial
+     Windows installation. Windows must have the <emphasis>Testsigning mode</emphasis> activated for the drivers to load on reboot.
     </para>
    </sect3>
    <sect3 xml:id="sec-vmdp-signature-vmdp-win-community">
