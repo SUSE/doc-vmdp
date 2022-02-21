@@ -17,6 +17,7 @@
   <para>
    To help with automated installations, <command>setup.exe</command> currently
    has the following parameters:
+  </para>
    <informalfigure pgwide="0">
     <mediaobject>
      <imageobject role="fo">
@@ -27,7 +28,6 @@
      </imageobject>
     </mediaobject>
    </informalfigure>
-  </para>
   <itemizedlist>
    <listitem>
     <para>
