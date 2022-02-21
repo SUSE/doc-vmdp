@@ -73,7 +73,7 @@
    <sect3 xml:id="sec-vmdp-signature-vmdp-win-community">
     <title>VMDP Community</title>
     <para>
-     VMDP-WIN-VERSION-Community contains the same drivers as found in vmdp-211015.
+     <package>VMDP-WIN-VERSION-Community</package> contains the same drivers as found in vmdp-211015.
      The Windows 10 Server versions (both 32 and 64-bit) have drivers signed by SUSE signed and certified by Microsoft.  All other 32/64 bit drivers are signed by SUSE only.
     </para>
    </sect3>
