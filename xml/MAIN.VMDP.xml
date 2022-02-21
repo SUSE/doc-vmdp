@@ -54,7 +54,38 @@
     to existing operating systems.
    </para>
   </sect2>
-
+  <sect2 xml:id="sec-vmdp-signature">
+   <title>VMDP signature</title>
+   <sect3 xml:id="sec-vmdp-signature-vmdp-win">
+    <title>VMDP-WIN-VERSION</title>
+    <para>
+     VMDP-WIN-VERSION contains the Microsoft WHQL signed driver files for the
+     Windows Server versions of the drivers contained in vmdp-211015.  The Windows
+     Server drivers will also run in the corresponding Windows client versions.
+     Windows 10 32-bit client drivers are signed by SUSE and certified by Microsoft. 
+     All other 32-bit client drivers are signed by SUSE only.
+    </para>
+    <para>
+     The 64-bit drivers signed only by SUSE can be installed only after the initial
+     Windows installation. Windows must have the <emphasis>Testsigning mode</emphasis> activated for the drivers to load on reboot.
+    </para>
+   </sect3>
+   <sect3 xml:id="sec-vmdp-signature-vmdp-win-community">
+    <title>VMDP Community</title>
+    <para>
+     <package>VMDP-WIN-VERSION-Community</package> contains the same drivers as found in vmdp-211015.
+     The Windows 10 Server versions (both 32 and 64-bit) have drivers signed by SUSE signed and certified by Microsoft.  All other 32/64 bit drivers are signed by SUSE only.
+    </para>
+   </sect3>
+   <sect3 xml:id="sec-vmdp-signature-win2008r2">
+    <title>Windows Server 2008 R2</title>
+    <para>
+     Windows Server 2008 R2 VMs need to be updated to recognize the new WHQL signing
+     format. Without the update, the WHQL signatures are treated as unknown and
+     the drivers will not load.
+    </para>
+   </sect3>
+  </sect2>
   <sect2 xml:id="sec-vmdp-drivers-subscription">
    <title>Support Subscription</title>
    <para>
