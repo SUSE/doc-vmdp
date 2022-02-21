@@ -108,7 +108,7 @@
         <para>Better support for wsl2</para>
       </listitem>
     </itemizedlist>
-    <para>What's new in the PV block driver:</para>
+    <para>What is new in the PV block driver:</para>
     <itemizedlist>
       <listitem>
         <para>Handle force unit access commands for virtio</para>
