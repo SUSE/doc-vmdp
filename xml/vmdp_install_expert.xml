@@ -17,6 +17,16 @@
   <para>
    To help with automated installations, <command>setup.exe</command> currently
    has the following parameters:
+   <informalfigure pgwide="0">
+    <mediaobject>
+     <imageobject role="fo">
+      <imagedata fileref="vmdp_options.png" width="56%" format="PNG"/>
+     </imageobject>
+     <imageobject role="html">
+      <imagedata fileref="vmdp_options.png" width="56%" format="PNG"/>
+     </imageobject>
+    </mediaobject>
+   </informalfigure>
   </para>
   <itemizedlist>
    <listitem>
@@ -138,7 +148,7 @@
   <itemizedlist>
    <listitem>
     <para>
-     <option>/w2k3, /w2k8, /win7, and /win8 </option>: are mutually exclusive.
+      <option>/w2k3, /w2k8, /win7, /win8, /win81, /win10 and /win10-2004 </option>: are mutually exclusive.
      They allow the specified drivers to be installed in the running operating
      system, if compatible. These parameters are for testing purposes only and
      are not supported
