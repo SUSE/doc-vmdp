@@ -117,7 +117,7 @@
         <para>Add support for IOCTL_SCSI_MINIPORT_FIRMWARE</para>
       </listitem>
     </itemizedlist>
-    <para>What's new in the PV scsi driver:</para>
+    <para>What is new in the PV SCSI driver:</para>
     <itemizedlist>
       <listitem>
         <para>Process Srbs at DPC time rather than interrupt time</para>
