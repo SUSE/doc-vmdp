@@ -95,7 +95,7 @@
  </sect2>
 
  <sect2 xml:id="sec-vmdp-driver-install-instruction">
-  <title>Installation instructions for <literal>.vfd</literal> and <literal>.iso</literal></title>
+  <title>Installation instructions <literal>.iso</literal></title>
   <para>
    A Windows* VM may attach the &vmdpa; <emphasis>iso</emphasis>. 
    The ISO contains VirtIO disk drivers for
@@ -144,8 +144,7 @@
     <para>
      For Windows 2003, at the very beginning of the installation there is an
      option to press <guimenu>F6</guimenu> for an OEM SCSI disk installation.
-     At that time, press <guimenu>F6</guimenu>. The VirtIO disk driver from the
-     <emphasis>vfd</emphasis> can then be selected and installed.
+     At that time, press <guimenu>F6</guimenu>.
     </para>
    </step>
    <step>
