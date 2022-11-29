@@ -5,17 +5,17 @@
     %entities;
 ]>
 <sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-vmdp-certification">
- <title>&vmdpa; certification</title>
+ <title>&productnameshort; certification</title>
 
  <para>
-  &vmdpa; has been certified by Microsoft:
+  &productnameshort; has been certified by Microsoft:
   <link xlink:href="http://www.windowsservercatalog.com/item.aspx?idItem=979ea66f-7f52-a04c-df5b-88ecc4dfa5b0&amp;bCatID=1282"/>
  </para>
 
  <sect2 xml:id="sec-vmdp-certification-whql">
   <title>WHQL</title>
   <para>
-   &vmdpa; has passed WHQL certification. See
+   &productnameshort; has passed WHQL certification. See
    <link xlink:href="http://msdn.microsoft.com/en-us/windows/hardware/gg463010.aspx"/>
    for more information.
   </para>
@@ -24,7 +24,7 @@
  <sect2 xml:id="sec-vmdp-certification-svvp">
   <title>SVVP</title>
   <para>
-   The SVVP program has validated our &vmdpa; paravirtualized drivers. Thus,
+   The SVVP program has validated our &productnameshort; paravirtualized drivers. Thus,
    Microsoft customers running copies of Windows* Server they have acquired and
    licensed from Microsoft directly can receive technical support for Windows*
    Server in virtualized environments. See
