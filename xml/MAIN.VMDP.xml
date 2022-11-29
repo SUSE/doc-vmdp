@@ -10,6 +10,7 @@
  <info>
   <productname>&productname;</productname>
   <productnumber>&productnumber;</productnumber>
+  <productname role="abbrev">&productnameshort;</productname>
  </info>
  <sect1 xml:id="sec-vmdp-drivers-vdmp">
   <title>About &vmdpa;</title>

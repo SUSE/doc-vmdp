@@ -63,6 +63,7 @@
 <!ENTITY vmdpa         'SLE-VMDP'>
 <!ENTITY productname   '&vmdp;'>
 <!ENTITY productnumber '2.5'>
+<!ENTITY productnameshort "&vmdpa;">
 
 <!ENTITY opensuse      "openSUSE">
 <!ENTITY sle           "SUSE Linux Enterprise">
