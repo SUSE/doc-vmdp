@@ -5,29 +5,29 @@
     %entities;
 ]>
 <sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-vmdp-v2v-intro">
- <title>&vmdpa; and <emphasis>v2v</emphasis> support</title>
+ <title>&productnameshort; and <emphasis>v2v</emphasis> support</title>
 
  <para>
   The <emphasis>virt-v2v</emphasis> utility provides an easy way to convert
   virtual machines from one hypervisor format to another (for example, from Xen
   to KVM). In the case of Windows* guests running under Xen, this conversion
-  process includes support for the automatic deployment of the &vmdpa;.
+  process includes support for the automatic deployment of the &productnameshort;.
  </para>
 
  <sect2 xml:id="sec-vmdp-v2v-package">
-  <title>&vmdpa; RPM package</title>
+  <title>&productnameshort; RPM package</title>
   <para>
    The <systemitem class="resource">virt-v2v-vmdp</systemitem> RPM is a
-   repackaging of the Windows* &vmdpa; drivers into a directory structure usable
+   repackaging of the Windows* &productnameshort; drivers into a directory structure usable
    by the virt-v2v utility. After being installed on a KVM host, any Windows*
-   guests migrated to that host using the virt-v2v process can have the &vmdpa;
+   guests migrated to that host using the virt-v2v process can have the &productnameshort;
    drivers automatically installed.
   </para>
   <para>
-   By default, virt-v2v will first check for the existence of the &vmdpa; on the
+   By default, virt-v2v will first check for the existence of the &productnameshort; on the
    Windows* guest undergoing conversion. If found on the guest, and the
    virt-v2v-vmdp RPM is installed on the target host (the machine running the
-   virt-v2v process), virt-v2v will automatically install the &vmdpa; drivers as
+   virt-v2v process), virt-v2v will automatically install the &productnameshort; drivers as
    part of the conversion. This driver reinstallation is required to replace
    Xen specific drivers with virtio drivers for use with KVM.
   </para>
@@ -36,36 +36,36 @@
  <sect2 xml:id="sec-vmdp-v2v-installation">
   <title>v2v --vmdp parameter</title>
   <para>
-   Installation of the &vmdpa; can be manually influenced during virt-v2v
+   Installation of the &productnameshort; can be manually influenced during virt-v2v
    migration using the <option>–-vmdp</option> parameter:
   </para>
   <itemizedlist>
    <listitem>
     <para>
-     <option>--vmdp=auto</option>: only install the &vmdpa; if already installed
+     <option>--vmdp=auto</option>: only install the &productnameshort; if already installed
      on source image
     </para>
    </listitem>
    <listitem>
     <para>
-     <option>--vmdp=always</option>: always install the &vmdpa; during Windows*
+     <option>--vmdp=always</option>: always install the &productnameshort; during Windows*
      guest conversions
     </para>
    </listitem>
    <listitem>
     <para>
-     <option>--vmdp=never</option>: never install the &vmdpa;
+     <option>--vmdp=never</option>: never install the &productnameshort;
     </para>
    </listitem>
   </itemizedlist>
   <para>
    In addition to installing the drivers included with the virt-v2v-vmdp RPM,
-   it is possible for virt-v2v to copy the &vmdpa; setup program itself to the
+   it is possible for virt-v2v to copy the &productnameshort; setup program itself to the
    converted guest. While not required, if the virt-v2v host is configured to
-   perform this, the &vmdpa; setup program will be automatically ran upon first
+   perform this, the &productnameshort; setup program will be automatically ran upon first
    login. This will ensure the install/uninstall program is registered with
    Windows* and any residual Xen drivers are correctly uninstalled. To allow
-   for this capability, the &vmdpa; setup program
+   for this capability, the &productnameshort; setup program
    (<command>VMDP-WIN-VERSION.exe</command>) must be copied to
    <filename>/var/lib/virt-v2v/software/windows</filename> on the virt-v2v
    host. After copying the executable in place, ensure the setup executable
@@ -79,7 +79,7 @@
    &lt;/app&gt;</screen>
   <para>
    The <filename>virt-v2v-vmdp</filename> RPM is available in the same download
-   location as the &vmdpa; setup program.
+   location as the &productnameshort; setup program.
   </para>
  </sect2>
 
