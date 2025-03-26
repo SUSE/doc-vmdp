@@ -4,6 +4,7 @@
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
+
 <?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook50-profile.xsl" type="text/xml" title="Profiling step"?>
 <article xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xmlns:its="http://www.w3.org/2005/11/its" xml:id="article-vmdp-driver" xml:lang="en">
  <title>Installation Guide</title>
