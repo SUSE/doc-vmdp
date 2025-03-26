@@ -5,12 +5,19 @@
     %entities;
 ]>
 <?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook50-profile.xsl" type="text/xml" title="Profiling step"?>
-<article xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="article-vmdp-driver" xml:lang="en">
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xmlns:its="http://www.w3.org/2005/11/its" xml:id="article-vmdp-driver" xml:lang="en">
  <title>Installation Guide</title>
  <info>
   <productname>&productname;</productname>
   <productnumber>&productnumber;</productnumber>
   <productname role="abbrev">&productnameshort;</productname>
+  <meta name="title" its:translate="yes">Installation Guide</meta>
+  <meta name="series" its:translate="no">Products &amp; Solutions</meta>
+  <meta name="description" its:translate="yes">How to enhance the performance of Windows guest operating systems running within virtualized environments</meta>
+  <meta name="social-descr" its:translate="yes">Boost performance of a Windows guest OS</meta>
+  <meta name="task" its:translate="no">
+    <phrase>Virtualization</phrase>
+  </meta>
  </info>
  <sect1 xml:id="sec-vmdp-drivers-vdmp">
   <title>About &productnameshort;</title>
