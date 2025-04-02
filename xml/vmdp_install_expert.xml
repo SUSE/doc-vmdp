@@ -13,7 +13,7 @@
  </para>
 
  <sect2 xml:id="sec-vmdp-setup-expert-install">
-  <title>Expert iInstallation</title>
+  <title>Expert installation</title>
   <para>
    To help with automated installations, <command>setup.exe</command> currently
    has the following parameters:
@@ -67,7 +67,7 @@
   </itemizedlist>
   <para>
    The default is to install the drivers for the hypervisor that the VM is
-   currently running on. Howerver, the Xen and virtio drivers can be installed
+   currently running on. However, the Xen and virtio drivers can be installed
    at the same time if both the <option>/xen</option> and
    <option>/virtio</option> parameters are given.
   </para>

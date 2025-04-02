@@ -116,7 +116,7 @@
     <para>
      See
      <xref linkend="sec-vmdp-step-virt-manager" xrefstyle="SectTitleOnPage"/>
-     for attaching an ISO, setting up<emphasis>Virtio Network</emphasis>, and a
+     for attaching an ISO, setting up <emphasis>VirtIO Network</emphasis>, and a
      VirtIO disk for the Windows* VM.
     </para>
    </step>
@@ -202,7 +202,7 @@
    uninstall the &productname; and remove the associated
    files for the hypervisor that the VM is currently running on. The
    <option>/virtio</option> and <option>/xen</option> parameters forces the
-   uninstall of those drivers reqardless of the running hypervisor. When
+   uninstall of those drivers regardless of the running hypervisor. When
    uninstalling, it is important to <emphasis>reboot</emphasis> the VM on the
    currently running hypervisor to all allow the uninstall to clean up
    additional files and registry entries on reboot.
