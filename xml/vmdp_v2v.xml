@@ -95,7 +95,7 @@
    <listitem>
     <para>
      For &sls; 15, see
-     <link xlink:href="https://documentation.suse.com/sles-15/html/SLES-all/art-sles-xen2kvmquick.html"/>.
+     <link xlink:href="https://documentation.suse.com/sles-15/html/SLES-all/xen2kvm-migration.html"/>.
     </para>
    </listitem>
   </itemizedlist>
