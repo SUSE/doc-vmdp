@@ -88,12 +88,6 @@
   <itemizedlist>
    <listitem>
     <para>
-     For &sls; 11, see
-     <link xlink:href="https://documentation.suse.com/sles-11/html/SLES-xen2kvmquick/art-sles-xen2kvmquick.html"/>.
-    </para>
-   </listitem>
-   <listitem>
-    <para>
      For &sls; 12, see
      <link xlink:href="https://documentation.suse.com/sles-12/html/SLES-all/art-sles-xen2kvmquick.html"/>.
     </para>
